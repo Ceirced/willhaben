@@ -22,7 +22,7 @@
             {"name": "DISTRICT", "values": ["Spittal an der Drau"]},
             {"name": "STATE", "values": ["Kärnten"]},
             {"name": "COORDINATES", "values": ["46.82335,13.521889"]},
-            {"name": "PUBLISHED", "values": ["1777407540000"]},
+            {"name": "PUBLISHED", "values": ["1777414740000"]},
             {"name": "NUMBER_OF_ROOMS", "values": ["2"]},
             {"name": "ROOMS", "values": ["2X2"]},
             {"name": "ESTATE_SIZE/LIVING_AREA", "values": ["60"]},
