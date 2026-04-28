@@ -156,3 +156,14 @@ class TestRetryBehavior:
             with pytest.raises(WillhabenAPIError):
                 client.search(MARKETPLACE_PATH, {"k": "v"})
         assert urlopen.call_count == 3
+
+
+class TestPathArgument:
+    def test_path_is_joined_onto_api_root(
+        self, client: WillhabenClient
+    ) -> None:
+        with patch("willhaben.client.urllib.request.urlopen") as urlopen:
+            urlopen.return_value = make_urlopen_response({})
+            client.search("atz/2/131", {"rows": 1})
+        req = urlopen.call_args.args[0]
+        assert "/webapi/iad/search/atz/2/131?" in req.full_url
