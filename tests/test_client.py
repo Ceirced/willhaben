@@ -51,7 +51,7 @@ class TestRequestSuccess:
         assert req.get_header("X-wh-client") == X_WH_CLIENT
         assert req.get_header("User-agent") == client.user_agent
         assert req.get_header("Accept") == "application/json"
-        assert req.get_header("Referer") is not None
+        assert req.get_header("Referer") == "https://www.willhaben.at/iad"
 
     def test_sets_isnavigation_default(self, client: WillhabenClient) -> None:
         with patch("willhaben.client.urllib.request.urlopen") as urlopen:

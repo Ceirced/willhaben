@@ -58,7 +58,7 @@ class WillhabenClient:
     ) -> dict[str, Any]:
         query = {k: str(v) for k, v in params.items() if v is not None}
         query.setdefault("isNavigation", "true")
-        url = f"{API_ROOT}/{path.lstrip('/')}?{urllib.parse.urlencode(query)}"
+        url = f"{API_ROOT}/{path}?{urllib.parse.urlencode(query)}"
 
         last_exc: Exception | None = None
         for attempt in range(self.max_retries + 1):
