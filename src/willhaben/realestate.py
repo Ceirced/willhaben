@@ -127,3 +127,21 @@ class RealEstateAd:
             is_private=_first(attrs.get("ISPRIVATE")) == "1",
             raw_attributes=attrs,
         )
+
+
+@dataclass(frozen=True, slots=True)
+class RealEstateSearchResult:
+    rows_found: int
+    rows_returned: int
+    page: int
+    ads: list[RealEstateAd]
+
+    @classmethod
+    def from_api(cls, raw: dict[str, Any]) -> RealEstateSearchResult:
+        ad_list = raw.get("advertSummaryList", {}).get("advertSummary", [])
+        return cls(
+            rows_found=raw.get("rowsFound", 0),
+            rows_returned=raw.get("rowsReturned", 0),
+            page=raw.get("pageRequested", 1),
+            ads=[RealEstateAd.from_api(a) for a in ad_list],
+        )

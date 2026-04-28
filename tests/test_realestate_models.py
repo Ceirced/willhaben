@@ -7,6 +7,7 @@ from willhaben.realestate import (
     REAL_ESTATE_AREAS,
     RealEstateAd,
     RealEstateCategory,
+    RealEstateSearchResult,
 )
 
 
@@ -98,3 +99,22 @@ class TestRealEstateAdFromApi:
         )
         assert ad.rooms == 0
         assert ad.property_type_id == 0
+
+
+class TestRealEstateSearchResult:
+    def test_basic(self, load_fixture) -> None:
+        result = RealEstateSearchResult.from_api(
+            load_fixture("realestate_response.json")
+        )
+        assert result.rows_found == 7269
+        assert result.rows_returned == 2
+        assert result.page == 1
+        assert len(result.ads) == 2
+        assert result.ads[0].id == "940426115"
+
+    def test_empty_response(self) -> None:
+        result = RealEstateSearchResult.from_api({})
+        assert result.rows_found == 0
+        assert result.rows_returned == 0
+        assert result.page == 1
+        assert result.ads == []
