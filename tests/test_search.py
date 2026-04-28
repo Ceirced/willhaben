@@ -10,8 +10,12 @@ class StubClient:
     def __init__(self, responses: list[dict[str, Any]]) -> None:
         self.responses = responses
         self.calls: list[dict[str, str | int]] = []
+        self.paths: list[str] = []
 
-    def search(self, params: dict[str, str | int]) -> dict[str, Any]:
+    def search(
+        self, path: str, params: dict[str, str | int]
+    ) -> dict[str, Any]:
+        self.paths.append(path)
         self.calls.append(params)
         return self.responses.pop(0)
 
