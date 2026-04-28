@@ -47,7 +47,7 @@ REAL_ESTATE_AREAS: Final[dict[str, int]] = {
 
 
 def _parse_int(raw: str | None) -> int | None:
-    if not raw:
+    if raw is None:
         return None
     try:
         return int(raw)
@@ -119,6 +119,7 @@ class RealEstateAd:
             published_at=_parse_published(_first(attrs.get("PUBLISHED"))),
             main_image_url=main_image,
             rooms=_parse_int(_first(attrs.get("NUMBER_OF_ROOMS"))),
+            # _parse_price returns Decimal | None — reused for the m² value.
             area_m2=_parse_price(_first(attrs.get("ESTATE_SIZE/LIVING_AREA"))),
             property_type=_first(attrs.get("PROPERTY_TYPE")),
             property_type_id=_parse_int(_first(attrs.get("PROPERTY_TYPE_ID"))),

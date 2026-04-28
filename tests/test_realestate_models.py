@@ -83,3 +83,18 @@ class TestRealEstateAdFromApi:
         assert ad.price is None
         assert ad.rooms is None
         assert ad.is_private is False
+
+    def test_parse_int_handles_zero(self) -> None:
+        ad = RealEstateAd.from_api(
+            {
+                "id": 1,
+                "attributes": {
+                    "attribute": [
+                        {"name": "NUMBER_OF_ROOMS", "values": ["0"]},
+                        {"name": "PROPERTY_TYPE_ID", "values": ["0"]},
+                    ]
+                },
+            }
+        )
+        assert ad.rooms == 0
+        assert ad.property_type_id == 0
