@@ -1,0 +1,38 @@
+{
+  "rowsFound": 42,
+  "rowsReturned": 1,
+  "pageRequested": 1,
+  "advertSummaryList": {
+    "advertSummary": [
+      {
+        "id": 12345,
+        "description": "Used Bicycle",
+        "attributes": {
+          "attribute": [
+            {"name": "SEO_URL", "values": ["fahrraeder/used-bicycle"]},
+            {"name": "PRICE/AMOUNT", "values": ["120.00"]},
+            {"name": "PRICE_FOR_DISPLAY", "values": ["€ 120,-"]},
+            {"name": "LOCATION", "values": ["1010 Wien"]},
+            {"name": "POSTCODE", "values": ["1010"]},
+            {"name": "DISTRICT", "values": ["Innere Stadt"]},
+            {"name": "STATE", "values": ["Wien"]},
+            {"name": "COORDINATES", "values": ["48.2082,16.3738"]},
+            {"name": "PUBLISHED", "values": ["1700000000000"]},
+            {"name": "BODY_DYN", "values": ["A nice used bicycle."]},
+            {"name": "ISPRIVATE", "values": ["1"]}
+          ]
+        },
+        "contextLinkList": {
+          "contextLink": [
+            {"id": "iadShareLink", "uri": "https://www.willhaben.at/iad/share/12345"}
+          ]
+        },
+        "advertImageList": {
+          "advertImage": [
+            {"mainImageUrl": "https://images.willhaben.at/main.jpg"}
+          ]
+        }
+      }
+    ]
+  }
+}
