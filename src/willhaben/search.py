@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Iterator
 
 from .client import WillhabenClient
-from .constants import MAX_ROWS_PER_PAGE, SortOrder
+from .constants import MARKETPLACE_PATH, MAX_ROWS_PER_PAGE, SortOrder
 from .models import Ad, SearchResult
 
 
@@ -68,7 +68,7 @@ def search(
         page=page,
         extra=extra_params,
     )
-    return SearchResult.from_api(client.search(params))
+    return SearchResult.from_api(client.search(MARKETPLACE_PATH, params))
 
 
 def count(

@@ -1,0 +1,64 @@
+{
+  "verticalId": 2,
+  "searchId": 131,
+  "rowsFound": 7269,
+  "rowsReturned": 2,
+  "pageRequested": 1,
+  "advertSummaryList": {
+    "advertSummary": [
+      {
+        "id": 940426115,
+        "description": "Ruhige Wohnung am See",
+        "verticalId": 2,
+        "productId": 200,
+        "attributes": {
+          "attribute": [
+            {"name": "SEO_URL", "values": ["immobilien/d/mietwohnungen/kaernten/spittal-an-der-drau/ruhige-wohnung-am-see"]},
+            {"name": "PRICE", "values": ["1200"]},
+            {"name": "PRICE_FOR_DISPLAY", "values": ["€ 1.200"]},
+            {"name": "RENT/PER_MONTH_LETTINGS", "values": ["1200.0"]},
+            {"name": "LOCATION", "values": ["Seeboden"]},
+            {"name": "POSTCODE", "values": ["9871"]},
+            {"name": "DISTRICT", "values": ["Spittal an der Drau"]},
+            {"name": "STATE", "values": ["Kärnten"]},
+            {"name": "COORDINATES", "values": ["46.82335,13.521889"]},
+            {"name": "PUBLISHED", "values": ["1777414740000"]},
+            {"name": "NUMBER_OF_ROOMS", "values": ["2"]},
+            {"name": "ROOMS", "values": ["2X2"]},
+            {"name": "ESTATE_SIZE/LIVING_AREA", "values": ["60"]},
+            {"name": "PROPERTY_TYPE", "values": ["Wohnung"]},
+            {"name": "PROPERTY_TYPE_ID", "values": ["3"]},
+            {"name": "FREE_AREA_TYPE", "values": ["30"]},
+            {"name": "FREE_AREA_TYPE_NAME", "values": ["Loggia"]},
+            {"name": "ISPRIVATE", "values": ["1"]}
+          ]
+        },
+        "contextLinkList": {
+          "contextLink": [
+            {"id": "iadShareLink", "uri": "https://www.willhaben.at/iad/share/940426115"}
+          ]
+        },
+        "advertImageList": {
+          "advertImage": [
+            {"mainImageUrl": "https://images.willhaben.at/940/426/115_main.jpg"}
+          ]
+        }
+      },
+      {
+        "id": 999111222,
+        "description": "Grundstück bei Eggelsberg",
+        "verticalId": 2,
+        "attributes": {
+          "attribute": [
+            {"name": "PRICE_FOR_DISPLAY", "values": ["Preis auf Anfrage"]},
+            {"name": "LOCATION", "values": ["Eggelsberg"]},
+            {"name": "ESTATE_SIZE/LIVING_AREA", "values": ["1500.5"]},
+            {"name": "ISPRIVATE", "values": ["0"]}
+          ]
+        },
+        "contextLinkList": {"contextLink": []},
+        "advertImageList": {"advertImage": []}
+      }
+    ]
+  }
+}

@@ -3,10 +3,10 @@ from __future__ import annotations
 from enum import IntEnum
 from typing import Final
 
-BASE_URL: Final = (
-    "https://www.willhaben.at/webapi/iad/search/atz/seo"
-    "/kaufen-und-verkaufen/marktplatz"
-)
+API_ROOT: Final = "https://www.willhaben.at/webapi/iad/search"
+
+# Marketplace endpoint path (joined onto API_ROOT).
+MARKETPLACE_PATH: Final = "atz/seo/kaufen-und-verkaufen/marktplatz"
 
 # Without this header the same endpoint returns 400 with an empty body.
 X_WH_CLIENT: Final = "api@willhaben.at;responsive_web;server;1.0.0;desktop"

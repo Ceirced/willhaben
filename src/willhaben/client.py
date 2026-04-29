@@ -8,7 +8,7 @@ import urllib.parse
 import urllib.request
 from typing import Any
 
-from .constants import BASE_URL, DEFAULT_USER_AGENT, X_WH_CLIENT
+from .constants import API_ROOT, DEFAULT_USER_AGENT, X_WH_CLIENT
 
 
 class WillhabenAPIError(Exception):
@@ -44,7 +44,7 @@ class WillhabenClient:
             "Accept": "application/json",
             "Accept-Language": "de-AT,de;q=0.9,en;q=0.8",
             "x-wh-client": X_WH_CLIENT,
-            "Referer": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz",
+            "Referer": "https://www.willhaben.at/iad",
         }
 
     def _wait(self) -> None:
@@ -53,10 +53,12 @@ class WillhabenClient:
         if elapsed < delay:
             time.sleep(delay - elapsed)
 
-    def search(self, params: dict[str, str | int]) -> dict[str, Any]:
+    def search(
+        self, path: str, params: dict[str, str | int]
+    ) -> dict[str, Any]:
         query = {k: str(v) for k, v in params.items() if v is not None}
         query.setdefault("isNavigation", "true")
-        url = f"{BASE_URL}?{urllib.parse.urlencode(query)}"
+        url = f"{API_ROOT}/{path}?{urllib.parse.urlencode(query)}"
 
         last_exc: Exception | None = None
         for attempt in range(self.max_retries + 1):
