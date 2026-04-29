@@ -6,6 +6,7 @@ from decimal import Decimal
 from enum import IntEnum
 from typing import Any, Final
 
+from .client import WillhabenClient
 from .constants import SortOrder
 from .models import (
     _attrs_to_dict,
@@ -188,3 +189,47 @@ def _build_realestate_params(
     if extra:
         params.update(extra)
     return params
+
+
+def search_realestate(
+    *,
+    category: RealEstateCategory,
+    keyword: str | None = None,
+    price_from: int | None = None,
+    price_to: int | None = None,
+    area_m2_from: int | None = None,
+    area_m2_to: int | None = None,
+    rooms: str | None = None,
+    property_type: int | None = None,
+    area_id: int | None = None,
+    is_private: bool | None = None,
+    sort: SortOrder | int | None = None,
+    rows: int = 30,
+    page: int = 1,
+    client: WillhabenClient | None = None,
+    extra_params: dict[str, str | int] | None = None,
+) -> RealEstateSearchResult:
+    """Run a single real-estate search query.
+
+    `rooms` is a willhaben "bucket" string like "2X2" (exactly 2 rooms) or
+    "2X4" (2-to-4 rooms). `area_id` uses `REAL_ESTATE_AREAS` (not marketplace
+    `AREAS`). `rows` is server-capped at 200.
+    """
+    client = client or WillhabenClient()
+    params = _build_realestate_params(
+        keyword=keyword,
+        price_from=price_from,
+        price_to=price_to,
+        area_m2_from=area_m2_from,
+        area_m2_to=area_m2_to,
+        rooms=rooms,
+        property_type=property_type,
+        area_id=area_id,
+        is_private=is_private,
+        sort=sort,
+        rows=rows,
+        page=page,
+        extra=extra_params,
+    )
+    path = f"atz/2/{category.value}"
+    return RealEstateSearchResult.from_api(client.search(path, params))

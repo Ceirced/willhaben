@@ -6,6 +6,7 @@ from willhaben.constants import SortOrder
 from willhaben.realestate import (
     RealEstateCategory,
     _build_realestate_params,
+    search_realestate,
 )
 
 
@@ -132,3 +133,36 @@ class TestBuildRealEstateParams:
             extra={"keyword": "balkon"},
         )
         assert params["keyword"] == "balkon"
+
+
+class TestSearchRealestate:
+    def test_returns_search_result(self) -> None:
+        client = StubClient([make_response(rows_found=42, ads=[make_ad("1")])])
+        result = search_realestate(
+            category=RealEstateCategory.APARTMENT_RENT,
+            client=client,  # type: ignore[arg-type]
+        )
+        assert result.rows_found == 42
+        assert len(result.ads) == 1
+        assert result.ads[0].id == "1"
+
+    def test_uses_category_in_path(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.HOUSE_BUY,
+            client=client,  # type: ignore[arg-type]
+        )
+        assert client.paths[0] == "atz/2/102"
+
+    def test_passes_filters(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.APARTMENT_RENT,
+            keyword="garten",
+            price_to=1500,
+            rooms="2X3",
+            client=client,  # type: ignore[arg-type]
+        )
+        assert client.calls[0]["keyword"] == "garten"
+        assert client.calls[0]["PRICE_TO"] == 1500
+        assert client.calls[0]["NO_OF_ROOMS_BUCKET"] == "2X3"
