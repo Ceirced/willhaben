@@ -37,7 +37,7 @@ class TestRealEstateAdFromApi:
         ad = RealEstateAd.from_api(raw["advertSummaryList"]["advertSummary"][0])
         assert ad.id == "940426115"
         assert ad.title == "Ruhige Wohnung am See"
-        assert ad.price == Decimal("1200")
+        assert ad.price == Decimal(1200)
         assert ad.price_display == "€ 1.200"
         assert ad.location == "Seeboden"
         assert ad.postcode == "9871"
@@ -46,7 +46,7 @@ class TestRealEstateAdFromApi:
         assert ad.coordinates == (46.82335, 13.521889)
         assert ad.published_at == datetime(2026, 4, 28, 22, 19, 0, tzinfo=UTC)
         assert ad.rooms == 2
-        assert ad.area_m2 == Decimal("60")
+        assert ad.area_m2 == Decimal(60)
         assert ad.property_type == "Wohnung"
         assert ad.property_type_id == 3
         assert ad.free_area_type == "Loggia"
