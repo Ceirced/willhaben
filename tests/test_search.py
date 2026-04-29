@@ -134,14 +134,14 @@ class TestBuildParams:
 class TestSearch:
     def test_returns_search_result(self) -> None:
         client = StubClient([make_response(rows_found=1, ads=[make_ad("1")])])
-        result = search(keyword="x", client=client)  # type: ignore[arg-type]
+        result = search(keyword="x", client=client)  # ty: ignore[invalid-argument-type]
         assert result.rows_found == 1
         assert len(result.ads) == 1
         assert result.ads[0].id == "1"
 
     def test_passes_params(self) -> None:
         client = StubClient([make_response(rows_found=0)])
-        search(keyword="bike", price_to=100, client=client)  # type: ignore[arg-type]
+        search(keyword="bike", price_to=100, client=client)  # ty: ignore[invalid-argument-type]
         assert client.calls[0]["keyword"] == "bike"
         assert client.calls[0]["PRICE_TO"] == 100
 
@@ -149,11 +149,11 @@ class TestSearch:
 class TestCount:
     def test_returns_rows_found(self) -> None:
         client = StubClient([make_response(rows_found=99)])
-        assert count(keyword="x", client=client) == 99  # type: ignore[arg-type]
+        assert count(keyword="x", client=client) == 99  # ty: ignore[invalid-argument-type]
 
     def test_uses_rows_one(self) -> None:
         client = StubClient([make_response(rows_found=99)])
-        count(keyword="x", client=client)  # type: ignore[arg-type]
+        count(keyword="x", client=client)  # ty: ignore[invalid-argument-type]
         assert client.calls[0]["rows"] == 1
 
 
@@ -167,7 +167,7 @@ class TestIterAds:
                 make_response(rows_found=400, ads=ads_p2, page=2),
             ]
         )
-        result = list(iter_ads(client=client))  # type: ignore[arg-type]
+        result = list(iter_ads(client=client))  # ty: ignore[invalid-argument-type]
         assert len(result) == 400
         assert result[0].id == "0"
         assert result[-1].id == "399"
@@ -175,17 +175,17 @@ class TestIterAds:
     def test_stops_at_max_results(self) -> None:
         ads = [make_ad(str(i)) for i in range(200)]
         client = StubClient([make_response(rows_found=400, ads=ads)])
-        result = list(iter_ads(max_results=5, client=client))  # type: ignore[arg-type]
+        result = list(iter_ads(max_results=5, client=client))  # ty: ignore[invalid-argument-type]
         assert len(result) == 5
 
     def test_stops_when_rows_found_reached(self) -> None:
         ads = [make_ad(str(i)) for i in range(3)]
         client = StubClient([make_response(rows_found=3, ads=ads)])
-        result = list(iter_ads(client=client))  # type: ignore[arg-type]
+        result = list(iter_ads(client=client))  # ty: ignore[invalid-argument-type]
         assert len(result) == 3
         assert len(client.calls) == 1
 
     def test_stops_on_empty_page(self) -> None:
         client = StubClient([make_response(rows_found=999, ads=[])])
-        result = list(iter_ads(client=client))  # type: ignore[arg-type]
+        result = list(iter_ads(client=client))  # ty: ignore[invalid-argument-type]
         assert result == []

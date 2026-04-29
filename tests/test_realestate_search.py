@@ -142,7 +142,7 @@ class TestSearchRealestate:
         client = StubClient([make_response(rows_found=42, ads=[make_ad("1")])])
         result = search_realestate(
             category=RealEstateCategory.APARTMENT_RENT,
-            client=client,  # type: ignore[arg-type]
+            client=client,  # ty: ignore[invalid-argument-type]
         )
         assert result.rows_found == 42
         assert len(result.ads) == 1
@@ -152,7 +152,7 @@ class TestSearchRealestate:
         client = StubClient([make_response(rows_found=0)])
         search_realestate(
             category=RealEstateCategory.HOUSE_BUY,
-            client=client,  # type: ignore[arg-type]
+            client=client,  # ty: ignore[invalid-argument-type]
         )
         assert client.paths[0] == "atz/2/102"
 
@@ -163,7 +163,7 @@ class TestSearchRealestate:
             keyword="garten",
             price_to=1500,
             rooms="2X3",
-            client=client,  # type: ignore[arg-type]
+            client=client,  # ty: ignore[invalid-argument-type]
         )
         assert client.calls[0]["keyword"] == "garten"
         assert client.calls[0]["PRICE_TO"] == 1500
@@ -176,7 +176,7 @@ class TestCountRealestate:
         assert (
             count_realestate(
                 category=RealEstateCategory.APARTMENT_RENT,
-                client=client,  # type: ignore[arg-type]
+                client=client,  # ty: ignore[invalid-argument-type]
             )
             == 99
         )
@@ -185,7 +185,7 @@ class TestCountRealestate:
         client = StubClient([make_response(rows_found=99)])
         count_realestate(
             category=RealEstateCategory.APARTMENT_RENT,
-            client=client,  # type: ignore[arg-type]
+            client=client,  # ty: ignore[invalid-argument-type]
         )
         assert client.calls[0]["rows"] == 1
 
@@ -203,7 +203,7 @@ class TestIterRealestateAds:
         result = list(
             iter_realestate_ads(
                 category=RealEstateCategory.APARTMENT_RENT,
-                client=client,  # type: ignore[arg-type]
+                client=client,  # ty: ignore[invalid-argument-type]
             )
         )
         assert len(result) == 400
@@ -217,7 +217,7 @@ class TestIterRealestateAds:
             iter_realestate_ads(
                 category=RealEstateCategory.APARTMENT_RENT,
                 max_results=5,
-                client=client,  # type: ignore[arg-type]
+                client=client,  # ty: ignore[invalid-argument-type]
             )
         )
         assert len(result) == 5
@@ -228,7 +228,7 @@ class TestIterRealestateAds:
         result = list(
             iter_realestate_ads(
                 category=RealEstateCategory.APARTMENT_RENT,
-                client=client,  # type: ignore[arg-type]
+                client=client,  # ty: ignore[invalid-argument-type]
             )
         )
         assert len(result) == 3
@@ -239,7 +239,7 @@ class TestIterRealestateAds:
         result = list(
             iter_realestate_ads(
                 category=RealEstateCategory.APARTMENT_RENT,
-                client=client,  # type: ignore[arg-type]
+                client=client,  # ty: ignore[invalid-argument-type]
             )
         )
         assert result == []

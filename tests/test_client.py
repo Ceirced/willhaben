@@ -26,7 +26,7 @@ def make_http_error(code: int) -> HTTPError:
         url="http://example",
         code=code,
         msg="err",
-        hdrs=None,  # type: ignore[arg-type]
+        hdrs=None,  # ty: ignore[invalid-argument-type]
         fp=None,
     )
 
