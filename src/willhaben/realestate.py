@@ -1,12 +1,11 @@
 from __future__ import annotations
 
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from datetime import datetime
 from decimal import Decimal
 from enum import IntEnum
 from typing import Any, Final
-
-from collections.abc import Iterator
 
 from .client import WillhabenClient
 from .constants import MAX_ROWS_PER_PAGE, SortOrder
