@@ -6,6 +6,7 @@ from decimal import Decimal
 from enum import IntEnum
 from typing import Any, Final
 
+from .constants import SortOrder
 from .models import (
     _attrs_to_dict,
     _first,
@@ -145,3 +146,45 @@ class RealEstateSearchResult:
             page=raw.get("pageRequested", 1),
             ads=[RealEstateAd.from_api(a) for a in ad_list],
         )
+
+
+def _build_realestate_params(
+    *,
+    keyword: str | None,
+    price_from: int | None,
+    price_to: int | None,
+    area_m2_from: int | None,
+    area_m2_to: int | None,
+    rooms: str | None,
+    property_type: int | None,
+    area_id: int | None,
+    is_private: bool | None,
+    sort: SortOrder | int | None,
+    rows: int,
+    page: int,
+    extra: dict[str, str | int] | None,
+) -> dict[str, str | int]:
+    params: dict[str, str | int] = {"rows": rows, "page": page}
+    if keyword:
+        params["keyword"] = keyword
+    if price_from is not None:
+        params["PRICE_FROM"] = price_from
+    if price_to is not None:
+        params["PRICE_TO"] = price_to
+    if area_m2_from is not None:
+        params["ESTATE_SIZE/LIVING_AREA_FROM"] = area_m2_from
+    if area_m2_to is not None:
+        params["ESTATE_SIZE/LIVING_AREA_TO"] = area_m2_to
+    if rooms is not None:
+        params["NO_OF_ROOMS_BUCKET"] = rooms
+    if property_type is not None:
+        params["PROPERTY_TYPE"] = property_type
+    if area_id is not None:
+        params["areaId"] = area_id
+    if is_private is True:
+        params["ISPRIVATE"] = 1
+    if sort is not None:
+        params["sort"] = int(sort)
+    if extra:
+        params.update(extra)
+    return params
