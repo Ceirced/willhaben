@@ -233,3 +233,36 @@ def search_realestate(
     )
     path = f"atz/2/{category.value}"
     return RealEstateSearchResult.from_api(client.search(path, params))
+
+
+def count_realestate(
+    *,
+    category: RealEstateCategory,
+    keyword: str | None = None,
+    price_from: int | None = None,
+    price_to: int | None = None,
+    area_m2_from: int | None = None,
+    area_m2_to: int | None = None,
+    rooms: str | None = None,
+    property_type: int | None = None,
+    area_id: int | None = None,
+    is_private: bool | None = None,
+    client: WillhabenClient | None = None,
+    extra_params: dict[str, str | int] | None = None,
+) -> int:
+    """Return only the total result count via a minimal `rows=1` request."""
+    return search_realestate(
+        category=category,
+        keyword=keyword,
+        price_from=price_from,
+        price_to=price_to,
+        area_m2_from=area_m2_from,
+        area_m2_to=area_m2_to,
+        rooms=rooms,
+        property_type=property_type,
+        area_id=area_id,
+        is_private=is_private,
+        rows=1,
+        client=client,
+        extra_params=extra_params,
+    ).rows_found
