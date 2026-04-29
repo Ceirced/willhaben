@@ -6,8 +6,10 @@ from decimal import Decimal
 from enum import IntEnum
 from typing import Any, Final
 
+from collections.abc import Iterator
+
 from .client import WillhabenClient
-from .constants import SortOrder
+from .constants import MAX_ROWS_PER_PAGE, SortOrder
 from .models import (
     _attrs_to_dict,
     _first,
@@ -266,3 +268,54 @@ def count_realestate(
         client=client,
         extra_params=extra_params,
     ).rows_found
+
+
+def iter_realestate_ads(
+    *,
+    category: RealEstateCategory,
+    keyword: str | None = None,
+    price_from: int | None = None,
+    price_to: int | None = None,
+    area_m2_from: int | None = None,
+    area_m2_to: int | None = None,
+    rooms: str | None = None,
+    property_type: int | None = None,
+    area_id: int | None = None,
+    is_private: bool | None = None,
+    sort: SortOrder | int | None = None,
+    max_results: int | None = None,
+    client: WillhabenClient | None = None,
+    extra_params: dict[str, str | int] | None = None,
+) -> Iterator[RealEstateAd]:
+    """Yield real-estate ads across all pages, stopping at `max_results` if given."""
+    client = client or WillhabenClient()
+    yielded = 0
+    page = 1
+    while True:
+        result = search_realestate(
+            category=category,
+            keyword=keyword,
+            price_from=price_from,
+            price_to=price_to,
+            area_m2_from=area_m2_from,
+            area_m2_to=area_m2_to,
+            rooms=rooms,
+            property_type=property_type,
+            area_id=area_id,
+            is_private=is_private,
+            sort=sort,
+            rows=MAX_ROWS_PER_PAGE,
+            page=page,
+            client=client,
+            extra_params=extra_params,
+        )
+        if not result.ads:
+            return
+        for ad in result.ads:
+            yield ad
+            yielded += 1
+            if max_results is not None and yielded >= max_results:
+                return
+        if yielded >= result.rows_found:
+            return
+        page += 1

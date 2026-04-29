@@ -7,6 +7,7 @@ from willhaben.realestate import (
     RealEstateCategory,
     _build_realestate_params,
     count_realestate,
+    iter_realestate_ads,
     search_realestate,
 )
 
@@ -187,3 +188,58 @@ class TestCountRealestate:
             client=client,  # type: ignore[arg-type]
         )
         assert client.calls[0]["rows"] == 1
+
+
+class TestIterRealestateAds:
+    def test_yields_all_pages(self) -> None:
+        ads_p1 = [make_ad(str(i)) for i in range(200)]
+        ads_p2 = [make_ad(str(i)) for i in range(200, 400)]
+        client = StubClient(
+            [
+                make_response(rows_found=400, ads=ads_p1, page=1),
+                make_response(rows_found=400, ads=ads_p2, page=2),
+            ]
+        )
+        result = list(
+            iter_realestate_ads(
+                category=RealEstateCategory.APARTMENT_RENT,
+                client=client,  # type: ignore[arg-type]
+            )
+        )
+        assert len(result) == 400
+        assert result[0].id == "0"
+        assert result[-1].id == "399"
+
+    def test_stops_at_max_results(self) -> None:
+        ads = [make_ad(str(i)) for i in range(200)]
+        client = StubClient([make_response(rows_found=400, ads=ads)])
+        result = list(
+            iter_realestate_ads(
+                category=RealEstateCategory.APARTMENT_RENT,
+                max_results=5,
+                client=client,  # type: ignore[arg-type]
+            )
+        )
+        assert len(result) == 5
+
+    def test_stops_when_rows_found_reached(self) -> None:
+        ads = [make_ad(str(i)) for i in range(3)]
+        client = StubClient([make_response(rows_found=3, ads=ads)])
+        result = list(
+            iter_realestate_ads(
+                category=RealEstateCategory.APARTMENT_RENT,
+                client=client,  # type: ignore[arg-type]
+            )
+        )
+        assert len(result) == 3
+        assert len(client.calls) == 1
+
+    def test_stops_on_empty_page(self) -> None:
+        client = StubClient([make_response(rows_found=999, ads=[])])
+        result = list(
+            iter_realestate_ads(
+                category=RealEstateCategory.APARTMENT_RENT,
+                client=client,  # type: ignore[arg-type]
+            )
+        )
+        assert result == []
