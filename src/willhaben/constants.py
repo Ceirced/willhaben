@@ -21,15 +21,15 @@ DEFAULT_USER_AGENT: Final = (
 MAX_ROWS_PER_PAGE: Final = 200
 
 AREAS: Final[dict[str, int]] = {
-    "wien": 900,
-    "niederösterreich": 300,
-    "oberösterreich": 400,
-    "salzburg": 500,
-    "tirol": 700,
-    "vorarlberg": 800,
-    "kärnten": 200,
-    "steiermark": 600,
-    "burgenland": 100,
+    "wien": 9,
+    "niederösterreich": 3,
+    "oberösterreich": 4,
+    "salzburg": 5,
+    "tirol": 7,
+    "vorarlberg": 8,
+    "kärnten": 2,
+    "steiermark": 6,
+    "burgenland": 1,
 }
 
 
