@@ -42,6 +42,36 @@ def _parse_price(raw: str | None) -> Decimal | None:
         return None
 
 
+def _state_counts_from_raw(raw: dict[str, Any]) -> dict[int, int]:
+    nav = next(
+        (
+            n
+            for g in raw.get("navigatorGroups", [])
+            for n in g.get("navigatorList", [])
+            if n.get("id") == "state"
+        ),
+        None,
+    )
+    if nav is None:
+        return {}
+    values: list[dict[str, Any]] = list(nav.get("possibleValues") or [])
+    for grouped in nav.get("groupedPossibleValues") or []:
+        values.extend(grouped.get("possibleValues") or [])
+    counts: dict[int, int] = {}
+    for v in values:
+        hits = v.get("hits")
+        if hits is None:
+            continue
+        for p in v.get("urlParamRepresentationForValue") or []:
+            if p.get("urlParameterName") == "areaId":
+                try:
+                    counts[int(p["value"])] = hits
+                except (KeyError, ValueError, TypeError):
+                    pass
+                break
+    return counts
+
+
 @dataclass(frozen=True, slots=True)
 class Ad:
     id: str
@@ -115,6 +145,11 @@ class SearchResult:
     page: int
     ads: list[Ad]
     raw: dict[str, Any] = field(repr=False, default_factory=dict)
+
+    @property
+    def counts_by_state(self) -> dict[int, int]:
+        """Map Bundesland areaId → ad count. Keys match `AREAS`."""
+        return _state_counts_from_raw(self.raw)
 
     @classmethod
     def from_api(cls, raw: dict[str, Any]) -> SearchResult:
