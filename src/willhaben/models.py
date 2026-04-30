@@ -61,6 +61,9 @@ class Ad:
     is_private: bool
     raw_attributes: dict[str, list[str]] = field(repr=False)
 
+    def __repr__(self):
+        return f"Ad(id={self.id}, title={self.title!r}, price={self.price}, url={self.url})"
+
     @classmethod
     def from_api(cls, raw: dict[str, Any]) -> Ad:
         attrs = _attrs_to_dict(raw.get("attributes", {}).get("attribute", []))
@@ -111,6 +114,7 @@ class SearchResult:
     rows_returned: int
     page: int
     ads: list[Ad]
+    raw: dict[str, Any] = field(repr=False, default_factory=dict)
 
     @classmethod
     def from_api(cls, raw: dict[str, Any]) -> SearchResult:
@@ -120,4 +124,5 @@ class SearchResult:
             rows_returned=raw.get("rowsReturned", 0),
             page=raw.get("pageRequested", 1),
             ads=[Ad.from_api(a) for a in ad_list],
+            raw=raw,
         )
