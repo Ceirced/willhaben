@@ -4,7 +4,6 @@ from .client import WillhabenAPIError, WillhabenClient
 from .constants import AREAS, MAX_ROWS_PER_PAGE, SortOrder
 from .models import Ad, SearchResult
 from .realestate import (
-    REAL_ESTATE_AREAS,
     RealEstateAd,
     RealEstateCategory,
     RealEstateSearchResult,
@@ -17,7 +16,6 @@ from .search import count, iter_ads, search
 __all__ = [
     "AREAS",
     "MAX_ROWS_PER_PAGE",
-    "REAL_ESTATE_AREAS",
     "Ad",
     "RealEstateAd",
     "RealEstateCategory",

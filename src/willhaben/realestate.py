@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from decimal import Decimal
 from enum import IntEnum
-from typing import Any, Final
+from typing import Any
 
 from .client import WillhabenClient
 from .constants import MAX_ROWS_PER_PAGE, SortOrder
@@ -31,22 +31,6 @@ class RealEstateCategory(IntEnum):
     HOLIDAY_BUY = 12
     HOLIDAY_RENT = 32
     OTHER = 35
-
-
-# Real estate uses different areaId values than the marketplace `AREAS` dict.
-# Wien is the only value that matches.
-REAL_ESTATE_AREAS: Final[dict[str, int]] = {
-    "burgenland": 1,
-    "kärnten": 2,
-    "niederösterreich": 3,
-    "oberösterreich": 4,
-    "salzburg": 5,
-    "steiermark": 6,
-    "tirol": 7,
-    "vorarlberg": 8,
-    "wien": 900,
-    "andere länder": 22000,
-}
 
 
 def _parse_int(raw: str | None) -> int | None:
@@ -213,8 +197,8 @@ def search_realestate(
     """Run a single real-estate search query.
 
     `rooms` is a willhaben "bucket" string like "2X2" (exactly 2 rooms) or
-    "2X4" (2-to-4 rooms). `area_id` uses `REAL_ESTATE_AREAS` (not marketplace
-    `AREAS`). `rows` is server-capped at 200.
+    "2X4" (2-to-4 rooms). `area_id` uses `AREAS`. `rows` is server-capped
+    at 200.
     """
     client = client or WillhabenClient()
     params = _build_realestate_params(

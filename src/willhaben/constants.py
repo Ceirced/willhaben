@@ -20,16 +20,20 @@ DEFAULT_USER_AGENT: Final = (
 # Server silently caps `rows` at 200 even if you request more.
 MAX_ROWS_PER_PAGE: Final = 200
 
+# Bundesland areaIds emitted by the response `state` navigator and accepted
+# by both marketplace and real-estate endpoints. (Marketplace also accepts
+# 9 for Wien Stadt, but 900 covers the whole Bundesland equivalently.)
 AREAS: Final[dict[str, int]] = {
-    "wien": 9,
+    "burgenland": 1,
+    "kärnten": 2,
     "niederösterreich": 3,
     "oberösterreich": 4,
     "salzburg": 5,
+    "steiermark": 6,
     "tirol": 7,
     "vorarlberg": 8,
-    "kärnten": 2,
-    "steiermark": 6,
-    "burgenland": 1,
+    "wien": 900,
+    "andere länder": 22000,
 }
 
 

@@ -4,7 +4,6 @@ from datetime import UTC, datetime
 from decimal import Decimal
 
 from willhaben.realestate import (
-    REAL_ESTATE_AREAS,
     RealEstateAd,
     RealEstateCategory,
     RealEstateSearchResult,
@@ -20,15 +19,6 @@ class TestRealEstateCategory:
 
     def test_all_value(self) -> None:
         assert RealEstateCategory.ALL == 90
-
-
-class TestRealEstateAreas:
-    def test_wien_matches_marketplace(self) -> None:
-        assert REAL_ESTATE_AREAS["wien"] == 900
-
-    def test_burgenland_differs_from_marketplace(self) -> None:
-        # Marketplace uses 100, real estate uses 1.
-        assert REAL_ESTATE_AREAS["burgenland"] == 1
 
 
 class TestRealEstateAdFromApi:
