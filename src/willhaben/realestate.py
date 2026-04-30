@@ -122,6 +122,7 @@ class RealEstateSearchResult:
     rows_returned: int
     page: int
     ads: list[RealEstateAd]
+    raw: dict[str, Any] = field(repr=False, default_factory=dict)
 
     @classmethod
     def from_api(cls, raw: dict[str, Any]) -> RealEstateSearchResult:
@@ -131,6 +132,7 @@ class RealEstateSearchResult:
             rows_returned=raw.get("rowsReturned", 0),
             page=raw.get("pageRequested", 1),
             ads=[RealEstateAd.from_api(a) for a in ad_list],
+            raw=raw,
         )
 
 
