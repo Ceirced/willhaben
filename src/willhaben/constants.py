@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from dataclasses import dataclass, field
 from enum import IntEnum
 from typing import Final
 
@@ -19,6 +20,20 @@ DEFAULT_USER_AGENT: Final = (
 
 # Server silently caps `rows` at 200 even if you request more.
 MAX_ROWS_PER_PAGE: Final = 200
+
+@dataclass(slots=True, eq=False)
+class Area:
+    """A willhaben area: a Bundesland, a district within one, or a country
+    grouped under "andere Länder". `id` is the willhaben areaId (negative for
+    foreign countries). Equality is by identity so the cyclic parent/child
+    graph doesn't blow up `__eq__`.
+    """
+
+    id: int
+    name: str
+    parent: Area | None = field(default=None, repr=False)
+    children: tuple[Area, ...] = ()
+
 
 # Bundesland areaIds emitted by the response `state` navigator and accepted
 # by both marketplace and real-estate endpoints. (Marketplace also accepts
