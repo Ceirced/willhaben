@@ -12,7 +12,13 @@ from willhaben import (
     count,
     count_realestate,
 )
-from willhaben.constants import AREAS_BY_ID
+from willhaben.constants import (
+    API_ROOT,
+    AREAS_BY_ID,
+    DEFAULT_USER_AGENT,
+    MARKETPLACE_PATH,
+    X_WH_CLIENT,
+)
 
 
 @pytest.mark.live
@@ -33,18 +39,15 @@ def test_live_realestate_count_returns_positive() -> None:
 
 def _fetch_live_pairs() -> set[tuple[int, int]]:
     headers = {
-        "X-WH-Client": "api@willhaben.at;responsive_web;server;1.0.0;desktop",
-        "User-Agent": "Mozilla/5.0",
+        "X-WH-Client": X_WH_CLIENT,
+        "User-Agent": DEFAULT_USER_AGENT,
         "Accept": "application/json",
     }
     qs = urllib.parse.urlencode(
         [("rows", "1")]
         + [("areaId", str(i)) for i in (1, 2, 3, 4, 5, 6, 7, 8, 900, 22000)]
     )
-    url = (
-        "https://www.willhaben.at/webapi/iad/search/atz/seo/"
-        f"kaufen-und-verkaufen/marktplatz?{qs}"
-    )
+    url = f"{API_ROOT}/{MARKETPLACE_PATH}?{qs}"
     req = urllib.request.Request(url, headers=headers)  # noqa: S310
     with urllib.request.urlopen(req, timeout=30) as resp:  # noqa: S310
         payload = json.loads(resp.read())
