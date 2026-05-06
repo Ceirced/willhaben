@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from willhaben.constants import Area
+from willhaben.constants import AREAS, AREAS_BY_ID, Area
 
 
 def test_area_defaults() -> None:
@@ -39,3 +39,55 @@ def test_area_children_is_settable_after_construction() -> None:
     state.children = (child,)
     assert state.children == (child,)
     assert state.children[0].parent is state
+
+
+def test_areas_has_ten_top_level_entries() -> None:
+    assert len(AREAS) == 10
+
+
+def test_top_level_areas_have_no_parent() -> None:
+    for area in AREAS.values():
+        assert area.parent is None
+
+
+def test_every_top_level_area_has_children() -> None:
+    # Including "andere länder", whose children are foreign countries.
+    for slug, area in AREAS.items():
+        assert len(area.children) > 0, f"{slug} has no children"
+
+
+def test_children_parent_back_reference() -> None:
+    for area in AREAS.values():
+        for child in area.children:
+            assert child.parent is area
+
+
+def test_areas_by_id_round_trip() -> None:
+    for area in AREAS.values():
+        assert AREAS_BY_ID[area.id] is area
+        for child in area.children:
+            assert AREAS_BY_ID[child.id] is child
+
+
+def test_areas_by_id_has_148_nodes() -> None:
+    # 10 top-level + 116 Austrian districts + 22 foreign countries.
+    assert len(AREAS_BY_ID) == 148
+
+
+def test_negative_ids_only_under_andere_laender() -> None:
+    andere = AREAS["andere länder"]
+    for area in AREAS_BY_ID.values():
+        if area.id < 0:
+            assert area.parent is andere, (
+                f"{area.name} ({area.id}) has negative id but parent is "
+                f"{area.parent.name if area.parent else None!r}"
+            )
+
+
+def test_known_lookups() -> None:
+    # Spot-check a few IDs the spec mentions, to catch silent reshuffles.
+    assert AREAS_BY_ID[900].name == "Wien"
+    assert AREAS_BY_ID[101].name == "Eisenstadt"
+    assert AREAS_BY_ID[101].parent is AREAS["burgenland"]
+    assert AREAS_BY_ID[-137].name == "Deutschland"
+    assert AREAS_BY_ID[-137].parent is AREAS["andere länder"]
