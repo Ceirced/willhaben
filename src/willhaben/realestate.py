@@ -199,8 +199,9 @@ def search_realestate(
     """Run a single real-estate search query.
 
     `rooms` is a willhaben "bucket" string like "2X2" (exactly 2 rooms) or
-    "2X4" (2-to-4 rooms). `area_id` uses `AREAS`. `rows` is server-capped
-    at 200.
+    "2X4" (2-to-4 rooms). `area_id` is a willhaben areaId — pass
+    `AREAS["wien"].id` or any node from `AREAS_BY_ID`. `rows` is
+    server-capped at 200.
     """
     client = client or WillhabenClient()
     params = _build_realestate_params(

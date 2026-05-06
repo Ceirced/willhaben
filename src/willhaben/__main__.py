@@ -12,7 +12,7 @@ def main() -> None:
         keyword="fahrrad",
         price_from=50,
         price_to=200,
-        area_id=AREAS["wien"],
+        area_id=AREAS["wien"].id,
         sort=SortOrder.NEWEST,
         rows=5,
     )
