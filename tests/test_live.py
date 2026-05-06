@@ -21,6 +21,6 @@ def test_live_realestate_count_returns_positive() -> None:
     """Smoke test: rental flats in Vienna should always have results."""
     result = count_realestate(
         category=RealEstateCategory.APARTMENT_RENT,
-        area_id=AREAS["wien"],
+        area_id=AREAS["wien"].id,
     )
     assert result > 0
