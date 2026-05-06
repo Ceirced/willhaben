@@ -1,12 +1,10 @@
 from __future__ import annotations
 
-import json
 import random
 import time
-import urllib.error
-import urllib.parse
-import urllib.request
 from typing import Any
+
+import httpx
 
 from .constants import API_ROOT, DEFAULT_USER_AGENT, X_WH_CLIENT
 
@@ -15,11 +13,16 @@ class WillhabenAPIError(Exception):
     """Raised when the Willhaben API returns an error or unexpected response."""
 
 
+_RETRY_STATUS = {429, 502, 503, 504}
+
+
 class WillhabenClient:
     """Thin HTTP client for the Willhaben search JSON API.
 
     Sets the magic `x-wh-client` header the endpoint requires, throttles
     requests with a polite random delay, and retries transient failures.
+    Uses httpx with HTTP/2 — stdlib http.client's chunked decoder fails
+    intermittently on willhaben's larger uncompressed responses.
     """
 
     def __init__(
@@ -37,6 +40,10 @@ class WillhabenClient:
         self.timeout = timeout
         self.max_retries = max_retries
         self._last_request_at: float = 0.0
+        self._http = httpx.Client(http2=True, timeout=timeout)
+
+    def close(self) -> None:
+        self._http.close()
 
     def _headers(self) -> dict[str, str]:
         return {
@@ -58,27 +65,31 @@ class WillhabenClient:
     ) -> dict[str, Any]:
         query = {k: str(v) for k, v in params.items() if v is not None}
         query.setdefault("isNavigation", "true")
-        url = f"{API_ROOT}/{path}?{urllib.parse.urlencode(query)}"
+        url = f"{API_ROOT}/{path}"
 
         last_exc: Exception | None = None
         for attempt in range(self.max_retries + 1):
             self._wait()
             self._last_request_at = time.monotonic()
-            req = urllib.request.Request(url, headers=self._headers())  # noqa: S310
             try:
-                with urllib.request.urlopen(req, timeout=self.timeout) as resp:  # noqa: S310
-                    body = resp.read()
-                return json.loads(body)
-            except urllib.error.HTTPError as exc:
-                last_exc = exc
-                if exc.code in (429, 502, 503, 504) and attempt < self.max_retries:
-                    time.sleep(2**attempt)
-                    continue
-                break
-            except (urllib.error.URLError, TimeoutError) as exc:
+                resp = self._http.get(url, params=query, headers=self._headers())
+            except httpx.RequestError as exc:
                 last_exc = exc
                 if attempt < self.max_retries:
                     time.sleep(2**attempt)
                     continue
+                break
+            if resp.status_code in _RETRY_STATUS and attempt < self.max_retries:
+                last_exc = httpx.HTTPStatusError(
+                    f"{resp.status_code}", request=resp.request, response=resp
+                )
+                time.sleep(2**attempt)
+                continue
+            if resp.status_code >= 400:
+                last_exc = httpx.HTTPStatusError(
+                    f"{resp.status_code}", request=resp.request, response=resp
+                )
+                break
+            return resp.json()
 
         raise WillhabenAPIError(f"Request failed: {last_exc!r}") from last_exc

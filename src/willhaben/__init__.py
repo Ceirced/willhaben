@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from .client import WillhabenAPIError, WillhabenClient
-from .constants import AREAS, MAX_ROWS_PER_PAGE, SortOrder
+from .constants import AREAS, AREAS_BY_ID, MAX_ROWS_PER_PAGE, Area, SortOrder
 from .models import Ad, SearchResult
 from .realestate import (
     RealEstateAd,
@@ -15,8 +15,10 @@ from .search import count, iter_ads, search
 
 __all__ = [
     "AREAS",
+    "AREAS_BY_ID",
     "MAX_ROWS_PER_PAGE",
     "Ad",
+    "Area",
     "RealEstateAd",
     "RealEstateCategory",
     "RealEstateSearchResult",
