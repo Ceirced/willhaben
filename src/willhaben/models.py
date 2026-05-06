@@ -148,7 +148,8 @@ class SearchResult:
 
     @property
     def counts_by_state(self) -> dict[int, int]:
-        """Map Bundesland areaId → ad count. Keys match `AREAS`."""
+        """Map Bundesland areaId → ad count. Keys are areaIds — resolve
+        with `AREAS_BY_ID`."""
         return _state_counts_from_raw(self.raw)
 
     @classmethod
