@@ -33,6 +33,24 @@ class RealEstateCategory(IntEnum):
     OTHER = 35
 
 
+class EstateMiscCategory(IntEnum):
+    """Subcategories of `RealEstateCategory.OTHER` ("sonstige Immobilien").
+
+    Pass as `misc_category=` to filter the OTHER category via willhaben's
+    `ESTATE_MISC_CATEGORY` parameter. Values mirror the German labels:
+    """
+
+    GARAGE_PARKING = 10000  # Garagen / Einstellplätze
+    INVESTMENT = 10020  # Kapitalanlagen / Rendite
+    MOVING = 10040  # Umzüge
+    VARIOUS = 10050  # Diverse
+    GUEST_ROOM = 10060  # Gästezimmer
+    TEMPORARY_LIVING = 10090  # Zeitwohnen
+    WANTED = 10110  # Gesuche
+    WINE_CELLAR = 10120  # Weinkeller
+    LAKE_HOUSE_MOBILE_HOME = 10130  # Seehaus/Mobilheim
+
+
 def _parse_int(raw: str | None) -> int | None:
     if raw is None:
         return None
