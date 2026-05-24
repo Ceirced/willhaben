@@ -1,9 +1,6 @@
 from __future__ import annotations
 
-import json
-import urllib.parse
-import urllib.request
-
+import httpx
 import pytest
 
 from willhaben import (
@@ -43,14 +40,15 @@ def _fetch_live_pairs() -> set[tuple[int, int]]:
         "User-Agent": DEFAULT_USER_AGENT,
         "Accept": "application/json",
     }
-    qs = urllib.parse.urlencode(
-        [("rows", "1")]
-        + [("areaId", str(i)) for i in (1, 2, 3, 4, 5, 6, 7, 8, 900, 22000)]
-    )
-    url = f"{API_ROOT}/{MARKETPLACE_PATH}?{qs}"
-    req = urllib.request.Request(url, headers=headers)  # noqa: S310
-    with urllib.request.urlopen(req, timeout=30) as resp:  # noqa: S310
-        payload = json.loads(resp.read())
+    params = {
+        "rows": 1,
+        "areaId": [1, 2, 3, 4, 5, 6, 7, 8, 900, 22000],
+    }
+    url = f"{API_ROOT}/{MARKETPLACE_PATH}"
+    with httpx.Client(http2=True, timeout=30) as client:
+        resp = client.get(url, params=params, headers=headers)
+        resp.raise_for_status()
+        payload = resp.json()
     pairs: set[tuple[int, int]] = set()
     for grp in payload.get("navigatorGroups", []):
         for nav in grp.get("navigatorList", []):
