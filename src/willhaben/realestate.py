@@ -165,6 +165,7 @@ def _build_realestate_params(
     property_type: int | None,
     area_id: int | None,
     is_private: bool | None,
+    misc_category: EstateMiscCategory | int | None,
     sort: SortOrder | int | None,
     rows: int,
     page: int,
@@ -189,6 +190,8 @@ def _build_realestate_params(
         params["areaId"] = area_id
     if is_private is True:
         params["ISPRIVATE"] = 1
+    if misc_category is not None:
+        params["ESTATE_MISC_CATEGORY"] = int(misc_category)
     if sort is not None:
         params["sort"] = int(sort)
     if extra:
@@ -208,6 +211,7 @@ def search_realestate(
     property_type: int | None = None,
     area_id: int | None = None,
     is_private: bool | None = None,
+    misc_category: EstateMiscCategory | int | None = None,
     sort: SortOrder | int | None = None,
     rows: int = 30,
     page: int = 1,
@@ -218,8 +222,10 @@ def search_realestate(
 
     `rooms` is a willhaben "bucket" string like "2X2" (exactly 2 rooms) or
     "2X4" (2-to-4 rooms). `area_id` is a willhaben areaId — pass
-    `AREAS["wien"].id` or any node from `AREAS_BY_ID`. `rows` is
-    server-capped at 200.
+    `AREAS["wien"].id` or any node from `AREAS_BY_ID`. `misc_category` filters
+    the `RealEstateCategory.OTHER` category to a single `EstateMiscCategory`
+    subcategory (e.g. garages, wine cellars);
+    `rows` is server-capped at 200.
     """
     client = client or WillhabenClient()
     params = _build_realestate_params(
@@ -232,6 +238,7 @@ def search_realestate(
         property_type=property_type,
         area_id=area_id,
         is_private=is_private,
+        misc_category=misc_category,
         sort=sort,
         rows=rows,
         page=page,
@@ -253,6 +260,7 @@ def count_realestate(
     property_type: int | None = None,
     area_id: int | None = None,
     is_private: bool | None = None,
+    misc_category: EstateMiscCategory | int | None = None,
     client: WillhabenClient | None = None,
     extra_params: dict[str, str | int] | None = None,
 ) -> int:
@@ -268,6 +276,7 @@ def count_realestate(
         property_type=property_type,
         area_id=area_id,
         is_private=is_private,
+        misc_category=misc_category,
         rows=1,
         client=client,
         extra_params=extra_params,
@@ -286,6 +295,7 @@ def iter_realestate_ads(
     property_type: int | None = None,
     area_id: int | None = None,
     is_private: bool | None = None,
+    misc_category: EstateMiscCategory | int | None = None,
     sort: SortOrder | int | None = None,
     max_results: int | None = None,
     client: WillhabenClient | None = None,
@@ -307,6 +317,7 @@ def iter_realestate_ads(
             property_type=property_type,
             area_id=area_id,
             is_private=is_private,
+            misc_category=misc_category,
             sort=sort,
             rows=MAX_ROWS_PER_PAGE,
             page=page,

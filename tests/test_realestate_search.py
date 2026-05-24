@@ -2,8 +2,11 @@ from __future__ import annotations
 
 from typing import Any
 
+import pytest
+
 from willhaben.constants import SortOrder
 from willhaben.realestate import (
+    EstateMiscCategory,
     RealEstateCategory,
     _build_realestate_params,
     count_realestate,
@@ -61,6 +64,7 @@ class TestBuildRealEstateParams:
             property_type=None,
             area_id=None,
             is_private=None,
+            misc_category=None,
             sort=None,
             rows=10,
             page=1,
@@ -79,6 +83,7 @@ class TestBuildRealEstateParams:
             property_type=110,
             area_id=900,
             is_private=True,
+            misc_category=EstateMiscCategory.GARAGE_PARKING,
             sort=SortOrder.NEWEST,
             rows=30,
             page=2,
@@ -96,9 +101,48 @@ class TestBuildRealEstateParams:
             "PROPERTY_TYPE": 110,
             "areaId": 900,
             "ISPRIVATE": 1,
+            "ESTATE_MISC_CATEGORY": 10000,
             "sort": 1,
             "FOO": "bar",
         }
+
+    def test_misc_category(self) -> None:
+        params = _build_realestate_params(
+            keyword=None,
+            price_from=None,
+            price_to=None,
+            area_m2_from=None,
+            area_m2_to=None,
+            rooms=None,
+            property_type=None,
+            area_id=None,
+            is_private=None,
+            misc_category=EstateMiscCategory.WINE_CELLAR,
+            sort=None,
+            rows=10,
+            page=1,
+            extra=None,
+        )
+        assert params["ESTATE_MISC_CATEGORY"] == 10120
+
+    def test_misc_category_accepts_plain_int(self) -> None:
+        params = _build_realestate_params(
+            keyword=None,
+            price_from=None,
+            price_to=None,
+            area_m2_from=None,
+            area_m2_to=None,
+            rooms=None,
+            property_type=None,
+            area_id=None,
+            is_private=None,
+            misc_category=99999,
+            sort=None,
+            rows=10,
+            page=1,
+            extra=None,
+        )
+        assert params["ESTATE_MISC_CATEGORY"] == 99999
 
     def test_is_private_false_omitted(self) -> None:
         params = _build_realestate_params(
@@ -111,12 +155,14 @@ class TestBuildRealEstateParams:
             property_type=None,
             area_id=None,
             is_private=False,
+            misc_category=None,
             sort=None,
             rows=10,
             page=1,
             extra=None,
         )
         assert "ISPRIVATE" not in params
+        assert "ESTATE_MISC_CATEGORY" not in params
 
     def test_extra_overrides(self) -> None:
         params = _build_realestate_params(
@@ -129,6 +175,7 @@ class TestBuildRealEstateParams:
             property_type=None,
             area_id=None,
             is_private=None,
+            misc_category=None,
             sort=None,
             rows=10,
             page=1,
