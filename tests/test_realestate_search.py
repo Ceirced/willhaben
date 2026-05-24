@@ -216,6 +216,33 @@ class TestSearchRealestate:
         assert client.calls[0]["PRICE_TO"] == 1500
         assert client.calls[0]["NO_OF_ROOMS_BUCKET"] == "2X3"
 
+    def test_passes_misc_category(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.OTHER,
+            misc_category=EstateMiscCategory.GARAGE_PARKING,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        assert client.calls[0]["ESTATE_MISC_CATEGORY"] == 10000
+
+    def test_misc_category_with_non_other_raises(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        with pytest.raises(ValueError, match="OTHER"):
+            search_realestate(
+                category=RealEstateCategory.APARTMENT_RENT,
+                misc_category=EstateMiscCategory.GARAGE_PARKING,
+                client=client,  # ty: ignore[invalid-argument-type]
+            )
+        assert client.calls == []
+
+    def test_no_misc_category_with_non_other_ok(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.APARTMENT_RENT,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        assert "ESTATE_MISC_CATEGORY" not in client.calls[0]
+
 
 class TestCountRealestate:
     def test_returns_rows_found(self) -> None:
@@ -235,6 +262,16 @@ class TestCountRealestate:
             client=client,  # ty: ignore[invalid-argument-type]
         )
         assert client.calls[0]["rows"] == 1
+
+    def test_misc_category_with_non_other_raises(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        with pytest.raises(ValueError, match="OTHER"):
+            count_realestate(
+                category=RealEstateCategory.HOUSE_BUY,
+                misc_category=EstateMiscCategory.GARAGE_PARKING,
+                client=client,  # ty: ignore[invalid-argument-type]
+            )
+        assert client.calls == []
 
 
 class TestIterRealestateAds:
@@ -290,3 +327,14 @@ class TestIterRealestateAds:
             )
         )
         assert result == []
+
+    def test_misc_category_with_non_other_raises(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        gen = iter_realestate_ads(
+            category=RealEstateCategory.LAND,
+            misc_category=EstateMiscCategory.GARAGE_PARKING,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        with pytest.raises(ValueError, match="OTHER"):
+            next(gen)
+        assert client.calls == []

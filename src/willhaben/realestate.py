@@ -225,8 +225,14 @@ def search_realestate(
     `AREAS["wien"].id` or any node from `AREAS_BY_ID`. `misc_category` filters
     the `RealEstateCategory.OTHER` category to a single `EstateMiscCategory`
     subcategory (e.g. garages, wine cellars);
+    willhaben only honours it for that category, so passing it with any other `category` raises ValueError.
     `rows` is server-capped at 200.
     """
+    if misc_category is not None and category is not RealEstateCategory.OTHER:
+        raise ValueError(
+            "misc_category is only valid with RealEstateCategory.OTHER, "
+            f"not {category.name}"
+        )
     client = client or WillhabenClient()
     params = _build_realestate_params(
         keyword=keyword,
