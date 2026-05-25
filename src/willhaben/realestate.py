@@ -51,6 +51,19 @@ class EstateMiscCategory(IntEnum):
     LAKE_HOUSE_MOBILE_HOME = 10130  # Seehaus/Mobilheim
 
 
+class OfferType(IntEnum):
+    """Buy vs. rent toggle for `RealEstateCategory.OTHER`.
+
+    The other top-level categories already split buy and rent into separate
+    values (e.g. `HOUSE_BUY` / `HOUSE_RENT`), so this filter only applies to
+    `OTHER`. Maps to willhaben's `OWNAGETYPE` URL parameter (label
+    "Besitzform").
+    """
+
+    BUY = 1  # Kauf
+    RENT = 2  # Miete
+
+
 def _parse_int(raw: str | None) -> int | None:
     if raw is None:
         return None
@@ -166,6 +179,7 @@ def _build_realestate_params(
     area_id: int | None,
     is_private: bool | None,
     misc_category: EstateMiscCategory | int | None,
+    offer_type: OfferType | int | None,
     sort: SortOrder | int | None,
     rows: int,
     page: int,
@@ -192,6 +206,8 @@ def _build_realestate_params(
         params["ISPRIVATE"] = 1
     if misc_category is not None:
         params["ESTATE_MISC_CATEGORY"] = int(misc_category)
+    if offer_type is not None:
+        params["OWNAGETYPE"] = int(offer_type)
     if sort is not None:
         params["sort"] = int(sort)
     if extra:
@@ -212,6 +228,7 @@ def search_realestate(
     area_id: int | None = None,
     is_private: bool | None = None,
     misc_category: EstateMiscCategory | int | None = None,
+    offer_type: OfferType | int | None = None,
     sort: SortOrder | int | None = None,
     rows: int = 30,
     page: int = 1,
@@ -224,13 +241,19 @@ def search_realestate(
     "2X4" (2-to-4 rooms). `area_id` is a willhaben areaId — pass
     `AREAS["wien"].id` or any node from `AREAS_BY_ID`. `misc_category` filters
     the `RealEstateCategory.OTHER` category to a single `EstateMiscCategory`
-    subcategory (e.g. garages, wine cellars);
-    willhaben only honours it for that category, so passing it with any other `category` raises ValueError.
+    subcategory (e.g. garages, wine cellars). `offer_type` toggles buy vs.
+    rent inside the OTHER category. willhaben only honours either filter
+    on `OTHER`, so passing them with any other `category` raises ValueError.
     `rows` is server-capped at 200.
     """
     if misc_category is not None and category is not RealEstateCategory.OTHER:
         raise ValueError(
             "misc_category is only valid with RealEstateCategory.OTHER, "
+            f"not {category.name}"
+        )
+    if offer_type is not None and category is not RealEstateCategory.OTHER:
+        raise ValueError(
+            "offer_type is only valid with RealEstateCategory.OTHER, "
             f"not {category.name}"
         )
     client = client or WillhabenClient()
@@ -245,6 +268,7 @@ def search_realestate(
         area_id=area_id,
         is_private=is_private,
         misc_category=misc_category,
+        offer_type=offer_type,
         sort=sort,
         rows=rows,
         page=page,
@@ -267,6 +291,7 @@ def count_realestate(
     area_id: int | None = None,
     is_private: bool | None = None,
     misc_category: EstateMiscCategory | int | None = None,
+    offer_type: OfferType | int | None = None,
     client: WillhabenClient | None = None,
     extra_params: dict[str, str | int] | None = None,
 ) -> int:
@@ -283,6 +308,7 @@ def count_realestate(
         area_id=area_id,
         is_private=is_private,
         misc_category=misc_category,
+        offer_type=offer_type,
         rows=1,
         client=client,
         extra_params=extra_params,
@@ -302,6 +328,7 @@ def iter_realestate_ads(
     area_id: int | None = None,
     is_private: bool | None = None,
     misc_category: EstateMiscCategory | int | None = None,
+    offer_type: OfferType | int | None = None,
     sort: SortOrder | int | None = None,
     max_results: int | None = None,
     client: WillhabenClient | None = None,
@@ -324,6 +351,7 @@ def iter_realestate_ads(
             area_id=area_id,
             is_private=is_private,
             misc_category=misc_category,
+            offer_type=offer_type,
             sort=sort,
             rows=MAX_ROWS_PER_PAGE,
             page=page,

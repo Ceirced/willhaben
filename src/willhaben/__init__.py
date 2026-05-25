@@ -5,6 +5,7 @@ from .constants import AREAS, AREAS_BY_ID, MAX_ROWS_PER_PAGE, Area, SortOrder
 from .models import Ad, SearchResult
 from .realestate import (
     EstateMiscCategory,
+    OfferType,
     RealEstateAd,
     RealEstateCategory,
     RealEstateSearchResult,
@@ -21,6 +22,7 @@ __all__ = [
     "Ad",
     "Area",
     "EstateMiscCategory",
+    "OfferType",
     "RealEstateAd",
     "RealEstateCategory",
     "RealEstateSearchResult",

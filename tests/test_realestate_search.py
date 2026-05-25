@@ -7,6 +7,7 @@ import pytest
 from willhaben.constants import SortOrder
 from willhaben.realestate import (
     EstateMiscCategory,
+    OfferType,
     RealEstateCategory,
     _build_realestate_params,
     count_realestate,
@@ -65,6 +66,7 @@ class TestBuildRealEstateParams:
             area_id=None,
             is_private=None,
             misc_category=None,
+            offer_type=None,
             sort=None,
             rows=10,
             page=1,
@@ -84,6 +86,7 @@ class TestBuildRealEstateParams:
             area_id=900,
             is_private=True,
             misc_category=EstateMiscCategory.GARAGE_PARKING,
+            offer_type=OfferType.RENT,
             sort=SortOrder.NEWEST,
             rows=30,
             page=2,
@@ -102,6 +105,7 @@ class TestBuildRealEstateParams:
             "areaId": 900,
             "ISPRIVATE": 1,
             "ESTATE_MISC_CATEGORY": 10000,
+            "OWNAGETYPE": 2,
             "sort": 1,
             "FOO": "bar",
         }
@@ -118,6 +122,7 @@ class TestBuildRealEstateParams:
             area_id=None,
             is_private=None,
             misc_category=EstateMiscCategory.WINE_CELLAR,
+            offer_type=None,
             sort=None,
             rows=10,
             page=1,
@@ -137,12 +142,53 @@ class TestBuildRealEstateParams:
             area_id=None,
             is_private=None,
             misc_category=99999,
+            offer_type=None,
             sort=None,
             rows=10,
             page=1,
             extra=None,
         )
         assert params["ESTATE_MISC_CATEGORY"] == 99999
+
+    def test_offer_type(self) -> None:
+        params = _build_realestate_params(
+            keyword=None,
+            price_from=None,
+            price_to=None,
+            area_m2_from=None,
+            area_m2_to=None,
+            rooms=None,
+            property_type=None,
+            area_id=None,
+            is_private=None,
+            misc_category=None,
+            offer_type=OfferType.BUY,
+            sort=None,
+            rows=10,
+            page=1,
+            extra=None,
+        )
+        assert params["OWNAGETYPE"] == 1
+
+    def test_offer_type_accepts_plain_int(self) -> None:
+        params = _build_realestate_params(
+            keyword=None,
+            price_from=None,
+            price_to=None,
+            area_m2_from=None,
+            area_m2_to=None,
+            rooms=None,
+            property_type=None,
+            area_id=None,
+            is_private=None,
+            misc_category=None,
+            offer_type=7,
+            sort=None,
+            rows=10,
+            page=1,
+            extra=None,
+        )
+        assert params["OWNAGETYPE"] == 7
 
     def test_is_private_false_omitted(self) -> None:
         params = _build_realestate_params(
@@ -156,6 +202,7 @@ class TestBuildRealEstateParams:
             area_id=None,
             is_private=False,
             misc_category=None,
+            offer_type=None,
             sort=None,
             rows=10,
             page=1,
@@ -163,6 +210,7 @@ class TestBuildRealEstateParams:
         )
         assert "ISPRIVATE" not in params
         assert "ESTATE_MISC_CATEGORY" not in params
+        assert "OWNAGETYPE" not in params
 
     def test_extra_overrides(self) -> None:
         params = _build_realestate_params(
@@ -176,6 +224,7 @@ class TestBuildRealEstateParams:
             area_id=None,
             is_private=None,
             misc_category=None,
+            offer_type=None,
             sort=None,
             rows=10,
             page=1,
@@ -243,6 +292,44 @@ class TestSearchRealestate:
         )
         assert "ESTATE_MISC_CATEGORY" not in client.calls[0]
 
+    def test_passes_offer_type(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.OTHER,
+            offer_type=OfferType.RENT,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        assert client.calls[0]["OWNAGETYPE"] == 2
+
+    def test_offer_type_with_misc_category(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.OTHER,
+            misc_category=EstateMiscCategory.GARAGE_PARKING,
+            offer_type=OfferType.BUY,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        assert client.calls[0]["ESTATE_MISC_CATEGORY"] == 10000
+        assert client.calls[0]["OWNAGETYPE"] == 1
+
+    def test_offer_type_with_non_other_raises(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        with pytest.raises(ValueError, match="OTHER"):
+            search_realestate(
+                category=RealEstateCategory.APARTMENT_RENT,
+                offer_type=OfferType.BUY,
+                client=client,  # ty: ignore[invalid-argument-type]
+            )
+        assert client.calls == []
+
+    def test_no_offer_type_with_non_other_ok(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        search_realestate(
+            category=RealEstateCategory.APARTMENT_RENT,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        assert "OWNAGETYPE" not in client.calls[0]
+
 
 class TestCountRealestate:
     def test_returns_rows_found(self) -> None:
@@ -269,6 +356,16 @@ class TestCountRealestate:
             count_realestate(
                 category=RealEstateCategory.HOUSE_BUY,
                 misc_category=EstateMiscCategory.GARAGE_PARKING,
+                client=client,  # ty: ignore[invalid-argument-type]
+            )
+        assert client.calls == []
+
+    def test_offer_type_with_non_other_raises(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        with pytest.raises(ValueError, match="OTHER"):
+            count_realestate(
+                category=RealEstateCategory.HOUSE_BUY,
+                offer_type=OfferType.RENT,
                 client=client,  # ty: ignore[invalid-argument-type]
             )
         assert client.calls == []
@@ -333,6 +430,17 @@ class TestIterRealestateAds:
         gen = iter_realestate_ads(
             category=RealEstateCategory.LAND,
             misc_category=EstateMiscCategory.GARAGE_PARKING,
+            client=client,  # ty: ignore[invalid-argument-type]
+        )
+        with pytest.raises(ValueError, match="OTHER"):
+            next(gen)
+        assert client.calls == []
+
+    def test_offer_type_with_non_other_raises(self) -> None:
+        client = StubClient([make_response(rows_found=0)])
+        gen = iter_realestate_ads(
+            category=RealEstateCategory.LAND,
+            offer_type=OfferType.BUY,
             client=client,  # ty: ignore[invalid-argument-type]
         )
         with pytest.raises(ValueError, match="OTHER"):
