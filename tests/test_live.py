@@ -8,6 +8,7 @@ from willhaben import (
     RealEstateCategory,
     count,
     count_realestate,
+    navigate,
 )
 from willhaben.constants import (
     API_ROOT,
@@ -96,3 +97,31 @@ def test_live_areas_match_committed_tree() -> None:
     extra_locally = local_pairs - live_pairs
     assert not missing_locally, f"new in API: {missing_locally}"
     assert not extra_locally, f"removed from API: {extra_locally}"
+
+
+@pytest.mark.live
+def test_live_navigate_root_lists_known_categories() -> None:
+    """Drift check: the marketplace root must expose its top-level categories.
+
+    If this fails, willhaben changed the top-level category labels/ids; inspect
+    `navigate()` output and update expectations.
+    """
+    view = navigate()
+    labels = {c.label for c in view.categories}
+    assert "Smartphones / Telefonie" in labels
+    assert len(view.categories) >= 15
+
+
+@pytest.mark.live
+def test_live_navigate_reaches_iphone_leaf() -> None:
+    """Apple (2724) must list the iPhone 17 Pro leaf (5015997) as a child."""
+    view = navigate(2724)
+    assert any(c.id == 5015997 for c in view.categories)
+
+
+@pytest.mark.live
+def test_live_category_param_actually_filters() -> None:
+    """Guard against the categoryId bug class: scoping to a category MUST reduce
+    the result count. (categoryId was silently ignored and returned everything.)
+    """
+    assert count(category=2691) < count()
