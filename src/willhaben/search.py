@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from collections.abc import Iterator, Mapping
+from collections.abc import Iterator
 
-from .client import WillhabenClient
+from .client import QueryParams, QueryValue, WillhabenClient
 from .constants import MARKETPLACE_PATH, MAX_ROWS_PER_PAGE, SortOrder
 from .models import Ad, SearchResult
 
@@ -18,9 +18,9 @@ def _build_params(
     sort: SortOrder | int | None,
     rows: int,
     page: int,
-    extra: Mapping[str, str | int | list[int]] | None,
-) -> dict[str, str | int | list[int]]:
-    params: dict[str, str | int | list[int]] = {"rows": rows, "page": page}
+    extra: QueryParams | None,
+) -> dict[str, QueryValue]:
+    params: dict[str, QueryValue] = {"rows": rows, "page": page}
     if keyword:
         params["keyword"] = keyword
     if price_from is not None:
@@ -52,7 +52,7 @@ def search(
     rows: int = 30,
     page: int = 1,
     client: WillhabenClient | None = None,
-    extra_params: Mapping[str, str | int | list[int]] | None = None,
+    extra_params: QueryParams | None = None,
 ) -> SearchResult:
     """Run a single search query. `rows` is server-capped at 200."""
     client = client or WillhabenClient()
@@ -80,7 +80,7 @@ def count(
     category: int | None = None,
     is_private: bool | None = None,
     client: WillhabenClient | None = None,
-    extra_params: Mapping[str, str | int | list[int]] | None = None,
+    extra_params: QueryParams | None = None,
 ) -> int:
     """Return only the total result count via a minimal `rows=1` request."""
     return search(
@@ -107,7 +107,7 @@ def iter_ads(
     sort: SortOrder | int | None = None,
     max_results: int | None = None,
     client: WillhabenClient | None = None,
-    extra_params: Mapping[str, str | int | list[int]] | None = None,
+    extra_params: QueryParams | None = None,
 ) -> Iterator[Ad]:
     """Yield ads across all pages, stopping at `max_results` if given."""
     client = client or WillhabenClient()
