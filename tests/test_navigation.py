@@ -2,14 +2,28 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
-from willhaben.navigation import FilterType, NodeView, SelectionMode
+from willhaben.constants import MARKETPLACE_PATH
+from willhaben.navigation import FilterType, NodeView, SelectionMode, navigate
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
 
 def load(name: str) -> dict:
     return json.loads((FIXTURES / name).read_text())
+
+
+class StubClient:
+    def __init__(self, responses: list[dict[str, Any]]) -> None:
+        self.responses = responses
+        self.calls: list[dict[str, Any]] = []
+        self.paths: list[str] = []
+
+    def search(self, path: str, params: dict[str, Any]) -> dict[str, Any]:
+        self.paths.append(path)
+        self.calls.append(params)
+        return self.responses.pop(0)
 
 
 class TestParseRoot:
@@ -64,3 +78,17 @@ class TestEmptyResponse:
         assert view.filters == ()
         assert view.breadcrumbs == ()
         assert view.rows_found == 0
+
+
+class TestNavigate:
+    def test_scopes_by_attribute_tree(self) -> None:
+        client = StubClient([load("navigate_apple.json")])
+        view = navigate(2724, client=client)  # ty: ignore[invalid-argument-type]
+        assert client.paths[0] == MARKETPLACE_PATH
+        assert client.calls[0]["ATTRIBUTE_TREE"] == 2724
+        assert any(c.id == 5015997 for c in view.categories)
+
+    def test_root_omits_attribute_tree(self) -> None:
+        client = StubClient([load("navigate_root.json")])
+        navigate(client=client)  # ty: ignore[invalid-argument-type]
+        assert "ATTRIBUTE_TREE" not in client.calls[0]
