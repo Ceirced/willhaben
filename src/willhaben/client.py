@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import random
 import time
+from collections.abc import Mapping
 from typing import Any
 
 import httpx
@@ -61,9 +62,16 @@ class WillhabenClient:
             time.sleep(delay - elapsed)
 
     def search(
-        self, path: str, params: dict[str, str | int]
+        self, path: str, params: Mapping[str, str | int | list[int]]
     ) -> dict[str, Any]:
-        query = {k: str(v) for k, v in params.items() if v is not None}
+        query: dict[str, str | list[str]] = {}
+        for key, value in params.items():
+            if value is None:
+                continue
+            if isinstance(value, (list, tuple)):
+                query[key] = [str(v) for v in value]
+            else:
+                query[key] = str(value)
         query.setdefault("isNavigation", "true")
         url = f"{API_ROOT}/{path}"
 
