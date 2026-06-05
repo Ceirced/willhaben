@@ -1,0 +1,2264 @@
+{
+ "rowsFound": 258,
+ "breadcrumbs": [
+  {
+   "displayName": "Startseite",
+   "seoUrl": "https://www.willhaben.at/iad"
+  },
+  {
+   "displayName": "Marktplatz",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/"
+  },
+  {
+   "displayName": "Smartphones / Telefonie",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691"
+  },
+  {
+   "displayName": "Smartphones / Handys",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/smartphones-handys-2722"
+  },
+  {
+   "displayName": "Apple",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/smartphones-handys/apple-2724"
+  },
+  {
+   "displayName": "iPhone 17 Pro",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997"
+  }
+ ],
+ "navigatorGroups": [
+  {
+   "label": "Suchbegriff & Kategorie",
+   "navigatorList": [
+    {
+     "id": "keyword",
+     "label": "Suchbegriff",
+     "possibleValues": [],
+     "groupedPossibleValues": [],
+     "selectedValues": [],
+     "navigatorType": "TEXT_SEARCH",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "keyword",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [
+      "RESULTLIST_QUICK_NAVIGATOR"
+     ],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "keyword"
+     }
+    },
+    {
+     "id": "category",
+     "label": "Kategorie",
+     "possibleValues": [],
+     "groupedPossibleValues": [],
+     "selectedValues": [
+      {
+       "label": "iPhone 17 Pro",
+       "prePostTextInfo": null,
+       "images": [],
+       "urlParamRepresentationForValue": [
+        {
+         "urlParameterName": "ATTRIBUTE_TREE",
+         "navigatorUrlParameterType": "STANDARD",
+         "value": "5015997"
+        }
+       ],
+       "parent": {
+        "label": "Apple",
+        "prePostTextInfo": null,
+        "images": [],
+        "urlParamRepresentationForValue": [
+         {
+          "urlParameterName": "ATTRIBUTE_TREE",
+          "navigatorUrlParameterType": "STANDARD",
+          "value": "2724"
+         }
+        ],
+        "parent": {
+         "label": "Smartphones / Handys",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2722"
+          }
+         ],
+         "parent": {
+          "label": "Smartphones / Telefonie",
+          "prePostTextInfo": null,
+          "images": [
+           {
+            "id": "png-normal",
+            "description": "Smartphones / Telefonie",
+            "uri": "https://cache.willhaben.at/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.png",
+            "selected": false,
+            "relativePath": "/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.png",
+            "serviceName": "iad"
+           },
+           {
+            "id": "svg-normal",
+            "description": "Smartphones / Telefonie",
+            "uri": "https://cache.willhaben.at/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.svg",
+            "selected": false,
+            "relativePath": "/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.svg",
+            "serviceName": "iad"
+           }
+          ],
+          "urlParamRepresentationForValue": [
+           {
+            "urlParameterName": "ATTRIBUTE_TREE",
+            "navigatorUrlParameterType": "STANDARD",
+            "value": "2691"
+           }
+          ],
+          "parent": null,
+          "parentId": null,
+          "parentLabel": null,
+          "resetLink": {
+           "id": "resetLink",
+           "description": "uri to filter without this value",
+           "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+           "selected": false,
+           "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+           "serviceName": "ad-search"
+          }
+         },
+         "parentId": null,
+         "parentLabel": null,
+         "resetLink": {
+          "id": "resetLink",
+          "description": "uri to filter without this value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         }
+        },
+        "parentId": null,
+        "parentLabel": null,
+        "resetLink": {
+         "id": "resetLink",
+         "description": "uri to filter without this value",
+         "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-handys-2722?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+         "selected": false,
+         "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-handys-2722?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+         "serviceName": "ad-search"
+        }
+       },
+       "parentId": null,
+       "parentLabel": null,
+       "resetLink": {
+        "id": "resetLink",
+        "description": "uri to filter without this value",
+        "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-handys/apple-2724?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+        "selected": false,
+        "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-handys/apple-2724?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+        "serviceName": "ad-search"
+       }
+      }
+     ],
+     "navigatorType": "HIERARCHICAL",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "ATTRIBUTE_TREE",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [
+      "SEARCH_INTRO"
+     ],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "ATTRIBUTE_TREE"
+     }
+    }
+   ]
+  },
+  {
+   "label": "Basisdaten",
+   "navigatorList": [
+    {
+     "id": "price",
+     "label": "Preis",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "ab € 0",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "0"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?PRICE_FROM=0&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?PRICE_FROM=0&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 258,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "RANGE",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "PRICE_FROM",
+        "navigatorUrlParameterType": "RANGE_FROM"
+       },
+       {
+        "urlParameterName": "PRICE_TO",
+        "navigatorUrlParameterType": "RANGE_TO"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {},
+     "navigatorFromValues": [
+      {
+       "label": "0",
+       "value": "0"
+      },
+      {
+       "label": "5",
+       "value": "5"
+      },
+      {
+       "label": "10",
+       "value": "10"
+      },
+      {
+       "label": "15",
+       "value": "15"
+      },
+      {
+       "label": "20",
+       "value": "20"
+      },
+      {
+       "label": "30",
+       "value": "30"
+      },
+      {
+       "label": "40",
+       "value": "40"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "60",
+       "value": "60"
+      },
+      {
+       "label": "70",
+       "value": "70"
+      },
+      {
+       "label": "80",
+       "value": "80"
+      },
+      {
+       "label": "90",
+       "value": "90"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "110",
+       "value": "110"
+      },
+      {
+       "label": "120",
+       "value": "120"
+      },
+      {
+       "label": "130",
+       "value": "130"
+      },
+      {
+       "label": "140",
+       "value": "140"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "160",
+       "value": "160"
+      },
+      {
+       "label": "170",
+       "value": "170"
+      },
+      {
+       "label": "180",
+       "value": "180"
+      },
+      {
+       "label": "190",
+       "value": "190"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "210",
+       "value": "210"
+      },
+      {
+       "label": "220",
+       "value": "220"
+      },
+      {
+       "label": "230",
+       "value": "230"
+      },
+      {
+       "label": "240",
+       "value": "240"
+      },
+      {
+       "label": "250",
+       "value": "250"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "350",
+       "value": "350"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "450",
+       "value": "450"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "550",
+       "value": "550"
+      },
+      {
+       "label": "600",
+       "value": "600"
+      },
+      {
+       "label": "650",
+       "value": "650"
+      },
+      {
+       "label": "700",
+       "value": "700"
+      },
+      {
+       "label": "750",
+       "value": "750"
+      },
+      {
+       "label": "800",
+       "value": "800"
+      },
+      {
+       "label": "850",
+       "value": "850"
+      },
+      {
+       "label": "900",
+       "value": "900"
+      },
+      {
+       "label": "950",
+       "value": "950"
+      },
+      {
+       "label": "1.000",
+       "value": "1000"
+      },
+      {
+       "label": "1.100",
+       "value": "1100"
+      },
+      {
+       "label": "1.200",
+       "value": "1200"
+      },
+      {
+       "label": "1.300",
+       "value": "1300"
+      },
+      {
+       "label": "1.400",
+       "value": "1400"
+      },
+      {
+       "label": "1.500",
+       "value": "1500"
+      },
+      {
+       "label": "2.000",
+       "value": "2000"
+      },
+      {
+       "label": "2.500",
+       "value": "2500"
+      },
+      {
+       "label": "3.000",
+       "value": "3000"
+      },
+      {
+       "label": "4.000",
+       "value": "4000"
+      },
+      {
+       "label": "5.000",
+       "value": "5000"
+      },
+      {
+       "label": "6.000",
+       "value": "6000"
+      },
+      {
+       "label": "7.000",
+       "value": "7000"
+      },
+      {
+       "label": "8.000",
+       "value": "8000"
+      },
+      {
+       "label": "9.000",
+       "value": "9000"
+      },
+      {
+       "label": "10.000",
+       "value": "10000"
+      },
+      {
+       "label": "20.000",
+       "value": "20000"
+      },
+      {
+       "label": "30.000",
+       "value": "30000"
+      },
+      {
+       "label": "40.000",
+       "value": "40000"
+      },
+      {
+       "label": "50.000",
+       "value": "50000"
+      },
+      {
+       "label": "60.000",
+       "value": "60000"
+      },
+      {
+       "label": "70.000",
+       "value": "70000"
+      },
+      {
+       "label": "80.000",
+       "value": "80000"
+      },
+      {
+       "label": "90.000",
+       "value": "90000"
+      },
+      {
+       "label": "100.000",
+       "value": "100000"
+      },
+      {
+       "label": "200.000",
+       "value": "200000"
+      }
+     ],
+     "navigatorToValues": [
+      {
+       "label": "beliebig",
+       "value": "*"
+      },
+      {
+       "label": "0",
+       "value": "0"
+      },
+      {
+       "label": "5",
+       "value": "5"
+      },
+      {
+       "label": "10",
+       "value": "10"
+      },
+      {
+       "label": "15",
+       "value": "15"
+      },
+      {
+       "label": "20",
+       "value": "20"
+      },
+      {
+       "label": "30",
+       "value": "30"
+      },
+      {
+       "label": "40",
+       "value": "40"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "60",
+       "value": "60"
+      },
+      {
+       "label": "70",
+       "value": "70"
+      },
+      {
+       "label": "80",
+       "value": "80"
+      },
+      {
+       "label": "90",
+       "value": "90"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "110",
+       "value": "110"
+      },
+      {
+       "label": "120",
+       "value": "120"
+      },
+      {
+       "label": "130",
+       "value": "130"
+      },
+      {
+       "label": "140",
+       "value": "140"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "160",
+       "value": "160"
+      },
+      {
+       "label": "170",
+       "value": "170"
+      },
+      {
+       "label": "180",
+       "value": "180"
+      },
+      {
+       "label": "190",
+       "value": "190"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "210",
+       "value": "210"
+      },
+      {
+       "label": "220",
+       "value": "220"
+      },
+      {
+       "label": "230",
+       "value": "230"
+      },
+      {
+       "label": "240",
+       "value": "240"
+      },
+      {
+       "label": "250",
+       "value": "250"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "350",
+       "value": "350"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "450",
+       "value": "450"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "550",
+       "value": "550"
+      },
+      {
+       "label": "600",
+       "value": "600"
+      },
+      {
+       "label": "650",
+       "value": "650"
+      },
+      {
+       "label": "700",
+       "value": "700"
+      },
+      {
+       "label": "750",
+       "value": "750"
+      },
+      {
+       "label": "800",
+       "value": "800"
+      },
+      {
+       "label": "850",
+       "value": "850"
+      },
+      {
+       "label": "900",
+       "value": "900"
+      },
+      {
+       "label": "950",
+       "value": "950"
+      },
+      {
+       "label": "1.000",
+       "value": "1000"
+      },
+      {
+       "label": "1.100",
+       "value": "1100"
+      },
+      {
+       "label": "1.200",
+       "value": "1200"
+      },
+      {
+       "label": "1.300",
+       "value": "1300"
+      },
+      {
+       "label": "1.400",
+       "value": "1400"
+      },
+      {
+       "label": "1.500",
+       "value": "1500"
+      },
+      {
+       "label": "2.000",
+       "value": "2000"
+      },
+      {
+       "label": "2.500",
+       "value": "2500"
+      },
+      {
+       "label": "3.000",
+       "value": "3000"
+      },
+      {
+       "label": "4.000",
+       "value": "4000"
+      },
+      {
+       "label": "5.000",
+       "value": "5000"
+      },
+      {
+       "label": "6.000",
+       "value": "6000"
+      },
+      {
+       "label": "7.000",
+       "value": "7000"
+      },
+      {
+       "label": "8.000",
+       "value": "8000"
+      },
+      {
+       "label": "9.000",
+       "value": "9000"
+      },
+      {
+       "label": "10.000",
+       "value": "10000"
+      },
+      {
+       "label": "20.000",
+       "value": "20000"
+      },
+      {
+       "label": "30.000",
+       "value": "30000"
+      },
+      {
+       "label": "40.000",
+       "value": "40000"
+      },
+      {
+       "label": "50.000",
+       "value": "50000"
+      },
+      {
+       "label": "60.000",
+       "value": "60000"
+      },
+      {
+       "label": "70.000",
+       "value": "70000"
+      },
+      {
+       "label": "80.000",
+       "value": "80000"
+      },
+      {
+       "label": "90.000",
+       "value": "90000"
+      },
+      {
+       "label": "100.000",
+       "value": "100000"
+      },
+      {
+       "label": "200.000",
+       "value": "200000"
+      }
+     ],
+     "quickToggle": {
+      "label": "Nur zu verschenken",
+      "on": false,
+      "onState": {
+       "fromValue": {
+        "label": "0",
+        "value": "0"
+       },
+       "toValue": {
+        "label": "0",
+        "value": "0"
+       }
+      },
+      "offState": {
+       "fromValue": {
+        "label": "0",
+        "value": "0"
+       },
+       "toValue": {
+        "label": "beliebig",
+        "value": "*"
+       }
+      }
+     },
+     "defaultFromNavigatorValue": {
+      "label": "0",
+      "value": "0"
+     },
+     "defaultToNavigatorValue": {
+      "label": "beliebig",
+      "value": "*"
+     },
+     "alternativeRanges": [],
+     "alternativeLabel": null,
+     "unit": null
+    },
+    {
+     "id": "Speicherkapazität",
+     "label": "Speicherkapazität",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "ab 512 GB",
+         "prePostTextInfo": {
+          "preText": "ab",
+          "middleText": "512 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5007645"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-512-gb-5007645?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-512-gb-5007645?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-512-gb-5007645",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-512-gb-5007645",
+          "serviceName": "web_url"
+         },
+         "hits": 43,
+         "metaTags": []
+        },
+        {
+         "label": "256 GB",
+         "prePostTextInfo": {
+          "preText": null,
+          "middleText": "256 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7216"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-256-gb-7216?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-256-gb-7216?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-256-gb-7216",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-256-gb-7216",
+          "serviceName": "web_url"
+         },
+         "hits": 190,
+         "metaTags": []
+        },
+        {
+         "label": "128 GB",
+         "prePostTextInfo": {
+          "preText": null,
+          "middleText": "128 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7217"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-128-gb-7217?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-128-gb-7217?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-128-gb-7217",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-128-gb-7217",
+          "serviceName": "web_url"
+         },
+         "hits": 1,
+         "metaTags": []
+        },
+        {
+         "label": "64 GB",
+         "prePostTextInfo": {
+          "preText": null,
+          "middleText": "64 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7218"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-64-gb-7218?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-64-gb-7218?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-64-gb-7218",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-64-gb-7218",
+          "serviceName": "web_url"
+         },
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "32 GB",
+         "prePostTextInfo": {
+          "preText": null,
+          "middleText": "32 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7219"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-32-gb-7219?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-32-gb-7219?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-32-gb-7219",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-32-gb-7219",
+          "serviceName": "web_url"
+         },
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "16 GB",
+         "prePostTextInfo": {
+          "preText": null,
+          "middleText": "16 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7220"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-16-gb-7220?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-16-gb-7220?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-16-gb-7220",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-16-gb-7220",
+          "serviceName": "web_url"
+         },
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "bis 8 GB",
+         "prePostTextInfo": {
+          "preText": "bis",
+          "middleText": "8 GB",
+          "postText": null
+         },
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7221"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-8-gb-7221?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-8-gb-7221?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-8-gb-7221",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/speicherkapazitaet-8-gb-7221",
+          "serviceName": "web_url"
+         },
+         "hits": 0,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "treeAttributes",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "PRE_POST_TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "treeAttributes",
+      "treeAttributeXmlNames": [
+       "SD_CARD_CAPACITY"
+      ]
+     }
+    },
+    {
+     "id": "Entsperrt",
+     "label": "Entsperrt",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Ja",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2719"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-ja-2719?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-ja-2719?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-ja-2719",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-ja-2719",
+          "serviceName": "web_url"
+         },
+         "hits": 250,
+         "metaTags": []
+        },
+        {
+         "label": "Nein",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5010154"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-nein-5010154?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-nein-5010154?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-nein-5010154",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/entsperrt-nein-5010154",
+          "serviceName": "web_url"
+         },
+         "hits": 7,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "treeAttributes",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "treeAttributes",
+      "treeAttributeXmlNames": [
+       "SIM_LOCK_UNLOCKED"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "label": "Zustand & Übergabe",
+   "navigatorList": [
+    {
+     "id": "Zustand",
+     "label": "Zustand",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Neu",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "22"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neu-22?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neu-22?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neu-22",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neu-22",
+          "serviceName": "web_url"
+         },
+         "hits": 168,
+         "metaTags": []
+        },
+        {
+         "label": "Neuwertig",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2546"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neuwertig-2546?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neuwertig-2546?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neuwertig-2546",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-neuwertig-2546",
+          "serviceName": "web_url"
+         },
+         "hits": 60,
+         "metaTags": []
+        },
+        {
+         "label": "Generalüberholt",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5013256"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-generalueberholt-5013256?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-generalueberholt-5013256?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-generalueberholt-5013256",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-generalueberholt-5013256",
+          "serviceName": "web_url"
+         },
+         "hits": 1,
+         "metaTags": []
+        },
+        {
+         "label": "Gebraucht",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "23"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-gebraucht-23?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-gebraucht-23?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-gebraucht-23",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-gebraucht-23",
+          "serviceName": "web_url"
+         },
+         "hits": 28,
+         "metaTags": []
+        },
+        {
+         "label": "Defekt",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "24"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-defekt-24?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-defekt-24?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-defekt-24",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-defekt-24",
+          "serviceName": "web_url"
+         },
+         "hits": 1,
+         "metaTags": []
+        },
+        {
+         "label": "Ausstellungsstück",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2539"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-ausstellungsstueck-2539?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-ausstellungsstueck-2539?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-ausstellungsstueck-2539",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/zustand-ausstellungsstueck-2539",
+          "serviceName": "web_url"
+         },
+         "hits": 0,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "treeAttributes",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "treeAttributes",
+      "treeAttributeXmlNames": [
+       "Zustand"
+      ]
+     }
+    },
+    {
+     "id": "Übergabe",
+     "label": "Übergabe",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Selbstabholung",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2536"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-selbstabholung-2536?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-selbstabholung-2536?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-selbstabholung-2536",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-selbstabholung-2536",
+          "serviceName": "web_url"
+         },
+         "hits": 249,
+         "metaTags": []
+        },
+        {
+         "label": "Versand",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2537"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-versand-2537?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-versand-2537?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-versand-2537",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997/a/uebergabe-versand-2537",
+          "serviceName": "web_url"
+         },
+         "hits": 137,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "treeAttributes",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "treeAttributes",
+      "treeAttributeXmlNames": [
+       "Uebergabe"
+      ]
+     }
+    },
+    {
+     "id": "paylivery",
+     "label": "PayLivery",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Anzeigen mit Käuferschutz und Versand",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "paylivery",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "true"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?paylivery=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?paylivery=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 27,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "paylivery",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "paylivery"
+     }
+    }
+   ]
+  },
+  {
+   "label": "Standort & Sonstiges",
+   "navigatorList": [
+    {
+     "id": "state",
+     "label": "Bundesland",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Burgenland",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=1&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=1&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 3,
+         "metaTags": []
+        },
+        {
+         "label": "Kärnten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=2&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=2&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 6,
+         "metaTags": []
+        },
+        {
+         "label": "Niederösterreich",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=3&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=3&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 10,
+         "metaTags": []
+        },
+        {
+         "label": "Oberösterreich",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "4"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=4&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=4&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 31,
+         "metaTags": []
+        },
+        {
+         "label": "Salzburg",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=5&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=5&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 13,
+         "metaTags": []
+        },
+        {
+         "label": "Steiermark",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=6&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=6&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 21,
+         "metaTags": []
+        },
+        {
+         "label": "Tirol",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=7&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=7&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 18,
+         "metaTags": []
+        },
+        {
+         "label": "Vorarlberg",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "8"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=8&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=8&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 4,
+         "metaTags": []
+        },
+        {
+         "label": "Wien",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "900"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=900&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=900&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 151,
+         "metaTags": []
+        },
+        {
+         "label": "andere Länder",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "22000"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=22000&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?areaId=22000&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "areaId",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "areaId"
+     }
+    },
+    {
+     "id": "dealer",
+     "label": "Inserent",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Händler",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ISPRIVATE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "0"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?ISPRIVATE=0&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?ISPRIVATE=0&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 139,
+         "metaTags": []
+        },
+        {
+         "label": "Privat",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ISPRIVATE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?ISPRIVATE=1&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?ISPRIVATE=1&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 119,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "ISPRIVATE",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/apple/iphone-17-pro-5015997?sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "ISPRIVATE"
+     }
+    },
+    {
+     "id": "period",
+     "label": "Suchzeitraum",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "nur Anzeigen der letzten 48 Stunden",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "periode",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&ATTRIBUTE_TREE=5015997&isNavigation=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&periode=2&page=1",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&ATTRIBUTE_TREE=5015997&isNavigation=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&periode=2&page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&ATTRIBUTE_TREE=5015997&isNavigation=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&ATTRIBUTE_TREE=5015997&isNavigation=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&page=1",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "periode",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&ATTRIBUTE_TREE=5015997&isNavigation=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&ATTRIBUTE_TREE=5015997&isNavigation=true&sfId=39f22f7e-caf6-4eed-93ac-97324a4e0ae1&page=1",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    }
+   ]
+  }
+ ]
+}

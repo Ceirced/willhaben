@@ -1,0 +1,2672 @@
+{
+ "rowsFound": 13202991,
+ "breadcrumbs": [
+  {
+   "displayName": "Startseite",
+   "seoUrl": "https://www.willhaben.at/iad"
+  },
+  {
+   "displayName": "Marktplatz",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/"
+  },
+  {
+   "displayName": "Alle Anzeigen",
+   "seoUrl": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz"
+  }
+ ],
+ "navigatorGroups": [
+  {
+   "label": "Suchbegriff & Kategorie",
+   "navigatorList": [
+    {
+     "id": "keyword",
+     "label": "Suchbegriff",
+     "possibleValues": [],
+     "groupedPossibleValues": [],
+     "selectedValues": [],
+     "navigatorType": "TEXT_SEARCH",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "keyword",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [
+      "RESULTLIST_QUICK_NAVIGATOR"
+     ],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "keyword"
+     }
+    },
+    {
+     "id": "category",
+     "label": "Kategorie",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Antiquitäten / Kunst",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Antiquitäten / Kunst",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6941_antiquitaeten-kunst_normal_5aa2a5d98df7e76d055d2f49a8d837abc0293c5f.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6941_antiquitaeten-kunst_normal_5aa2a5d98df7e76d055d2f49a8d837abc0293c5f.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Antiquitäten / Kunst",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6941_antiquitaeten-kunst_normal_5aa2a5d98df7e76d055d2f49a8d837abc0293c5f.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6941_antiquitaeten-kunst_normal_5aa2a5d98df7e76d055d2f49a8d837abc0293c5f.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6941"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/antiquitaeten-kunst-6941?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/antiquitaeten-kunst-6941?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/antiquitaeten-kunst-6941",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/antiquitaeten-kunst-6941",
+          "serviceName": "web_url"
+         },
+         "hits": 1292099,
+         "metaTags": []
+        },
+        {
+         "label": "Baby / Kind",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Baby / Kind",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3928_baby-kind_normal_5f198b4a7e59c83fed5b73ae3a1ec1f1abbdfbd2.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3928_baby-kind_normal_5f198b4a7e59c83fed5b73ae3a1ec1f1abbdfbd2.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Baby / Kind",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3928_baby-kind_normal_5f198b4a7e59c83fed5b73ae3a1ec1f1abbdfbd2.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3928_baby-kind_normal_5f198b4a7e59c83fed5b73ae3a1ec1f1abbdfbd2.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3928"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/baby-kind-3928?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/baby-kind-3928?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/baby-kind-3928",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/baby-kind-3928",
+          "serviceName": "web_url"
+         },
+         "hits": 1869996,
+         "metaTags": []
+        },
+        {
+         "label": "Beauty / Gesundheit / Wellness",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Beauty / Gesundheit / Wellness",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3076_beauty-gesundheit-wellness_normal_d1edf58d77c325ae31ae91b0b9bc12c2be62db52.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3076_beauty-gesundheit-wellness_normal_d1edf58d77c325ae31ae91b0b9bc12c2be62db52.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Beauty / Gesundheit / Wellness",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3076_beauty-gesundheit-wellness_normal_d1edf58d77c325ae31ae91b0b9bc12c2be62db52.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3076_beauty-gesundheit-wellness_normal_d1edf58d77c325ae31ae91b0b9bc12c2be62db52.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3076"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/beauty-gesundheit-wellness-3076?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/beauty-gesundheit-wellness-3076?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/beauty-gesundheit-wellness-3076",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/beauty-gesundheit-wellness-3076",
+          "serviceName": "web_url"
+         },
+         "hits": 226960,
+         "metaTags": []
+        },
+        {
+         "label": "Boote / Yachten / Jetskis",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Boote / Yachten / Jetskis",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5007823_boote-yachten-jetskis_normal_63ca7541a3dfc9721234344fa5f92e2457122cb4.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5007823_boote-yachten-jetskis_normal_63ca7541a3dfc9721234344fa5f92e2457122cb4.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Boote / Yachten / Jetskis",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5007823_boote-yachten-jetskis_normal_63ca7541a3dfc9721234344fa5f92e2457122cb4.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5007823_boote-yachten-jetskis_normal_63ca7541a3dfc9721234344fa5f92e2457122cb4.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5007823"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/boote-yachten-jetskis-5007823?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/boote-yachten-jetskis-5007823?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/boote-yachten-jetskis-5007823",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/boote-yachten-jetskis-5007823",
+          "serviceName": "web_url"
+         },
+         "hits": 6849,
+         "metaTags": []
+        },
+        {
+         "label": "Bücher / Filme / Musik",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Bücher / Filme / Musik",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/387_buecher-filme-musik_normal_9f15eeedf376533087eca8e323b6a60fea5917ce.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/387_buecher-filme-musik_normal_9f15eeedf376533087eca8e323b6a60fea5917ce.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Bücher / Filme / Musik",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/387_buecher-filme-musik_normal_9f15eeedf376533087eca8e323b6a60fea5917ce.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/387_buecher-filme-musik_normal_9f15eeedf376533087eca8e323b6a60fea5917ce.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "387"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/buecher-filme-musik-387?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/buecher-filme-musik-387?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/buecher-filme-musik-387",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/buecher-filme-musik-387",
+          "serviceName": "web_url"
+         },
+         "hits": 1479628,
+         "metaTags": []
+        },
+        {
+         "label": "Computer / Software",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Computer / Software",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5824_computer-software_normal_3a6f754080e812134aa6d9b576c8e61689f706c4.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5824_computer-software_normal_3a6f754080e812134aa6d9b576c8e61689f706c4.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Computer / Software",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5824_computer-software_normal_3a6f754080e812134aa6d9b576c8e61689f706c4.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5824_computer-software_normal_3a6f754080e812134aa6d9b576c8e61689f706c4.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5824"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/computer-software-5824?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/computer-software-5824?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/computer-software-5824",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/computer-software-5824",
+          "serviceName": "web_url"
+         },
+         "hits": 168330,
+         "metaTags": []
+        },
+        {
+         "label": "Dienstleistungen",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Dienstleistungen",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/537_dienstleistungen_normal_7041758c60a63532504b41a5aff9beb2e1e3de99.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/537_dienstleistungen_normal_7041758c60a63532504b41a5aff9beb2e1e3de99.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Dienstleistungen",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/537_dienstleistungen_normal_7041758c60a63532504b41a5aff9beb2e1e3de99.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/537_dienstleistungen_normal_7041758c60a63532504b41a5aff9beb2e1e3de99.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "537"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/dienstleistungen-537?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/dienstleistungen-537?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/dienstleistungen-537",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/dienstleistungen-537",
+          "serviceName": "web_url"
+         },
+         "hits": 3175,
+         "metaTags": []
+        },
+        {
+         "label": "Freizeit / Instrumente / Kulinarik",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Freizeit / Instrumente / Kulinarik",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6462_freizeit-instrumente-kulinarik_normal_9f0ad95bf6160d1d0f7e20657ddcb766597f3bc0.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6462_freizeit-instrumente-kulinarik_normal_9f0ad95bf6160d1d0f7e20657ddcb766597f3bc0.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Freizeit / Instrumente / Kulinarik",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6462_freizeit-instrumente-kulinarik_normal_9f0ad95bf6160d1d0f7e20657ddcb766597f3bc0.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6462_freizeit-instrumente-kulinarik_normal_9f0ad95bf6160d1d0f7e20657ddcb766597f3bc0.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6462"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/freizeit-instrumente-kulinarik-6462?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/freizeit-instrumente-kulinarik-6462?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/freizeit-instrumente-kulinarik-6462",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/freizeit-instrumente-kulinarik-6462",
+          "serviceName": "web_url"
+         },
+         "hits": 897902,
+         "metaTags": []
+        },
+        {
+         "label": "Games / Konsolen",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Games / Konsolen",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/2785_games-konsolen_normal_b12fc8928b8ecabfb8ff9a549cf2befbe68f1125.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/2785_games-konsolen_normal_b12fc8928b8ecabfb8ff9a549cf2befbe68f1125.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Games / Konsolen",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/2785_games-konsolen_normal_b12fc8928b8ecabfb8ff9a549cf2befbe68f1125.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/2785_games-konsolen_normal_b12fc8928b8ecabfb8ff9a549cf2befbe68f1125.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2785"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/games-konsolen-2785?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/games-konsolen-2785?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/games-konsolen-2785",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/games-konsolen-2785",
+          "serviceName": "web_url"
+         },
+         "hits": 192288,
+         "metaTags": []
+        },
+        {
+         "label": "Haus / Garten / Werkstatt",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Haus / Garten / Werkstatt",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3541_haus-garten-werkstatt_normal_4a27d8c06cfd971c4bbe5d134c987097135ba0f6.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3541_haus-garten-werkstatt_normal_4a27d8c06cfd971c4bbe5d134c987097135ba0f6.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Haus / Garten / Werkstatt",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3541_haus-garten-werkstatt_normal_4a27d8c06cfd971c4bbe5d134c987097135ba0f6.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3541_haus-garten-werkstatt_normal_4a27d8c06cfd971c4bbe5d134c987097135ba0f6.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3541"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/haus-garten-werkstatt-3541?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/haus-garten-werkstatt-3541?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/haus-garten-werkstatt-3541",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/haus-garten-werkstatt-3541",
+          "serviceName": "web_url"
+         },
+         "hits": 623144,
+         "metaTags": []
+        },
+        {
+         "label": "Kameras / TV / Multimedia",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Kameras / TV / Multimedia",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6808_kameras-tv-multimedia_normal_3d5034f7de9ed0ed8c5c62e88349c6a55d1c49c9.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6808_kameras-tv-multimedia_normal_3d5034f7de9ed0ed8c5c62e88349c6a55d1c49c9.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Kameras / TV / Multimedia",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6808_kameras-tv-multimedia_normal_3d5034f7de9ed0ed8c5c62e88349c6a55d1c49c9.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6808_kameras-tv-multimedia_normal_3d5034f7de9ed0ed8c5c62e88349c6a55d1c49c9.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6808"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/kameras-tv-multimedia-6808?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/kameras-tv-multimedia-6808?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/kameras-tv-multimedia-6808",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/kameras-tv-multimedia-6808",
+          "serviceName": "web_url"
+         },
+         "hits": 207272,
+         "metaTags": []
+        },
+        {
+         "label": "KFZ-Zubehör / Motorradteile",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "KFZ-Zubehör / Motorradteile",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6142_kfz-zubehoer-motorradteile_normal_5df1946efd58b6ce6e73e537e26420aeac9202dd.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6142_kfz-zubehoer-motorradteile_normal_5df1946efd58b6ce6e73e537e26420aeac9202dd.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "KFZ-Zubehör / Motorradteile",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/6142_kfz-zubehoer-motorradteile_normal_5df1946efd58b6ce6e73e537e26420aeac9202dd.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/6142_kfz-zubehoer-motorradteile_normal_5df1946efd58b6ce6e73e537e26420aeac9202dd.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6142"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/kfz-zubehoer-motorradteile-6142?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/kfz-zubehoer-motorradteile-6142?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/kfz-zubehoer-motorradteile-6142",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/kfz-zubehoer-motorradteile-6142",
+          "serviceName": "web_url"
+         },
+         "hits": 550540,
+         "metaTags": []
+        },
+        {
+         "label": "Mode / Accessoires",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Mode / Accessoires",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3275_mode-accessoires_normal_44ea8805529fde428ff79f5161cfc8dc0fa5f55f.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3275_mode-accessoires_normal_44ea8805529fde428ff79f5161cfc8dc0fa5f55f.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Mode / Accessoires",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/3275_mode-accessoires_normal_44ea8805529fde428ff79f5161cfc8dc0fa5f55f.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/3275_mode-accessoires_normal_44ea8805529fde428ff79f5161cfc8dc0fa5f55f.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3275"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/mode-accessoires-3275?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/mode-accessoires-3275?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/mode-accessoires-3275",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/mode-accessoires-3275",
+          "serviceName": "web_url"
+         },
+         "hits": 2561644,
+         "metaTags": []
+        },
+        {
+         "label": "Smartphones / Telefonie",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Smartphones / Telefonie",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Smartphones / Telefonie",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/2691_smartphones-telefonie_normal_6d08920ad9fa94aee63e9c3f2543d147280c1027.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2691"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/smartphones-telefonie-2691",
+          "serviceName": "web_url"
+         },
+         "hits": 103643,
+         "metaTags": []
+        },
+        {
+         "label": "Spielen / Spielzeug",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Spielen / Spielzeug",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5136_spielen-spielzeug_normal_5a76463b90663ae1f4054efc391f7fb6c4b21550.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5136_spielen-spielzeug_normal_5a76463b90663ae1f4054efc391f7fb6c4b21550.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Spielen / Spielzeug",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5136_spielen-spielzeug_normal_5a76463b90663ae1f4054efc391f7fb6c4b21550.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5136_spielen-spielzeug_normal_5a76463b90663ae1f4054efc391f7fb6c4b21550.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5136"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/spielen-spielzeug-5136?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/spielen-spielzeug-5136?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/spielen-spielzeug-5136",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/spielen-spielzeug-5136",
+          "serviceName": "web_url"
+         },
+         "hits": 938557,
+         "metaTags": []
+        },
+        {
+         "label": "Sport / Sportgeräte",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Sport / Sportgeräte",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/4390_sport-sportgeraete_normal_7ff533c964f16f79151c4166937ce17035aa20a7.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/4390_sport-sportgeraete_normal_7ff533c964f16f79151c4166937ce17035aa20a7.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Sport / Sportgeräte",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/4390_sport-sportgeraete_normal_7ff533c964f16f79151c4166937ce17035aa20a7.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/4390_sport-sportgeraete_normal_7ff533c964f16f79151c4166937ce17035aa20a7.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "4390"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/sport-sportgeraete-4390?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/sport-sportgeraete-4390?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/sport-sportgeraete-4390",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/sport-sportgeraete-4390",
+          "serviceName": "web_url"
+         },
+         "hits": 756191,
+         "metaTags": []
+        },
+        {
+         "label": "Tiere / Tierbedarf",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Tiere / Tierbedarf",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/4915_tiere-tierbedarf_normal_790d6ce9c627f3054ae259efef79039b22694552.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/4915_tiere-tierbedarf_normal_790d6ce9c627f3054ae259efef79039b22694552.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Tiere / Tierbedarf",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/4915_tiere-tierbedarf_normal_790d6ce9c627f3054ae259efef79039b22694552.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/4915_tiere-tierbedarf_normal_790d6ce9c627f3054ae259efef79039b22694552.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "4915"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/tiere-tierbedarf-4915?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/tiere-tierbedarf-4915?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/tiere-tierbedarf-4915",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/tiere-tierbedarf-4915",
+          "serviceName": "web_url"
+         },
+         "hits": 137540,
+         "metaTags": []
+        },
+        {
+         "label": "Uhren / Schmuck",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Uhren / Schmuck",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/2409_uhren-schmuck_normal_b88141e8b4a2eeb6347120610670a59dd9afa360.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/2409_uhren-schmuck_normal_b88141e8b4a2eeb6347120610670a59dd9afa360.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Uhren / Schmuck",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/2409_uhren-schmuck_normal_b88141e8b4a2eeb6347120610670a59dd9afa360.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/2409_uhren-schmuck_normal_b88141e8b4a2eeb6347120610670a59dd9afa360.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2409"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/uhren-schmuck-2409?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/uhren-schmuck-2409?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/uhren-schmuck-2409",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/uhren-schmuck-2409",
+          "serviceName": "web_url"
+         },
+         "hits": 405061,
+         "metaTags": []
+        },
+        {
+         "label": "Wohnen / Haushalt / Gastronomie",
+         "prePostTextInfo": null,
+         "images": [
+          {
+           "id": "png-normal",
+           "description": "Wohnen / Haushalt / Gastronomie",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5387_wohnen-haushalt-gastronomie_normal_a9f1a7cc444f3974a54e6790315a7f78b4fcb4c2.png",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5387_wohnen-haushalt-gastronomie_normal_a9f1a7cc444f3974a54e6790315a7f78b4fcb4c2.png",
+           "serviceName": "iad"
+          },
+          {
+           "id": "svg-normal",
+           "description": "Wohnen / Haushalt / Gastronomie",
+           "uri": "https://cache.willhaben.at/static/categorytree/image/5387_wohnen-haushalt-gastronomie_normal_a9f1a7cc444f3974a54e6790315a7f78b4fcb4c2.svg",
+           "selected": false,
+           "relativePath": "/static/categorytree/image/5387_wohnen-haushalt-gastronomie_normal_a9f1a7cc444f3974a54e6790315a7f78b4fcb4c2.svg",
+           "serviceName": "iad"
+          }
+         ],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ATTRIBUTE_TREE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5387"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/wohnen-haushalt-gastronomie-5387?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/wohnen-haushalt-gastronomie-5387?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/wohnen-haushalt-gastronomie-5387",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/wohnen-haushalt-gastronomie-5387",
+          "serviceName": "web_url"
+         },
+         "hits": 1693176,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "HIERARCHICAL",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "ATTRIBUTE_TREE",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [
+      "SEARCH_INTRO"
+     ],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "ATTRIBUTE_TREE"
+     }
+    }
+   ]
+  },
+  {
+   "label": "Basisdaten",
+   "navigatorList": [
+    {
+     "id": "price",
+     "label": "Preis",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "ab € 0",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "0"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?PRICE_FROM=0&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?PRICE_FROM=0&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 13202990,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "RANGE",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "PRICE_FROM",
+        "navigatorUrlParameterType": "RANGE_FROM"
+       },
+       {
+        "urlParameterName": "PRICE_TO",
+        "navigatorUrlParameterType": "RANGE_TO"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {},
+     "navigatorFromValues": [
+      {
+       "label": "0",
+       "value": "0"
+      },
+      {
+       "label": "5",
+       "value": "5"
+      },
+      {
+       "label": "10",
+       "value": "10"
+      },
+      {
+       "label": "15",
+       "value": "15"
+      },
+      {
+       "label": "20",
+       "value": "20"
+      },
+      {
+       "label": "30",
+       "value": "30"
+      },
+      {
+       "label": "40",
+       "value": "40"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "60",
+       "value": "60"
+      },
+      {
+       "label": "70",
+       "value": "70"
+      },
+      {
+       "label": "80",
+       "value": "80"
+      },
+      {
+       "label": "90",
+       "value": "90"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "110",
+       "value": "110"
+      },
+      {
+       "label": "120",
+       "value": "120"
+      },
+      {
+       "label": "130",
+       "value": "130"
+      },
+      {
+       "label": "140",
+       "value": "140"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "160",
+       "value": "160"
+      },
+      {
+       "label": "170",
+       "value": "170"
+      },
+      {
+       "label": "180",
+       "value": "180"
+      },
+      {
+       "label": "190",
+       "value": "190"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "210",
+       "value": "210"
+      },
+      {
+       "label": "220",
+       "value": "220"
+      },
+      {
+       "label": "230",
+       "value": "230"
+      },
+      {
+       "label": "240",
+       "value": "240"
+      },
+      {
+       "label": "250",
+       "value": "250"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "350",
+       "value": "350"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "450",
+       "value": "450"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "550",
+       "value": "550"
+      },
+      {
+       "label": "600",
+       "value": "600"
+      },
+      {
+       "label": "650",
+       "value": "650"
+      },
+      {
+       "label": "700",
+       "value": "700"
+      },
+      {
+       "label": "750",
+       "value": "750"
+      },
+      {
+       "label": "800",
+       "value": "800"
+      },
+      {
+       "label": "850",
+       "value": "850"
+      },
+      {
+       "label": "900",
+       "value": "900"
+      },
+      {
+       "label": "950",
+       "value": "950"
+      },
+      {
+       "label": "1.000",
+       "value": "1000"
+      },
+      {
+       "label": "1.100",
+       "value": "1100"
+      },
+      {
+       "label": "1.200",
+       "value": "1200"
+      },
+      {
+       "label": "1.300",
+       "value": "1300"
+      },
+      {
+       "label": "1.400",
+       "value": "1400"
+      },
+      {
+       "label": "1.500",
+       "value": "1500"
+      },
+      {
+       "label": "2.000",
+       "value": "2000"
+      },
+      {
+       "label": "2.500",
+       "value": "2500"
+      },
+      {
+       "label": "3.000",
+       "value": "3000"
+      },
+      {
+       "label": "4.000",
+       "value": "4000"
+      },
+      {
+       "label": "5.000",
+       "value": "5000"
+      },
+      {
+       "label": "6.000",
+       "value": "6000"
+      },
+      {
+       "label": "7.000",
+       "value": "7000"
+      },
+      {
+       "label": "8.000",
+       "value": "8000"
+      },
+      {
+       "label": "9.000",
+       "value": "9000"
+      },
+      {
+       "label": "10.000",
+       "value": "10000"
+      },
+      {
+       "label": "20.000",
+       "value": "20000"
+      },
+      {
+       "label": "30.000",
+       "value": "30000"
+      },
+      {
+       "label": "40.000",
+       "value": "40000"
+      },
+      {
+       "label": "50.000",
+       "value": "50000"
+      },
+      {
+       "label": "60.000",
+       "value": "60000"
+      },
+      {
+       "label": "70.000",
+       "value": "70000"
+      },
+      {
+       "label": "80.000",
+       "value": "80000"
+      },
+      {
+       "label": "90.000",
+       "value": "90000"
+      },
+      {
+       "label": "100.000",
+       "value": "100000"
+      },
+      {
+       "label": "200.000",
+       "value": "200000"
+      }
+     ],
+     "navigatorToValues": [
+      {
+       "label": "beliebig",
+       "value": "*"
+      },
+      {
+       "label": "0",
+       "value": "0"
+      },
+      {
+       "label": "5",
+       "value": "5"
+      },
+      {
+       "label": "10",
+       "value": "10"
+      },
+      {
+       "label": "15",
+       "value": "15"
+      },
+      {
+       "label": "20",
+       "value": "20"
+      },
+      {
+       "label": "30",
+       "value": "30"
+      },
+      {
+       "label": "40",
+       "value": "40"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "60",
+       "value": "60"
+      },
+      {
+       "label": "70",
+       "value": "70"
+      },
+      {
+       "label": "80",
+       "value": "80"
+      },
+      {
+       "label": "90",
+       "value": "90"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "110",
+       "value": "110"
+      },
+      {
+       "label": "120",
+       "value": "120"
+      },
+      {
+       "label": "130",
+       "value": "130"
+      },
+      {
+       "label": "140",
+       "value": "140"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "160",
+       "value": "160"
+      },
+      {
+       "label": "170",
+       "value": "170"
+      },
+      {
+       "label": "180",
+       "value": "180"
+      },
+      {
+       "label": "190",
+       "value": "190"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "210",
+       "value": "210"
+      },
+      {
+       "label": "220",
+       "value": "220"
+      },
+      {
+       "label": "230",
+       "value": "230"
+      },
+      {
+       "label": "240",
+       "value": "240"
+      },
+      {
+       "label": "250",
+       "value": "250"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "350",
+       "value": "350"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "450",
+       "value": "450"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "550",
+       "value": "550"
+      },
+      {
+       "label": "600",
+       "value": "600"
+      },
+      {
+       "label": "650",
+       "value": "650"
+      },
+      {
+       "label": "700",
+       "value": "700"
+      },
+      {
+       "label": "750",
+       "value": "750"
+      },
+      {
+       "label": "800",
+       "value": "800"
+      },
+      {
+       "label": "850",
+       "value": "850"
+      },
+      {
+       "label": "900",
+       "value": "900"
+      },
+      {
+       "label": "950",
+       "value": "950"
+      },
+      {
+       "label": "1.000",
+       "value": "1000"
+      },
+      {
+       "label": "1.100",
+       "value": "1100"
+      },
+      {
+       "label": "1.200",
+       "value": "1200"
+      },
+      {
+       "label": "1.300",
+       "value": "1300"
+      },
+      {
+       "label": "1.400",
+       "value": "1400"
+      },
+      {
+       "label": "1.500",
+       "value": "1500"
+      },
+      {
+       "label": "2.000",
+       "value": "2000"
+      },
+      {
+       "label": "2.500",
+       "value": "2500"
+      },
+      {
+       "label": "3.000",
+       "value": "3000"
+      },
+      {
+       "label": "4.000",
+       "value": "4000"
+      },
+      {
+       "label": "5.000",
+       "value": "5000"
+      },
+      {
+       "label": "6.000",
+       "value": "6000"
+      },
+      {
+       "label": "7.000",
+       "value": "7000"
+      },
+      {
+       "label": "8.000",
+       "value": "8000"
+      },
+      {
+       "label": "9.000",
+       "value": "9000"
+      },
+      {
+       "label": "10.000",
+       "value": "10000"
+      },
+      {
+       "label": "20.000",
+       "value": "20000"
+      },
+      {
+       "label": "30.000",
+       "value": "30000"
+      },
+      {
+       "label": "40.000",
+       "value": "40000"
+      },
+      {
+       "label": "50.000",
+       "value": "50000"
+      },
+      {
+       "label": "60.000",
+       "value": "60000"
+      },
+      {
+       "label": "70.000",
+       "value": "70000"
+      },
+      {
+       "label": "80.000",
+       "value": "80000"
+      },
+      {
+       "label": "90.000",
+       "value": "90000"
+      },
+      {
+       "label": "100.000",
+       "value": "100000"
+      },
+      {
+       "label": "200.000",
+       "value": "200000"
+      }
+     ],
+     "quickToggle": {
+      "label": "Nur zu verschenken",
+      "on": false,
+      "onState": {
+       "fromValue": {
+        "label": "0",
+        "value": "0"
+       },
+       "toValue": {
+        "label": "0",
+        "value": "0"
+       }
+      },
+      "offState": {
+       "fromValue": {
+        "label": "0",
+        "value": "0"
+       },
+       "toValue": {
+        "label": "beliebig",
+        "value": "*"
+       }
+      }
+     },
+     "defaultFromNavigatorValue": {
+      "label": "0",
+      "value": "0"
+     },
+     "defaultToNavigatorValue": {
+      "label": "beliebig",
+      "value": "*"
+     },
+     "alternativeRanges": [],
+     "alternativeLabel": null,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "label": "Zustand & Übergabe",
+   "navigatorList": [
+    {
+     "id": "Zustand",
+     "label": "Zustand",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Neu",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "22"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-neu-22?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-neu-22?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/zustand-neu-22",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/zustand-neu-22",
+          "serviceName": "web_url"
+         },
+         "hits": 2374368,
+         "metaTags": []
+        },
+        {
+         "label": "Neuwertig",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2546"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-neuwertig-2546?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-neuwertig-2546?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/zustand-neuwertig-2546",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/zustand-neuwertig-2546",
+          "serviceName": "web_url"
+         },
+         "hits": 3606899,
+         "metaTags": []
+        },
+        {
+         "label": "Generalüberholt",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5013256"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-generalueberholt-5013256?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-generalueberholt-5013256?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/zustand-generalueberholt-5013256",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/zustand-generalueberholt-5013256",
+          "serviceName": "web_url"
+         },
+         "hits": 1304,
+         "metaTags": []
+        },
+        {
+         "label": "Gebraucht",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "23"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-gebraucht-23?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-gebraucht-23?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/zustand-gebraucht-23",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/zustand-gebraucht-23",
+          "serviceName": "web_url"
+         },
+         "hits": 7087675,
+         "metaTags": []
+        },
+        {
+         "label": "Defekt",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "24"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-defekt-24?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-defekt-24?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/zustand-defekt-24",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/zustand-defekt-24",
+          "serviceName": "web_url"
+         },
+         "hits": 40032,
+         "metaTags": []
+        },
+        {
+         "label": "Ausstellungsstück",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2539"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-ausstellungsstueck-2539?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/zustand-ausstellungsstueck-2539?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/zustand-ausstellungsstueck-2539",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/zustand-ausstellungsstueck-2539",
+          "serviceName": "web_url"
+         },
+         "hits": 4002,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "treeAttributes",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "treeAttributes",
+      "treeAttributeXmlNames": [
+       "Zustand"
+      ]
+     }
+    },
+    {
+     "id": "Übergabe",
+     "label": "Übergabe",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Selbstabholung",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2536"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/uebergabe-selbstabholung-2536?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/uebergabe-selbstabholung-2536?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/uebergabe-selbstabholung-2536",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/uebergabe-selbstabholung-2536",
+          "serviceName": "web_url"
+         },
+         "hits": 12639168,
+         "metaTags": []
+        },
+        {
+         "label": "Versand",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "treeAttributes",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2537"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/uebergabe-versand-2537?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz/a/uebergabe-versand-2537?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": {
+          "id": "webLink",
+          "description": "link that represents the search result as webpage",
+          "uri": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/a/uebergabe-versand-2537",
+          "selected": false,
+          "relativePath": "/iad/kaufen-und-verkaufen/marktplatz/a/uebergabe-versand-2537",
+          "serviceName": "web_url"
+         },
+         "hits": 10798859,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "treeAttributes",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "treeAttributes",
+      "treeAttributeXmlNames": [
+       "Uebergabe"
+      ]
+     }
+    },
+    {
+     "id": "paylivery",
+     "label": "PayLivery",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Anzeigen mit Käuferschutz und Versand",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "paylivery",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "true"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?paylivery=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?paylivery=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 5037146,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "paylivery",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "paylivery"
+     }
+    }
+   ]
+  },
+  {
+   "label": "Standort & Sonstiges",
+   "navigatorList": [
+    {
+     "id": "state",
+     "label": "Bundesland",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Burgenland",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=1&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=1&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 452373,
+         "metaTags": []
+        },
+        {
+         "label": "Kärnten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=2&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=2&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 661888,
+         "metaTags": []
+        },
+        {
+         "label": "Niederösterreich",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=3&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=3&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 3144199,
+         "metaTags": []
+        },
+        {
+         "label": "Oberösterreich",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "4"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=4&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=4&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2329458,
+         "metaTags": []
+        },
+        {
+         "label": "Salzburg",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=5&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=5&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 627306,
+         "metaTags": []
+        },
+        {
+         "label": "Steiermark",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=6&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=6&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1724334,
+         "metaTags": []
+        },
+        {
+         "label": "Tirol",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=7&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=7&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 599204,
+         "metaTags": []
+        },
+        {
+         "label": "Vorarlberg",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "8"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=8&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=8&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 125087,
+         "metaTags": []
+        },
+        {
+         "label": "Wien",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "900"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=900&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=900&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 3441055,
+         "metaTags": []
+        },
+        {
+         "label": "andere Länder",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "22000"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=22000&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?areaId=22000&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 97937,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "areaId",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "BUBBLE"
+     ],
+     "metadata": {
+      "parameterName": "areaId"
+     }
+    },
+    {
+     "id": "dealer",
+     "label": "Inserent",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Händler",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ISPRIVATE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "0"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?ISPRIVATE=0&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?ISPRIVATE=0&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 89920,
+         "metaTags": []
+        },
+        {
+         "label": "Privat",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ISPRIVATE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "SEARCH",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?ISPRIVATE=1&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?ISPRIVATE=1&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 13113071,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseUrl",
+       "description": "baseUrl where to add url parameters from user input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "ISPRIVATE",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllUrl",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&rows=1&isNavigation=true",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "navigatorValuesDisplayStyle": [
+      "STANDARD"
+     ],
+     "metadata": {
+      "parameterName": "ISPRIVATE"
+     }
+    },
+    {
+     "id": "period",
+     "label": "Suchzeitraum",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "nur Anzeigen der letzten 48 Stunden",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "periode",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&isNavigation=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&periode=2&page=1",
+          "selected": false,
+          "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&isNavigation=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&periode=2&page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&isNavigation=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&isNavigation=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&page=1",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "periode",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&isNavigation=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/seo/kaufen-und-verkaufen/marktplatz?rows=1&isNavigation=true&sfId=5995be26-4db7-4acd-b9b3-b4efdf9adc71&page=1",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    }
+   ]
+  }
+ ]
+}
