@@ -92,3 +92,20 @@ class TestNavigate:
         client = StubClient([load("navigate_root.json")])
         navigate(client=client)  # ty: ignore[invalid-argument-type]
         assert "ATTRIBUTE_TREE" not in client.calls[0]
+
+
+class TestPublicApi:
+    def test_navigation_symbols_are_exported(self) -> None:
+        import willhaben
+
+        for name in (
+            "navigate",
+            "NodeView",
+            "Category",
+            "Filter",
+            "FilterValue",
+            "Crumb",
+            "FilterType",
+            "SelectionMode",
+        ):
+            assert hasattr(willhaben, name), name

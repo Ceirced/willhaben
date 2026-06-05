@@ -3,6 +3,16 @@ from __future__ import annotations
 from .client import WillhabenAPIError, WillhabenClient
 from .constants import AREAS, AREAS_BY_ID, MAX_ROWS_PER_PAGE, Area, SortOrder
 from .models import Ad, SearchResult
+from .navigation import (
+    Category,
+    Crumb,
+    Filter,
+    FilterType,
+    FilterValue,
+    NodeView,
+    SelectionMode,
+    navigate,
+)
 from .realestate import (
     EstateMiscCategory,
     OfferType,
@@ -21,12 +31,19 @@ __all__ = [
     "MAX_ROWS_PER_PAGE",
     "Ad",
     "Area",
+    "Category",
+    "Crumb",
     "EstateMiscCategory",
+    "Filter",
+    "FilterType",
+    "FilterValue",
+    "NodeView",
     "OfferType",
     "RealEstateAd",
     "RealEstateCategory",
     "RealEstateSearchResult",
     "SearchResult",
+    "SelectionMode",
     "SortOrder",
     "WillhabenAPIError",
     "WillhabenClient",
@@ -34,6 +51,7 @@ __all__ = [
     "count_realestate",
     "iter_ads",
     "iter_realestate_ads",
+    "navigate",
     "search",
     "search_realestate",
 ]
