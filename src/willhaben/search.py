@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from collections.abc import Iterator
+from collections.abc import Iterator, Mapping
 
 from .client import WillhabenClient
 from .constants import MARKETPLACE_PATH, MAX_ROWS_PER_PAGE, SortOrder
@@ -13,14 +13,14 @@ def _build_params(
     price_from: int | None,
     price_to: int | None,
     area_id: int | None,
-    category_id: int | None,
+    category: int | None,
     is_private: bool | None,
     sort: SortOrder | int | None,
     rows: int,
     page: int,
-    extra: dict[str, str | int] | None,
-) -> dict[str, str | int]:
-    params: dict[str, str | int] = {"rows": rows, "page": page}
+    extra: Mapping[str, str | int | list[int]] | None,
+) -> dict[str, str | int | list[int]]:
+    params: dict[str, str | int | list[int]] = {"rows": rows, "page": page}
     if keyword:
         params["keyword"] = keyword
     if price_from is not None:
@@ -29,8 +29,8 @@ def _build_params(
         params["PRICE_TO"] = price_to
     if area_id is not None:
         params["areaId"] = area_id
-    if category_id is not None:
-        params["categoryId"] = category_id
+    if category is not None:
+        params["ATTRIBUTE_TREE"] = category
     if is_private is True:
         params["ISPRIVATE"] = 1
     if sort is not None:
@@ -46,13 +46,13 @@ def search(
     price_from: int | None = None,
     price_to: int | None = None,
     area_id: int | None = None,
-    category_id: int | None = None,
+    category: int | None = None,
     is_private: bool | None = None,
     sort: SortOrder | int | None = None,
     rows: int = 30,
     page: int = 1,
     client: WillhabenClient | None = None,
-    extra_params: dict[str, str | int] | None = None,
+    extra_params: Mapping[str, str | int | list[int]] | None = None,
 ) -> SearchResult:
     """Run a single search query. `rows` is server-capped at 200."""
     client = client or WillhabenClient()
@@ -61,7 +61,7 @@ def search(
         price_from=price_from,
         price_to=price_to,
         area_id=area_id,
-        category_id=category_id,
+        category=category,
         is_private=is_private,
         sort=sort,
         rows=rows,
@@ -77,10 +77,10 @@ def count(
     price_from: int | None = None,
     price_to: int | None = None,
     area_id: int | None = None,
-    category_id: int | None = None,
+    category: int | None = None,
     is_private: bool | None = None,
     client: WillhabenClient | None = None,
-    extra_params: dict[str, str | int] | None = None,
+    extra_params: Mapping[str, str | int | list[int]] | None = None,
 ) -> int:
     """Return only the total result count via a minimal `rows=1` request."""
     return search(
@@ -88,7 +88,7 @@ def count(
         price_from=price_from,
         price_to=price_to,
         area_id=area_id,
-        category_id=category_id,
+        category=category,
         is_private=is_private,
         rows=1,
         client=client,
@@ -102,12 +102,12 @@ def iter_ads(
     price_from: int | None = None,
     price_to: int | None = None,
     area_id: int | None = None,
-    category_id: int | None = None,
+    category: int | None = None,
     is_private: bool | None = None,
     sort: SortOrder | int | None = None,
     max_results: int | None = None,
     client: WillhabenClient | None = None,
-    extra_params: dict[str, str | int] | None = None,
+    extra_params: Mapping[str, str | int | list[int]] | None = None,
 ) -> Iterator[Ad]:
     """Yield ads across all pages, stopping at `max_results` if given."""
     client = client or WillhabenClient()
@@ -119,7 +119,7 @@ def iter_ads(
             price_from=price_from,
             price_to=price_to,
             area_id=area_id,
-            category_id=category_id,
+            category=category,
             is_private=is_private,
             sort=sort,
             rows=MAX_ROWS_PER_PAGE,

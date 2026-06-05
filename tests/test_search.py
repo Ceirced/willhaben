@@ -9,11 +9,11 @@ from willhaben.search import _build_params, count, iter_ads, search
 class StubClient:
     def __init__(self, responses: list[dict[str, Any]]) -> None:
         self.responses = responses
-        self.calls: list[dict[str, str | int]] = []
+        self.calls: list[dict[str, str | int | list[int]]] = []
         self.paths: list[str] = []
 
     def search(
-        self, path: str, params: dict[str, str | int]
+        self, path: str, params: dict[str, str | int | list[int]]
     ) -> dict[str, Any]:
         self.paths.append(path)
         self.calls.append(params)
@@ -50,7 +50,7 @@ class TestBuildParams:
             price_from=None,
             price_to=None,
             area_id=None,
-            category_id=None,
+            category=None,
             is_private=None,
             sort=None,
             rows=10,
@@ -65,7 +65,7 @@ class TestBuildParams:
             price_from=10,
             price_to=200,
             area_id=900,
-            category_id=42,
+            category=42,
             is_private=True,
             sort=SortOrder.NEWEST,
             rows=30,
@@ -79,7 +79,7 @@ class TestBuildParams:
             "PRICE_FROM": 10,
             "PRICE_TO": 200,
             "areaId": 900,
-            "categoryId": 42,
+            "ATTRIBUTE_TREE": 42,
             "ISPRIVATE": 1,
             "sort": 1,
             "FOO": "bar",
@@ -91,7 +91,7 @@ class TestBuildParams:
             price_from=None,
             price_to=None,
             area_id=None,
-            category_id=None,
+            category=None,
             is_private=False,
             sort=None,
             rows=10,
@@ -106,7 +106,7 @@ class TestBuildParams:
             price_from=None,
             price_to=None,
             area_id=None,
-            category_id=None,
+            category=None,
             is_private=None,
             sort=4,
             rows=10,
@@ -121,7 +121,7 @@ class TestBuildParams:
             price_from=None,
             price_to=None,
             area_id=None,
-            category_id=None,
+            category=None,
             is_private=None,
             sort=None,
             rows=10,
@@ -129,6 +129,22 @@ class TestBuildParams:
             extra={"keyword": "car"},
         )
         assert params["keyword"] == "car"
+
+    def test_category_maps_to_attribute_tree(self) -> None:
+        params = _build_params(
+            keyword=None,
+            price_from=None,
+            price_to=None,
+            area_id=None,
+            category=2691,
+            is_private=None,
+            sort=None,
+            rows=1,
+            page=1,
+            extra=None,
+        )
+        assert params["ATTRIBUTE_TREE"] == 2691
+        assert "categoryId" not in params
 
 
 class TestSearch:
