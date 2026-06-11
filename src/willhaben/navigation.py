@@ -4,10 +4,14 @@ import re
 from collections.abc import Mapping
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from .client import QueryParams, QueryValue, WillhabenClient
 from .verticals import MARKETPLACE, Vertical, _target
+
+if TYPE_CHECKING:
+    from .constants import SortOrder
+    from .models import SearchResult
 
 _TRAILING_ID = re.compile(r"-(\d+)$")
 
@@ -250,6 +254,33 @@ class NodeView:
         if extra:
             params.update(extra)
         return Order(self.vertical, self.node_id, params)
+
+    def search(
+        self,
+        *,
+        select: Mapping[str, Any] | None = None,
+        extra: Mapping[str, QueryValue] | None = None,
+        rows: int = 30,
+        page: int = 1,
+        sort: SortOrder | int | None = None,
+        client: WillhabenClient | None = None,
+    ) -> SearchResult:
+        """Build an Order from selections and search this node."""
+        from .search import search as _search
+
+        return _search(self.order(select, extra), rows=rows, page=page, sort=sort, client=client)
+
+    def count(
+        self,
+        *,
+        select: Mapping[str, Any] | None = None,
+        extra: Mapping[str, QueryValue] | None = None,
+        client: WillhabenClient | None = None,
+    ) -> int:
+        """Build an Order from selections and count results for this node."""
+        from .search import count as _count
+
+        return _count(self.order(select, extra), client=client)
 
 
 def navigate(
