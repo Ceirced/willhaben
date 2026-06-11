@@ -25,7 +25,7 @@ def _execute(
     # the sort kwarg overrides any sort already in order.params; sort=None leaves it untouched
     if sort is not None:
         params["sort"] = int(sort)
-    return SearchResult.from_api(client.search(path, params), vertical=order.vertical)
+    return SearchResult.from_api(client.search(path, params), vertical=order.vertical, node_id=order.node)
 
 
 def search(

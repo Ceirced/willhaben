@@ -165,7 +165,7 @@ class TestAdPriceAliases:
             "description": "y",
             "attributes": {"attribute": [{"name": "PRICE", "values": ["300000"]}]},
         }
-        assert Ad.from_api(raw).price == Decimal("300000")
+        assert Ad.from_api(raw).price == Decimal(300000)
 
 
 class TestSearchResultNode:

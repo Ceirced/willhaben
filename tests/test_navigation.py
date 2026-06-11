@@ -6,7 +6,15 @@ from typing import Any
 
 import pytest
 
-from willhaben.navigation import Filter, FilterType, FilterValue, NodeView, Order, SelectionMode, navigate
+from willhaben.navigation import (
+    Filter,
+    FilterType,
+    FilterValue,
+    NodeView,
+    Order,
+    SelectionMode,
+    navigate,
+)
 from willhaben.verticals import AUTO, MARKETPLACE, REALESTATE
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -141,7 +149,7 @@ class TestFilterValueParams:
 
     def test_bucketed_range_keeps_both_bounds(self) -> None:
         fv = FilterValue(
-            label="10.000 – 49.999",
+            label="10.000 – 49.999",  # noqa: RUF001
             params={"MILEAGE_FROM": "10000", "MILEAGE_TO": "49999"},
             hits=5,
         )

@@ -4,7 +4,7 @@ import re
 from collections.abc import Mapping
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, cast
 
 from .client import QueryParams, QueryValue, WillhabenClient
 from .verticals import MARKETPLACE, Vertical, _target
@@ -77,7 +77,7 @@ def _merge(into: dict[str, QueryValue], params: Mapping[str, QueryValue]) -> Non
         if key in into:
             existing = into[key]
             existing_list = existing if isinstance(existing, list) else [existing]
-            into[key] = [*existing_list, *incoming]
+            into[key] = cast(QueryValue, [*existing_list, *incoming])
         else:
             into[key] = val
 

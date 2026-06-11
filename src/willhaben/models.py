@@ -119,12 +119,13 @@ class SearchResult:
     ads: list[Ad]
     raw: dict[str, Any] = field(repr=False, default_factory=dict)
     vertical: Vertical = MARKETPLACE
+    node_id: int | None = None
 
     @property
     def node(self) -> NodeView:
         # Re-parses `self.raw` on each access. SearchResult is frozen+slots, so
         # functools.cached_property is unavailable; the parse is cheap, so this is fine.
-        return NodeView.from_api(self.raw, node_id=None, vertical=self.vertical)
+        return NodeView.from_api(self.raw, node_id=self.node_id, vertical=self.vertical)
 
     @property
     def counts_by_state(self) -> dict[int, int]:
@@ -141,8 +142,8 @@ class SearchResult:
 
     @classmethod
     def from_api(
-        cls, raw: dict[str, Any], *, vertical: Vertical = MARKETPLACE
-    ) -> "SearchResult":
+        cls, raw: dict[str, Any], *, vertical: Vertical = MARKETPLACE, node_id: int | None = None
+    ) -> SearchResult:
         ad_list = raw.get("advertSummaryList", {}).get("advertSummary", [])
         return cls(
             rows_found=raw.get("rowsFound", 0),
@@ -151,4 +152,5 @@ class SearchResult:
             ads=[Ad.from_api(a) for a in ad_list],
             raw=raw,
             vertical=vertical,
+            node_id=node_id,
         )
