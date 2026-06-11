@@ -121,6 +121,15 @@ def test_live_search_id_as_param_does_not_scope() -> None:
 
 
 @pytest.mark.live
+def test_live_auto_category_scopes_via_path() -> None:
+    """Motor categories (Motorrad=4, …) scope via atz/3/<searchId>."""
+    cars = navigate(vertical=AUTO)
+    by_label = {c.label: c.id for c in cars.categories}
+    motorrad = navigate(by_label["Motorrad und Quad"], vertical=AUTO)
+    assert count(motorrad.order()) < count(cars.order())
+
+
+@pytest.mark.live
 def test_live_auto_model_unlocks_after_make() -> None:
     locked = next(f for f in navigate(vertical=AUTO).filters if f.id == "model")
     assert locked.available is False

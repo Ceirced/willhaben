@@ -35,7 +35,7 @@ mechanisms — plus filters.**
 | --- | --- | --- | --- |
 | Marketplace | `atz/seo/kaufen-und-verkaufen/marktplatz` | `category` (HIERARCHICAL, deep tree) | `ATTRIBUTE_TREE` **query param** |
 | Realestate | `atz/seo/immobilien/immobilien` | `searchId` (STANDARD, flat list) | **path** `atz/2/<id>` |
-| Auto | `atz/seo/gebrauchtwagen/auto` | `searchId` (STANDARD, flat list) | **path** (form TBD — see open decisions) |
+| Auto | `atz/seo/gebrauchtwagen/auto` | `searchId` (STANDARD, flat list) | **path** `atz/3/<id>` |
 
 The `searchId` navigator lists each category with a human-readable label and an
 id (`Haus kaufen → 102`, `Wohnung kaufen → 101`, …) — these ids equal the legacy
@@ -102,7 +102,7 @@ class Vertical:
 
 MARKETPLACE = Vertical("marketplace", "atz/seo/kaufen-und-verkaufen/marktplatz", "ATTRIBUTE_TREE", None,         "category")
 REALESTATE  = Vertical("realestate",  "atz/seo/immobilien/immobilien",          None,            "atz/2/{node}", "searchId")
-AUTO        = Vertical("auto",         "atz/seo/gebrauchtwagen/auto",            None,            None,           "searchId")  # node_path TBD
+AUTO        = Vertical("auto",         "atz/seo/gebrauchtwagen/auto",            None,            "atz/3/{node}", "searchId")
 
 @dataclass(frozen=True, slots=True)
 class Order:
@@ -275,7 +275,7 @@ the 138 districts are not, so the tree is kept for district-level `areaId`.
 - Missing/empty `navigatorGroups`/`breadcrumbs` → empty tuples (no crash).
 - `view.order` with unknown filter, absent value, locked filter, or type
   mismatch → `ValueError`.
-- Scoping to a node on a vertical with no node strategy yet (auto) → `ValueError`
+- Scoping to a node on a vertical with no node strategy yet → `ValueError`
   from `_target`. `node is None` is **valid** for every vertical (it lists the
   vertical's categories at its root).
 
@@ -300,11 +300,7 @@ the 138 districts are not, so the tree is kept for district-level `areaId`.
 
 ## Open decisions
 
-1. **Auto node path.** Realestate scopes via `atz/2/<searchId>`; auto's path form
-   for non-default vehicle categories (Motorrad=4, …) is unconfirmed (`atz/3..5`
-   404). Cars (the default root) work with `node=None`. **Recommendation:** probe
-   the auto path during implementation; until then auto `node` scoping raises and
-   only the default vehicle category is supported.
+None — all resolved.
 
 **Resolved:** selections use the declarative `view.order(select=…, extra=…)`
 dict (no stateful builder). `sort` lives on `search`/`iter_ads` only (it
@@ -312,7 +308,10 @@ describes the response, not the request); `Order` is filters-only. `area_id`
 districts go through `extra` with `AREAS_BY_ID` as reference data. **One generic
 `Ad`/`SearchResult` for all verticals** — `RealEstateAd`/`CarAd` are not built;
 vertical-specific fields come from `Ad.raw_attributes`. The breaking change ships
-as a major version bump with no deprecated shims.
+as a major version bump with no deprecated shims. Auto/motor categories scope via
+`atz/3/{node}` (verticalId 3), parallel to realestate — the searchId comes from
+`navigate()`'s category values (confirmed against the `ad-search/searchconfig/3`
+config and live counts).
 
 ## Out of scope
 

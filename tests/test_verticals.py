@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import pytest
-
 from willhaben.verticals import AUTO, MARKETPLACE, REALESTATE, _target
 
 
@@ -27,9 +25,8 @@ class TestTarget:
     def test_auto_root_path(self) -> None:
         assert _target(AUTO, None) == ("atz/seo/gebrauchtwagen/auto", {})
 
-    def test_auto_node_unsupported_raises(self) -> None:
-        with pytest.raises(ValueError, match="auto"):
-            _target(AUTO, 4)
+    def test_auto_node_in_path(self) -> None:
+        assert _target(AUTO, 4) == ("atz/3/4", {})
 
     def test_category_nav_names(self) -> None:
         assert MARKETPLACE.category_nav == "category"

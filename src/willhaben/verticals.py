@@ -41,7 +41,7 @@ AUTO: Final = Vertical(
     name="auto",
     root_path="atz/seo/gebrauchtwagen/auto",
     node_param=None,
-    node_path=None,
+    node_path="atz/3/{node}",
     category_nav="searchId",
 )
 
