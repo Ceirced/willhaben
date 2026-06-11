@@ -69,6 +69,7 @@ class Category:
 class Crumb:
     label: str
     node_id: int | None
+    seo_url: str | None
 
 
 def _merge(into: dict[str, QueryValue], params: Mapping[str, QueryValue]) -> None:
@@ -189,6 +190,7 @@ def _parse_breadcrumbs(raw: list[dict[str, Any]]) -> list[Crumb]:
             Crumb(
                 label=item.get("displayName", ""),
                 node_id=int(match.group(1)) if match else None,
+                seo_url=item.get("seoUrl"),
             )
         )
     return crumbs

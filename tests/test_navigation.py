@@ -258,6 +258,25 @@ class TestParseRealestate:
         assert any(f.id == "ownagetype" for f in view.filters)
 
 
+class TestBreadcrumbSeoUrl:
+    def test_last_crumb_carries_seo_url(self) -> None:
+        view = NodeView.from_api(
+            load("navigate_apple.json"), node_id=2724, vertical=MARKETPLACE
+        )
+        last = view.breadcrumbs[-1]
+        assert last.label == "Apple"
+        assert last.seo_url == (
+            "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/"
+            "smartphones-handys/apple-2724"
+        )
+
+    def test_root_crumb_seo_url_present(self) -> None:
+        view = NodeView.from_api(
+            load("navigate_apple.json"), node_id=2724, vertical=MARKETPLACE
+        )
+        assert all(c.seo_url for c in view.breadcrumbs)  # every crumb has a url
+
+
 class TestParseAuto:
     def test_model_locked_until_make(self) -> None:
         view = NodeView.from_api(load("navigate_auto.json"), node_id=None, vertical=AUTO)
