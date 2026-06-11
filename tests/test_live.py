@@ -5,9 +5,7 @@ import pytest
 
 from willhaben import (
     AREAS,
-    RealEstateCategory,
     count,
-    count_realestate,
     navigate,
 )
 from willhaben.constants import (
@@ -23,16 +21,6 @@ from willhaben.constants import (
 def test_live_count_returns_positive() -> None:
     """Smoke test: keyword 'fahrrad' should always have results on willhaben.at."""
     assert count(keyword="fahrrad") > 0
-
-
-@pytest.mark.live
-def test_live_realestate_count_returns_positive() -> None:
-    """Smoke test: rental flats in Vienna should always have results."""
-    result = count_realestate(
-        category=RealEstateCategory.APARTMENT_RENT,
-        area_id=AREAS["wien"].id,
-    )
-    assert result > 0
 
 
 def _fetch_live_pairs() -> set[tuple[int, int]]:

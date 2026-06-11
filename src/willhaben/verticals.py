@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Final
 
+from .constants import MARKETPLACE_PATH
+
 
 @dataclass(frozen=True, slots=True)
 class Vertical:
@@ -21,10 +23,9 @@ class Vertical:
     category_nav: str
 
 
-# NOTE: this root path also lives as constants.MARKETPLACE_PATH (legacy; removed in Task 8 of the plan).
 MARKETPLACE: Final = Vertical(
     name="marketplace",
-    root_path="atz/seo/kaufen-und-verkaufen/marktplatz",
+    root_path=MARKETPLACE_PATH,
     node_param="ATTRIBUTE_TREE",
     node_path=None,
     category_nav="category",
