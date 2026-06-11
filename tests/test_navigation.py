@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+import pytest
+
 from willhaben.navigation import Filter, FilterType, FilterValue, NodeView, Order, SelectionMode, navigate
 from willhaben.verticals import AUTO, MARKETPLACE, REALESTATE
 
@@ -179,3 +181,47 @@ class TestParseMarketplace:
         storage = next(f for f in view.filters if f.id == "Speicherkapazität")
         assert storage.selection is SelectionMode.MULTI
         assert all("treeAttributes" in v.params for v in storage.values)
+
+
+class TestNodeViewOrder:
+    def _iphone(self) -> NodeView:
+        return NodeView.from_api(
+            load("navigate_iphone.json"), node_id=5015997, vertical=MARKETPLACE
+        )
+
+    def test_discrete_multi_select_stacks(self) -> None:
+        view = self._iphone()
+        order = view.order(select={"Speicherkapazität": ["256 GB", "128 GB"]})
+        assert order.node == 5015997
+        vals = order.params["treeAttributes"]
+        assert isinstance(vals, list) and len(vals) == 2
+        assert vals == ["7216", "7217"]
+
+    def test_cross_filter_treeattributes_stacks(self) -> None:
+        view = self._iphone()
+        order = view.order(select={"Speicherkapazität": "256 GB", "Zustand": "Neu"})
+        vals = order.params["treeAttributes"]
+        assert isinstance(vals, list) and len(vals) == 2
+
+    def test_free_form_range_tuple(self) -> None:
+        view = self._iphone()
+        order = view.order(select={"price": (100, 900)})
+        assert order.params == {"PRICE_FROM": 100, "PRICE_TO": 900}
+
+    def test_open_ended_range_skips_none(self) -> None:
+        view = self._iphone()
+        order = view.order(select={"price": (None, 900)})
+        assert order.params == {"PRICE_TO": 900}
+
+    def test_extra_raw_params_passthrough(self) -> None:
+        view = self._iphone()
+        order = view.order(extra={"areaId": 900})
+        assert order.params == {"areaId": 900}
+
+    def test_unknown_filter_raises(self) -> None:
+        with pytest.raises(ValueError, match="unknown filter"):
+            self._iphone().order(select={"Nope": ["x"]})
+
+    def test_unknown_value_raises(self) -> None:
+        with pytest.raises(ValueError, match="no value"):
+            self._iphone().order(select={"Speicherkapazität": ["999 GB"]})

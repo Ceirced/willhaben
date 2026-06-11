@@ -67,6 +67,49 @@ class Crumb:
     node_id: int | None
 
 
+def _merge(into: dict[str, QueryValue], params: Mapping[str, QueryValue]) -> None:
+    for key, val in params.items():
+        incoming = val if isinstance(val, list) else [val]
+        if key in into:
+            existing = into[key]
+            existing_list = existing if isinstance(existing, list) else [existing]
+            into[key] = [*existing_list, *incoming]
+        else:
+            into[key] = val
+
+
+def _resolve(f: Filter, value: Any) -> dict[str, QueryValue]:
+    if f.type is FilterType.TEXT:
+        if not isinstance(value, str):
+            raise ValueError(f"filter {f.id!r} is TEXT; expected a string")
+        return {f.params[0]: value}
+    if f.type is FilterType.RANGE and isinstance(value, tuple):
+        if len(value) != 2:
+            raise ValueError(
+                f"filter {f.id!r} is RANGE; expected a 2-tuple (lo, hi), got a {len(value)}-tuple"
+            )
+        lo, hi = value
+        bounds: dict[str, QueryValue] = {}
+        if lo is not None:
+            bounds[f.params[0]] = lo
+        if hi is not None:
+            bounds[f.params[1]] = hi
+        return bounds
+    # SELECT / HIERARCHICAL, or a RANGE selected by preset bucket label(s)
+    labels = [value] if isinstance(value, str) else list(value)
+    if f.selection is SelectionMode.SINGLE and len(labels) > 1:
+        raise ValueError(f"filter {f.id!r} is single-select; got {labels}")
+    by_label = {v.label: v for v in f.values}
+    by_value = {v.value: v for v in f.values}
+    out: dict[str, QueryValue] = {}
+    for label in labels:
+        fv = by_label.get(label, by_value.get(str(label)))
+        if fv is None:
+            raise ValueError(f"filter {f.id!r} has no value {label!r}")
+        _merge(out, fv.params)
+    return out
+
+
 def _iter_values(nav: dict[str, Any]) -> list[dict[str, Any]]:
     values = list(nav.get("possibleValues") or [])
     for grouped in nav.get("groupedPossibleValues") or []:
@@ -185,6 +228,28 @@ class NodeView:
             categories=tuple(categories),
             filters=tuple(filters),
         )
+
+    def _filter(self, key: str) -> Filter:
+        """Find an available filter by id or label; raise if missing or locked."""
+        for f in self.filters:
+            if f.id == key or f.label == key:
+                if not f.available:
+                    raise ValueError(f"filter {key!r} is locked; select its prerequisite first")
+                return f
+        raise ValueError(f"unknown filter {key!r}")
+
+    def order(
+        self,
+        select: Mapping[str, Any] | None = None,
+        extra: Mapping[str, QueryValue] | None = None,
+    ) -> Order:
+        """Resolve `select` (filter label/id -> value(s)) and raw `extra` params into an Order."""
+        params: dict[str, QueryValue] = {}
+        for key, value in (select or {}).items():
+            _merge(params, _resolve(self._filter(key), value))
+        if extra:
+            params.update(extra)
+        return Order(self.vertical, self.node_id, params)
 
 
 def navigate(
