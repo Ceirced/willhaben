@@ -4,9 +4,8 @@ import json
 from pathlib import Path
 from typing import Any
 
-from willhaben.constants import MARKETPLACE_PATH
-from willhaben.navigation import Filter, FilterType, FilterValue, NodeView, SelectionMode, navigate
-from willhaben.verticals import MARKETPLACE
+from willhaben.navigation import Filter, FilterType, FilterValue, NodeView, Order, SelectionMode, navigate
+from willhaben.verticals import AUTO, MARKETPLACE, REALESTATE
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -82,18 +81,38 @@ class TestEmptyResponse:
         assert view.vertical is MARKETPLACE
 
 
-class TestNavigate:
-    def test_scopes_by_attribute_tree(self) -> None:
-        client = StubClient([load("navigate_apple.json")])
-        view = navigate(2724, client=client)  # ty: ignore[invalid-argument-type]
-        assert client.paths[0] == MARKETPLACE_PATH
-        assert client.calls[0]["ATTRIBUTE_TREE"] == 2724
-        assert any(c.id == 5015997 for c in view.categories)
+class TestNavigateRequest:
+    def test_marketplace_node_query_param(self) -> None:
+        stub = StubClient([load("navigate_apple.json")])
+        view = navigate(2724, client=stub)  # ty: ignore[invalid-argument-type]
+        assert stub.paths == ["atz/seo/kaufen-und-verkaufen/marktplatz"]
+        assert stub.calls[0]["ATTRIBUTE_TREE"] == 2724
+        assert stub.calls[0]["rows"] == 1
+        assert view.vertical is MARKETPLACE
 
-    def test_root_omits_attribute_tree(self) -> None:
-        client = StubClient([load("navigate_root.json")])
-        navigate(client=client)  # ty: ignore[invalid-argument-type]
-        assert "ATTRIBUTE_TREE" not in client.calls[0]
+    def test_realestate_root_path_no_node(self) -> None:
+        stub = StubClient([load("navigate_apple.json")])
+        navigate(vertical=REALESTATE, client=stub)  # ty: ignore[invalid-argument-type]
+        assert stub.paths == ["atz/seo/immobilien/immobilien"]
+
+    def test_marketplace_root_omits_attribute_tree(self) -> None:
+        stub = StubClient([load("navigate_root.json")])
+        navigate(client=stub)  # ty: ignore[invalid-argument-type]
+        assert "ATTRIBUTE_TREE" not in stub.calls[0]
+
+    def test_selections_are_forwarded(self) -> None:
+        stub = StubClient([load("navigate_apple.json")])
+        navigate(vertical=AUTO, selections={"CAR_MODEL/MAKE": 1005}, client=stub)  # ty: ignore[invalid-argument-type]
+        assert stub.calls[0]["rows"] == 1
+        assert stub.calls[0]["CAR_MODEL/MAKE"] == 1005
+
+
+class TestOrder:
+    def test_order_holds_vertical_node_params(self) -> None:
+        order = Order(MARKETPLACE, 2724, {"PRICE_TO": 900})
+        assert order.vertical is MARKETPLACE
+        assert order.node == 2724
+        assert order.params == {"PRICE_TO": 900}
 
 
 class TestPublicApi:

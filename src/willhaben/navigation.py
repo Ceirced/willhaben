@@ -6,9 +6,8 @@ from dataclasses import dataclass
 from enum import StrEnum
 from typing import Any
 
-from .client import WillhabenClient
-from .constants import MARKETPLACE_PATH
-from .verticals import MARKETPLACE, Vertical
+from .client import QueryParams, QueryValue, WillhabenClient
+from .verticals import MARKETPLACE, Vertical, _target
 
 _TRAILING_ID = re.compile(r"-(\d+)$")
 
@@ -149,6 +148,15 @@ def _parse_breadcrumbs(raw: list[dict[str, Any]]) -> list[Crumb]:
 
 
 @dataclass(frozen=True, slots=True)
+class Order:
+    """A persistable, replayable search agent: vertical + node + flat params."""
+
+    vertical: Vertical
+    node: int | None
+    params: Mapping[str, QueryValue]
+
+
+@dataclass(frozen=True, slots=True)
 class NodeView:
     node_id: int | None
     vertical: Vertical
@@ -180,19 +188,23 @@ class NodeView:
 
 
 def navigate(
-    node: int | None = None, *, client: WillhabenClient | None = None
+    node: int | None = None,
+    *,
+    vertical: Vertical = MARKETPLACE,
+    selections: QueryParams | None = None,
+    client: WillhabenClient | None = None,
 ) -> NodeView:
-    """Fetch a marketplace catalog node and return its child categories and the
-    filters valid there.
+    """Fetch a catalog node and return its child categories and valid filters.
 
-    `node` is an `ATTRIBUTE_TREE` category id (any depth — e.g. 2724 for Apple,
-    5015997 for the iPhone 17 Pro leaf), or `None` for the marketplace root.
-    Performs one live request. `categories` is empty at a leaf; `filters` holds
-    every non-category navigator (price, condition, storage, …) with its URL
-    parameter name, type, selection mode, and possible values.
+    `node` is the vertical's category id (or `None` for the vertical root).
+    `selections` is a flat param dict forwarded so the response reflects
+    dependent filters (e.g. pass a chosen make to populate auto `model`).
+    Performs one `rows=1` live request. `rows` is always pinned to 1.
     """
     client = client or WillhabenClient()
-    params: dict[str, str | int | list[int]] = {"rows": 1}
-    if node is not None:
-        params["ATTRIBUTE_TREE"] = node
-    return NodeView.from_api(client.search(MARKETPLACE_PATH, params), node_id=node)
+    path, node_params = _target(vertical, node)
+    params: dict[str, QueryValue] = {**node_params}
+    if selections:
+        params.update(selections)
+    params["rows"] = 1  # discovery request: never let selections override it
+    return NodeView.from_api(client.search(path, params), node_id=node, vertical=vertical)
