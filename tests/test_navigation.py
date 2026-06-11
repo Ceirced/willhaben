@@ -5,7 +5,8 @@ from pathlib import Path
 from typing import Any
 
 from willhaben.constants import MARKETPLACE_PATH
-from willhaben.navigation import FilterType, NodeView, SelectionMode, navigate
+from willhaben.navigation import Filter, FilterType, FilterValue, NodeView, SelectionMode, navigate
+from willhaben.verticals import MARKETPLACE
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -78,6 +79,7 @@ class TestEmptyResponse:
         assert view.filters == ()
         assert view.breadcrumbs == ()
         assert view.rows_found == 0
+        assert view.vertical is MARKETPLACE
 
 
 class TestNavigate:
@@ -109,3 +111,52 @@ class TestPublicApi:
             "SelectionMode",
         ):
             assert hasattr(willhaben, name), name
+
+
+class TestFilterValueParams:
+    def test_value_property_returns_first_param_value(self) -> None:
+        fv = FilterValue(label="256 GB", params={"treeAttributes": "2537"}, hits=10)
+        assert fv.value == "2537"
+
+    def test_bucketed_range_keeps_both_bounds(self) -> None:
+        fv = FilterValue(
+            label="10.000 – 49.999",
+            params={"MILEAGE_FROM": "10000", "MILEAGE_TO": "49999"},
+            hits=5,
+        )
+        assert fv.params["MILEAGE_FROM"] == "10000"
+        assert fv.params["MILEAGE_TO"] == "49999"
+
+
+class TestFilterAvailable:
+    def test_default_available_true(self) -> None:
+        f = Filter(
+            id="x", label="X", params=("p",), type=FilterType.SELECT,
+            selection=SelectionMode.SINGLE, values=(), available=True,
+        )
+        assert f.available is True
+
+    def test_not_selectable_sets_available_false(self) -> None:
+        from willhaben.navigation import _parse_filter
+
+        f = _parse_filter({"id": "model", "label": "Model", "navigatorType": "NOT_SELECTABLE"})
+        assert f.available is False
+        assert f.values == ()
+
+
+class TestParseMarketplace:
+    def test_categories_from_category_navigator(self) -> None:
+        view = NodeView.from_api(
+            load("navigate_apple.json"), node_id=2724, vertical=MARKETPLACE
+        )
+        assert view.vertical is MARKETPLACE
+        by_id = {c.id: c.label for c in view.categories}
+        assert by_id.get(5015997) == "iPhone 17 Pro"
+
+    def test_storage_filter_values_carry_params(self) -> None:
+        view = NodeView.from_api(
+            load("navigate_iphone.json"), node_id=5015997, vertical=MARKETPLACE
+        )
+        storage = next(f for f in view.filters if f.id == "Speicherkapazität")
+        assert storage.selection is SelectionMode.MULTI
+        assert all("treeAttributes" in v.params for v in storage.values)

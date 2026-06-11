@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import re
+from collections.abc import Mapping
 from dataclasses import dataclass
 from enum import StrEnum
 from typing import Any
 
 from .client import WillhabenClient
 from .constants import MARKETPLACE_PATH
+from .verticals import MARKETPLACE, Vertical
 
 _TRAILING_ID = re.compile(r"-(\d+)$")
 
@@ -33,8 +35,13 @@ class SelectionMode(StrEnum):
 @dataclass(frozen=True, slots=True)
 class FilterValue:
     label: str
-    value: str          # the id to send in the URL param, e.g. "2537"
+    params: Mapping[str, str]   # this value's URL representation, e.g. {"treeAttributes": "2537"}
     hits: int | None
+
+    @property
+    def value(self) -> str | None:
+        """The first param value — convenient for single-param discrete filters."""
+        return next(iter(self.params.values()), None)
 
 
 @dataclass(frozen=True, slots=True)
@@ -45,6 +52,7 @@ class Filter:
     type: FilterType
     selection: SelectionMode
     values: tuple[FilterValue, ...]
+    available: bool
 
 
 @dataclass(frozen=True, slots=True)
@@ -67,23 +75,30 @@ def _iter_values(nav: dict[str, Any]) -> list[dict[str, Any]]:
     return values
 
 
-def _url_value(value: dict[str, Any], param: str | None = None) -> str | None:
+def _value_params(value: dict[str, Any]) -> dict[str, str]:
+    out: dict[str, str] = {}
     for rep in value.get("urlParamRepresentationForValue") or []:
-        if param is None or rep.get("urlParameterName") == param:
-            raw = rep.get("value")
-            if raw is not None:
-                return str(raw)
-    return None
+        name, raw = rep.get("urlParameterName"), rep.get("value")
+        if name is not None and raw is not None:
+            out[name] = str(raw)
+    return out
 
 
 def _parse_categories(nav: dict[str, Any]) -> list[Category]:
     out: list[Category] = []
     for value in _iter_values(nav):
-        raw_id = _url_value(value, "ATTRIBUTE_TREE")
-        if raw_id is None:
+        params = _value_params(value)
+        if not params:
+            continue
+        # A category value carries exactly one url param (ATTRIBUTE_TREE for
+        # marketplace, searchId for realestate/auto); use its value as the id.
+        raw_id = next(iter(params.values()))
+        try:
+            cat_id = int(raw_id)
+        except ValueError:
             continue
         out.append(
-            Category(id=int(raw_id), label=value.get("label", ""), hits=value.get("hits"))
+            Category(id=cat_id, label=value.get("label", ""), hits=value.get("hits"))
         )
     return out
 
@@ -97,23 +112,25 @@ def _parse_filter(nav: dict[str, Any]) -> Filter:
     )
     values: list[FilterValue] = []
     for value in _iter_values(nav):
-        raw = _url_value(value)
-        if raw is None:
+        vparams = _value_params(value)
+        if not vparams:
             continue
         values.append(
-            FilterValue(label=value.get("label", ""), value=raw, hits=value.get("hits"))
+            FilterValue(label=value.get("label", ""), params=vparams, hits=value.get("hits"))
         )
+    nav_type = nav.get("navigatorType", "")
     return Filter(
         id=nav.get("id", ""),
         label=nav.get("label", ""),
         params=params,
-        type=FilterType(_NAVIGATOR_TYPES.get(nav.get("navigatorType", ""), "SELECT")),
+        type=FilterType(_NAVIGATOR_TYPES.get(nav_type, "SELECT")),
         selection=(
             SelectionMode.MULTI
             if nav.get("navigatorSelectionType") == "MULTI_SELECT"
             else SelectionMode.SINGLE
         ),
         values=tuple(values),
+        available=nav_type != "NOT_SELECTABLE",
     )
 
 
@@ -134,23 +151,27 @@ def _parse_breadcrumbs(raw: list[dict[str, Any]]) -> list[Crumb]:
 @dataclass(frozen=True, slots=True)
 class NodeView:
     node_id: int | None
+    vertical: Vertical
     rows_found: int
     breadcrumbs: tuple[Crumb, ...]
     categories: tuple[Category, ...]   # children; () at a leaf
     filters: tuple[Filter, ...]        # every non-category navigator
 
     @classmethod
-    def from_api(cls, raw: dict[str, Any], *, node_id: int | None) -> NodeView:
+    def from_api(
+        cls, raw: dict[str, Any], *, node_id: int | None, vertical: Vertical = MARKETPLACE
+    ) -> NodeView:
         categories: list[Category] = []
         filters: list[Filter] = []
         for group in raw.get("navigatorGroups", []):
             for nav in group.get("navigatorList", []):
-                if nav.get("id") == "category":
+                if nav.get("id") == vertical.category_nav:
                     categories.extend(_parse_categories(nav))
                 else:
                     filters.append(_parse_filter(nav))
         return cls(
             node_id=node_id,
+            vertical=vertical,
             rows_found=raw.get("rowsFound", 0),
             breadcrumbs=tuple(_parse_breadcrumbs(raw.get("breadcrumbs", []))),
             categories=tuple(categories),
