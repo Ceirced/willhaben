@@ -5,6 +5,9 @@ from datetime import UTC, datetime
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
+from .navigation import NodeView
+from .verticals import MARKETPLACE, Vertical
+
 
 def _attrs_to_dict(raw_attrs: list[dict[str, Any]]) -> dict[str, list[str]]:
     return {a["name"]: a["values"] for a in raw_attrs}
@@ -40,36 +43,6 @@ def _parse_price(raw: str | None) -> Decimal | None:
         return Decimal(raw)
     except (InvalidOperation, ValueError):
         return None
-
-
-def _state_counts_from_raw(raw: dict[str, Any]) -> dict[int, int]:
-    nav = next(
-        (
-            n
-            for g in raw.get("navigatorGroups", [])
-            for n in g.get("navigatorList", [])
-            if n.get("id") == "state"
-        ),
-        None,
-    )
-    if nav is None:
-        return {}
-    values: list[dict[str, Any]] = list(nav.get("possibleValues") or [])
-    for grouped in nav.get("groupedPossibleValues") or []:
-        values.extend(grouped.get("possibleValues") or [])
-    counts: dict[int, int] = {}
-    for v in values:
-        hits = v.get("hits")
-        if hits is None:
-            continue
-        for p in v.get("urlParamRepresentationForValue") or []:
-            if p.get("urlParameterName") == "areaId":
-                try:
-                    counts[int(p["value"])] = hits
-                except (KeyError, ValueError, TypeError):
-                    pass
-                break
-    return counts
 
 
 @dataclass(frozen=True, slots=True)
@@ -123,7 +96,7 @@ class Ad:
             title=raw.get("description", ""),
             url=url,
             seo_url=seo_full,
-            price=_parse_price(_first(attrs.get("PRICE/AMOUNT"))),
+            price=_parse_price(_first(attrs.get("PRICE/AMOUNT")) or _first(attrs.get("PRICE"))),
             price_display=_first(attrs.get("PRICE_FOR_DISPLAY")),
             location=_first(attrs.get("LOCATION")),
             postcode=_first(attrs.get("POSTCODE")),
@@ -145,15 +118,31 @@ class SearchResult:
     page: int
     ads: list[Ad]
     raw: dict[str, Any] = field(repr=False, default_factory=dict)
+    vertical: Vertical = MARKETPLACE
+
+    @property
+    def node(self) -> NodeView:
+        # Re-parses `self.raw` on each access. SearchResult is frozen+slots, so
+        # functools.cached_property is unavailable; the parse is cheap, so this is fine.
+        return NodeView.from_api(self.raw, node_id=None, vertical=self.vertical)
 
     @property
     def counts_by_state(self) -> dict[int, int]:
-        """Map Bundesland areaId → ad count. Keys are areaIds — resolve
-        with `AREAS_BY_ID`."""
-        return _state_counts_from_raw(self.raw)
+        """Map Bundesland areaId → ad count, derived from the location filter."""
+        counts: dict[int, int] = {}
+        for f in self.node.filters:
+            if "areaId" not in f.params:
+                continue
+            for v in f.values:
+                area = v.params.get("areaId")
+                if area is not None and v.hits is not None:
+                    counts[int(area)] = v.hits
+        return counts
 
     @classmethod
-    def from_api(cls, raw: dict[str, Any]) -> SearchResult:
+    def from_api(
+        cls, raw: dict[str, Any], *, vertical: Vertical = MARKETPLACE
+    ) -> "SearchResult":
         ad_list = raw.get("advertSummaryList", {}).get("advertSummary", [])
         return cls(
             rows_found=raw.get("rowsFound", 0),
@@ -161,4 +150,5 @@ class SearchResult:
             page=raw.get("pageRequested", 1),
             ads=[Ad.from_api(a) for a in ad_list],
             raw=raw,
+            vertical=vertical,
         )
