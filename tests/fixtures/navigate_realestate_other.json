@@ -1,0 +1,3027 @@
+{
+ "id": 35,
+ "description": "Sonstige",
+ "heading": "Sonstige Immobilien zu kaufen oder zu mieten",
+ "verticalId": 2,
+ "searchId": 35,
+ "rowsRequested": 1,
+ "rowsFound": 4676,
+ "rowsReturned": 1,
+ "pageRequested": 1,
+ "searchDate": "2026-06-11T15:52:36+0200",
+ "lastUserAlertViewedDate": null,
+ "newAdsSeparatorPosition": null,
+ "advertSummaryList": {
+  "advertSummary": [
+   {
+    "id": "1518350377",
+    "verticalId": 2,
+    "adTypeId": 15,
+    "productId": 255,
+    "advertStatus": {
+     "id": "active",
+     "description": "aktiv",
+     "statusId": 50
+    },
+    "description": "LUXUS-PENTHOUSE DIREKT AM NASCHMARKT! Grandiose Dachterrasse mit traumhaften Wienblick!",
+    "attributes": {
+     "attribute": [
+      {
+       "name": "LOCATION",
+       "values": [
+        "Wien, 04. Bezirk, Wieden"
+       ]
+      },
+      {
+       "name": "POSTCODE",
+       "values": [
+        "1040"
+       ]
+      },
+      {
+       "name": "BODY_DYN",
+       "values": [
+        "DAS PROJEKT ENJOY THE UNEXPECTED Direkt am Naschmarkt vereint das Projekt \"THE FUSION by WINEGG\" eindrucksvoll unterschiedliche Einflüsse und bündelt das Beste aus mehreren Epochen. Der geschichtsträchtige Vordertrakt der Liegenschaft in der..."
+       ]
+      },
+      {
+       "name": "ORGNAME",
+       "values": [
+        "WINEGG Makler GmbH"
+       ]
+      },
+      {
+       "name": "STATE",
+       "values": [
+        "Wien"
+       ]
+      },
+      {
+       "name": "imagedescription",
+       "values": [
+        "The Fusion | Penthouse"
+       ]
+      },
+      {
+       "name": "ORG_UUID",
+       "values": [
+        "42b9fd79-dc14-4a17-ad21-c82a3667e9e5"
+       ]
+      },
+      {
+       "name": "HEADING",
+       "values": [
+        "LUXUS-PENTHOUSE DIREKT AM NASCHMARKT! Grandiose Dachterrasse mit traumhaften Wienblick!"
+       ]
+      },
+      {
+       "name": "LOCATION_QUALITY",
+       "values": [
+        "1.0"
+       ]
+      },
+      {
+       "name": "DISTRICT",
+       "values": [
+        "Wien"
+       ]
+      },
+      {
+       "name": "PUBLISHED",
+       "values": [
+        "1781185740000"
+       ]
+      },
+      {
+       "name": "COUNTRY",
+       "values": [
+        "Österreich"
+       ]
+      },
+      {
+       "name": "PRICE/SQUARE_METER",
+       "values": [
+        "14148.837"
+       ]
+      },
+      {
+       "name": "ESTATE_MISC_CATEGORY",
+       "values": [
+        "10020"
+       ]
+      },
+      {
+       "name": "LOCATION_ID",
+       "values": [
+        "117226"
+       ]
+      },
+      {
+       "name": "PRICE/AMOUNT",
+       "values": [
+        "2433600.0"
+       ]
+      },
+      {
+       "name": "ADTYPE_ID",
+       "values": [
+        "15"
+       ]
+      },
+      {
+       "name": "ADID",
+       "values": [
+        "1518350377"
+       ]
+      },
+      {
+       "name": "ORGID",
+       "values": [
+        "28516886"
+       ]
+      },
+      {
+       "name": "SEO_URL",
+       "values": [
+        "immobilien/d/sonstige/sonstige/luxus-penthouse-direkt-am-naschmarkt-grandiose-dachterrasse-mit-traumhaften-wienblick-1518350377/"
+       ]
+      },
+      {
+       "name": "ALL_IMAGE_URLS",
+       "values": [
+        "7/151/835/0377_-376710268.jpg;7/151/835/0377_1663364074.jpg;7/151/835/0377_-1517887068.jpg;7/151/835/0377_1881990099.jpg;7/151/835/0377_286909116.jpg;7/151/835/0377_-245699378.jpg;7/151/835/0377_1863442716.jpg;7/151/835/0377_1206053655.jpg;7/151/835/0377_-894509715.jpg;7/151/835/0377_1944116827.jpg;7/151/835/0377_489350698.jpg;7/151/835/0377_64873535.jpg;7/151/835/0377_532864660.jpg;7/151/835/0377_1134484925.jpg;7/151/835/0377_-1811946218.jpg;7/151/835/0377_-1669210841.jpg;7/151/835/0377_-215818604.jpg;7/151/835/0377_1545593050.jpg;7/151/835/0377_1442897731.jpg;7/151/835/0377_132830659.jpg;7/151/835/0377_-337649735.jpg;7/151/835/0377_-710290300.jpg;7/151/835/0377_601280499.jpg;7/151/835/0377_-368062109.jpg;7/151/835/0377_170974448.jpg;7/151/835/0377_-767764754.jpg;7/151/835/0377_52610015.jpg;7/151/835/0377_-1297246897.jpg;7/151/835/0377_518691253.jpg;7/151/835/0377_-1962501241.jpg"
+       ]
+      },
+      {
+       "name": "PUBLISHED_String",
+       "values": [
+        "2026-06-11T15:49:00Z"
+       ]
+      },
+      {
+       "name": "UPSELLING_AD_SEARCHRESULT",
+       "values": [
+        "true"
+       ]
+      },
+      {
+       "name": "categorytreeids",
+       "values": [
+        "7280"
+       ]
+      },
+      {
+       "name": "ADVERTISER_REF",
+       "values": [
+        "28508"
+       ]
+      },
+      {
+       "name": "PRODUCT_ID",
+       "values": [
+        "255"
+       ]
+      },
+      {
+       "name": "IS_BUMPED",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "MMO",
+       "values": [
+        "7/151/835/0377_-376710268.jpg"
+       ]
+      },
+      {
+       "name": "ESTATE_SIZE/USEABLE_AREA",
+       "values": [
+        "172"
+       ]
+      },
+      {
+       "name": "AD_UUID",
+       "values": [
+        "3fc427f4-3bec-4af5-a824-b34e9d305250"
+       ]
+      },
+      {
+       "name": "AD_SEARCHRESULT_LOGO",
+       "values": [
+        "adSearchResult/28516886/imageupload14273601138444397647wineggmakler_12879244690655525074.png"
+       ]
+      },
+      {
+       "name": "COORDINATES",
+       "values": [
+        "48.196424,16.3600058"
+       ]
+      },
+      {
+       "name": "PRICE",
+       "values": [
+        "2433600"
+       ]
+      },
+      {
+       "name": "PRICE_FOR_DISPLAY",
+       "values": [
+        "€ 2.433.600"
+       ]
+      },
+      {
+       "name": "PRICE/SQUARE_METER_FOR_DISPLAY",
+       "values": [
+        "€ 14.148,84 /m²"
+       ]
+      },
+      {
+       "name": "ESTATE_SIZE",
+       "values": [
+        "172"
+       ]
+      },
+      {
+       "name": "ISPRIVATE",
+       "values": [
+        "0"
+       ]
+      },
+      {
+       "name": "UNIT_TITLE",
+       "values": [
+        "28508"
+       ]
+      },
+      {
+       "name": "ESTATE_MISC_CATEGORY_RESOLVED",
+       "values": [
+        "Kapitalanlagen / Rendite"
+       ]
+      }
+     ]
+    },
+    "advertImageList": {
+     "advertImage": [
+      {
+       "id": 1,
+       "name": "7/151/835/0377_-376710268.jpg",
+       "selfLink": "https://api.willhaben.at/restapi/v2/atimage/1518350377/1",
+       "description": "Cover Image",
+       "mainImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_-376710268_hoved.jpg",
+       "thumbnailImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_-376710268_thumb.jpg",
+       "referenceImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_-376710268.jpg",
+       "similarImageSearchUrl": null,
+       "reference": "7/151/835/0377_-376710268.jpg"
+      },
+      {
+       "id": 1,
+       "name": "7/151/835/0377_1663364074.jpg",
+       "selfLink": "https://api.willhaben.at/restapi/v2/atimage/1518350377/1",
+       "description": "Cover Image",
+       "mainImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_1663364074_hoved.jpg",
+       "thumbnailImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_1663364074_thumb.jpg",
+       "referenceImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_1663364074.jpg",
+       "similarImageSearchUrl": null,
+       "reference": "7/151/835/0377_1663364074.jpg"
+      },
+      {
+       "id": 1,
+       "name": "7/151/835/0377_-1517887068.jpg",
+       "selfLink": "https://api.willhaben.at/restapi/v2/atimage/1518350377/1",
+       "description": "Cover Image",
+       "mainImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_-1517887068_hoved.jpg",
+       "thumbnailImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_-1517887068_thumb.jpg",
+       "referenceImageUrl": "https://cache.willhaben.at/mmo/7/151/835/0377_-1517887068.jpg",
+       "similarImageSearchUrl": null,
+       "reference": "7/151/835/0377_-1517887068.jpg"
+      }
+     ],
+     "floorPlans": []
+    },
+    "selfLink": "https://api.willhaben.at/restapi/v2/atverz/1518350377",
+    "contextLinkList": {
+     "contextLink": [
+      {
+       "id": "selfLink",
+       "description": "Identifies this entity",
+       "uri": "https://api.willhaben.at/restapi/v2/atverz/1518350377",
+       "selected": false,
+       "relativePath": "/atverz/1518350377",
+       "serviceName": "iad"
+      },
+      {
+       "id": "seoSelfLink",
+       "description": "Self reference",
+       "uri": "https://api.willhaben.at/restapi/v2/atverz/immobilien/d/sonstige/kapitalanlagen-rendite/luxus-penthouse-direkt-am-naschmarkt-grandiose-dachterrasse-mit-traumhaften-wienblick-1518350377/",
+       "selected": false,
+       "relativePath": "/atverz/immobilien/d/sonstige/kapitalanlagen-rendite/luxus-penthouse-direkt-am-naschmarkt-grandiose-dachterrasse-mit-traumhaften-wienblick-1518350377/",
+       "serviceName": "iad"
+      },
+      {
+       "id": "adDetailLink",
+       "description": "Self reference to advert via ad detail component",
+       "uri": "https://publicapi.willhaben.at/atdetail/v1/1518350377",
+       "selected": false,
+       "relativePath": "/1518350377",
+       "serviceName": "addetail"
+      },
+      {
+       "id": "removeAdFromFolder",
+       "description": "Remove ad from any folder",
+       "uri": "https://api.willhaben.at/restapi/v2/userfolders/remove/1518350377",
+       "selected": false,
+       "relativePath": "/userfolders/remove/1518350377",
+       "serviceName": "iad"
+      },
+      {
+       "id": "getFolderSaveLinks",
+       "description": "Get contextlinks to save the ad in the users folders",
+       "uri": "https://api.willhaben.at/restapi/v2/userfolders/links/1518350377",
+       "selected": false,
+       "relativePath": "/userfolders/links/1518350377",
+       "serviceName": "iad"
+      },
+      {
+       "id": "iadShareLink",
+       "description": "Share link in iAd",
+       "uri": "https://www.willhaben.at/iad/object?adId=1518350377",
+       "selected": false,
+       "relativePath": "/iad/object?adId=1518350377",
+       "serviceName": "web_url"
+      }
+     ]
+    },
+    "advertiserInfo": {
+     "label": "WINEGG Makler GmbH",
+     "iconSVG": null,
+     "iconPNG": null,
+     "iconType": "NONE"
+    },
+    "upsellingOrganisationLogo": "https://cache.willhaben.at/mmo/logo/adSearchResult/28516886/imageupload14273601138444397647wineggmakler_12879244690655525074_medium.png",
+    "teaserAttributes": [
+     {
+      "prefix": null,
+      "value": "",
+      "postfix": "Kapitalanlagen / Rendite"
+     }
+    ],
+    "children": null,
+    "dmpParameters": null
+   }
+  ]
+ },
+ "breadcrumbs": [
+  {
+   "displayName": "Startseite",
+   "seoUrl": "https://www.willhaben.at/iad"
+  },
+  {
+   "displayName": "Immobilien",
+   "seoUrl": "https://www.willhaben.at/iad/immobilien/"
+  },
+  {
+   "displayName": "Sonstige Immobilien",
+   "seoUrl": "https://www.willhaben.at/iad/immobilien/sonstige/immobilien-angebote"
+  }
+ ],
+ "navigatorGroups": [
+  {
+   "label": "",
+   "navigatorList": [
+    {
+     "id": "searchId",
+     "label": "",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Alle Immobilien",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "90"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/90?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/90?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Neubauprojekte - Haus & Wohnung",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "42"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/42?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/42?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Haus kaufen",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "102"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/102?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/102?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Haus mieten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "132"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/132?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/132?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Wohnung kaufen",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "101"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/101?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/101?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Wohnung mieten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "131"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/131?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/131?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Grundstücke",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "14"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/14?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/14?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Gewerbeimmobilie kaufen",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "15"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/15?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/15?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Gewerbeimmobilie mieten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "16"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/16?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/16?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Ferienimmobilie mieten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "32"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/32?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/32?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Ferienimmobilie kaufen",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "12"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/12?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/12?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        },
+        {
+         "label": "Sonstige Immobilien",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "searchId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "35"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [
+      {
+       "label": "Sonstige Immobilien",
+       "prePostTextInfo": null,
+       "images": [],
+       "urlParamRepresentationForValue": [
+        {
+         "urlParameterName": "searchId",
+         "navigatorUrlParameterType": "STANDARD",
+         "value": "35"
+        }
+       ],
+       "parent": null,
+       "parentId": null,
+       "parentLabel": null,
+       "resetLink": null
+      }
+     ],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "searchId",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": null,
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": null,
+     "metadata": null
+    }
+   ]
+  },
+  {
+   "label": "Objektstandort",
+   "navigatorList": [
+    {
+     "id": "province",
+     "label": "Bundesland",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Burgenland",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 61,
+         "metaTags": []
+        },
+        {
+         "label": "Kärnten",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=2",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=2",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 111,
+         "metaTags": []
+        },
+        {
+         "label": "Niederösterreich",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "3"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=3",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=3",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 846,
+         "metaTags": []
+        },
+        {
+         "label": "Oberösterreich",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "4"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=4",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=4",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 392,
+         "metaTags": []
+        },
+        {
+         "label": "Salzburg",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "5"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=5",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=5",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 94,
+         "metaTags": []
+        },
+        {
+         "label": "Steiermark",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "6"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=6",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=6",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 480,
+         "metaTags": []
+        },
+        {
+         "label": "Tirol",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "7"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=7",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=7",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 167,
+         "metaTags": []
+        },
+        {
+         "label": "Vorarlberg",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "8"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=8",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=8",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 11,
+         "metaTags": []
+        },
+        {
+         "label": "Wien",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "900"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=900",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=900",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2491,
+         "metaTags": []
+        },
+        {
+         "label": "andere Länder",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "areaId",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "22000"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=22000",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&parent_areaid=&areaId=22000",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 23,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "areaId",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    },
+    {
+     "id": "location-autocomplete",
+     "label": "Ortssuche",
+     "possibleValues": [],
+     "groupedPossibleValues": [],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "areaId",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": {
+      "autocompleteLink": {
+       "id": "autocompleteLink",
+       "description": "uri to the location autocomplete endpoint",
+       "uri": "https://publicapi.willhaben.at/autocomplete/area?term=",
+       "selected": false,
+       "relativePath": "/area?term=",
+       "serviceName": "autocomplete"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "label": "Basisdaten",
+   "navigatorList": [
+    {
+     "id": "price",
+     "label": "Preis",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "bis € 199.999",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "0"
+          },
+          {
+           "urlParameterName": "PRICE_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "199999.99"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=0&PRICE_TO=199999.99",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=0&PRICE_TO=199999.99",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2565,
+         "metaTags": []
+        },
+        {
+         "label": "€ 200.000 – 359.999",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "200000"
+          },
+          {
+           "urlParameterName": "PRICE_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "359999.99"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=200000&PRICE_TO=359999.99",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=200000&PRICE_TO=359999.99",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 924,
+         "metaTags": []
+        },
+        {
+         "label": "€ 360.000 – 549.999",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "360000"
+          },
+          {
+           "urlParameterName": "PRICE_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "549999.99"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=360000&PRICE_TO=549999.99",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=360000&PRICE_TO=549999.99",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 651,
+         "metaTags": []
+        },
+        {
+         "label": "€ 550.000 – 709.999",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "550000"
+          },
+          {
+           "urlParameterName": "PRICE_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "709999.99"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=550000&PRICE_TO=709999.99",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=550000&PRICE_TO=709999.99",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 150,
+         "metaTags": []
+        },
+        {
+         "label": "ab € 710.000",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "PRICE_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "710000"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=710000&PRICE_TO=",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&PRICE_FROM=710000&PRICE_TO=",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 294,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "RANGE",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "PRICE_FROM",
+        "navigatorUrlParameterType": "RANGE_FROM"
+       },
+       {
+        "urlParameterName": "PRICE_TO",
+        "navigatorUrlParameterType": "RANGE_TO"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null,
+     "navigatorFromValues": [
+      {
+       "label": "0",
+       "value": "0"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "250",
+       "value": "250"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "350",
+       "value": "350"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "450",
+       "value": "450"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "550",
+       "value": "550"
+      },
+      {
+       "label": "600",
+       "value": "600"
+      },
+      {
+       "label": "650",
+       "value": "650"
+      },
+      {
+       "label": "700",
+       "value": "700"
+      },
+      {
+       "label": "800",
+       "value": "800"
+      },
+      {
+       "label": "900",
+       "value": "900"
+      },
+      {
+       "label": "1.000",
+       "value": "1000"
+      },
+      {
+       "label": "1.100",
+       "value": "1100"
+      },
+      {
+       "label": "1.200",
+       "value": "1200"
+      },
+      {
+       "label": "1.300",
+       "value": "1300"
+      },
+      {
+       "label": "1.400",
+       "value": "1400"
+      },
+      {
+       "label": "1.500",
+       "value": "1500"
+      },
+      {
+       "label": "2.000",
+       "value": "2000"
+      },
+      {
+       "label": "2.500",
+       "value": "2500"
+      },
+      {
+       "label": "3.000",
+       "value": "3000"
+      },
+      {
+       "label": "4.000",
+       "value": "4000"
+      },
+      {
+       "label": "5.000",
+       "value": "5000"
+      }
+     ],
+     "navigatorToValues": [
+      {
+       "label": "beliebig",
+       "value": "*"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "250",
+       "value": "250"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "350",
+       "value": "350"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "450",
+       "value": "450"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "550",
+       "value": "550"
+      },
+      {
+       "label": "600",
+       "value": "600"
+      },
+      {
+       "label": "650",
+       "value": "650"
+      },
+      {
+       "label": "700",
+       "value": "700"
+      },
+      {
+       "label": "800",
+       "value": "800"
+      },
+      {
+       "label": "900",
+       "value": "900"
+      },
+      {
+       "label": "1.000",
+       "value": "1000"
+      },
+      {
+       "label": "1.100",
+       "value": "1100"
+      },
+      {
+       "label": "1.200",
+       "value": "1200"
+      },
+      {
+       "label": "1.300",
+       "value": "1300"
+      },
+      {
+       "label": "1.400",
+       "value": "1400"
+      },
+      {
+       "label": "1.500",
+       "value": "1500"
+      },
+      {
+       "label": "2.000",
+       "value": "2000"
+      },
+      {
+       "label": "2.500",
+       "value": "2500"
+      },
+      {
+       "label": "3.000",
+       "value": "3000"
+      },
+      {
+       "label": "4.000",
+       "value": "4000"
+      },
+      {
+       "label": "5.000",
+       "value": "5000"
+      }
+     ],
+     "quickToggle": null,
+     "defaultFromNavigatorValue": {
+      "label": "0",
+      "value": "0"
+     },
+     "defaultToNavigatorValue": {
+      "label": "beliebig",
+      "value": "*"
+     },
+     "alternativeRanges": [],
+     "alternativeLabel": null,
+     "unit": null
+    },
+    {
+     "id": "completearea",
+     "label": "Gesamtfläche",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "bis 59 m²",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "0"
+          },
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "59"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=0&ESTATE_SIZE%2FGROSS_AREA_TO=59",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=0&ESTATE_SIZE%2FGROSS_AREA_TO=59",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1847,
+         "metaTags": []
+        },
+        {
+         "label": "60 – 79 m²",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "60"
+          },
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "79"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=60&ESTATE_SIZE%2FGROSS_AREA_TO=79",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=60&ESTATE_SIZE%2FGROSS_AREA_TO=79",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 511,
+         "metaTags": []
+        },
+        {
+         "label": "80 – 109 m²",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "80"
+          },
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "109"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=80&ESTATE_SIZE%2FGROSS_AREA_TO=109",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=80&ESTATE_SIZE%2FGROSS_AREA_TO=109",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 361,
+         "metaTags": []
+        },
+        {
+         "label": "110 – 149 m²",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "110"
+          },
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "149"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=110&ESTATE_SIZE%2FGROSS_AREA_TO=149",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=110&ESTATE_SIZE%2FGROSS_AREA_TO=149",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 166,
+         "metaTags": []
+        },
+        {
+         "label": "150 – 249 m²",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "150"
+          },
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_TO",
+           "navigatorUrlParameterType": "RANGE_TO",
+           "value": "249"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=150&ESTATE_SIZE%2FGROSS_AREA_TO=249",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=150&ESTATE_SIZE%2FGROSS_AREA_TO=249",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 135,
+         "metaTags": []
+        },
+        {
+         "label": "ab 250 m²",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+           "navigatorUrlParameterType": "RANGE_FROM",
+           "value": "250"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=250&ESTATE_SIZE%2FGROSS_AREA_TO=",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_SIZE%2FGROSS_AREA_FROM=250&ESTATE_SIZE%2FGROSS_AREA_TO=",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 236,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "RANGE",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "ESTATE_SIZE/GROSS_AREA_FROM",
+        "navigatorUrlParameterType": "RANGE_FROM"
+       },
+       {
+        "urlParameterName": "ESTATE_SIZE/GROSS_AREA_TO",
+        "navigatorUrlParameterType": "RANGE_TO"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null,
+     "navigatorFromValues": [
+      {
+       "label": "0",
+       "value": "0"
+      },
+      {
+       "label": "20",
+       "value": "20"
+      },
+      {
+       "label": "25",
+       "value": "25"
+      },
+      {
+       "label": "30",
+       "value": "30"
+      },
+      {
+       "label": "35",
+       "value": "35"
+      },
+      {
+       "label": "40",
+       "value": "40"
+      },
+      {
+       "label": "45",
+       "value": "45"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "55",
+       "value": "55"
+      },
+      {
+       "label": "60",
+       "value": "60"
+      },
+      {
+       "label": "65",
+       "value": "65"
+      },
+      {
+       "label": "70",
+       "value": "70"
+      },
+      {
+       "label": "75",
+       "value": "75"
+      },
+      {
+       "label": "80",
+       "value": "80"
+      },
+      {
+       "label": "85",
+       "value": "85"
+      },
+      {
+       "label": "90",
+       "value": "90"
+      },
+      {
+       "label": "95",
+       "value": "95"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "105",
+       "value": "105"
+      },
+      {
+       "label": "110",
+       "value": "110"
+      },
+      {
+       "label": "115",
+       "value": "115"
+      },
+      {
+       "label": "120",
+       "value": "120"
+      },
+      {
+       "label": "125",
+       "value": "125"
+      },
+      {
+       "label": "130",
+       "value": "130"
+      },
+      {
+       "label": "135",
+       "value": "135"
+      },
+      {
+       "label": "140",
+       "value": "140"
+      },
+      {
+       "label": "145",
+       "value": "145"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "155",
+       "value": "155"
+      },
+      {
+       "label": "160",
+       "value": "160"
+      },
+      {
+       "label": "165",
+       "value": "165"
+      },
+      {
+       "label": "170",
+       "value": "170"
+      },
+      {
+       "label": "175",
+       "value": "175"
+      },
+      {
+       "label": "180",
+       "value": "180"
+      },
+      {
+       "label": "185",
+       "value": "185"
+      },
+      {
+       "label": "190",
+       "value": "190"
+      },
+      {
+       "label": "195",
+       "value": "195"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      }
+     ],
+     "navigatorToValues": [
+      {
+       "label": "20",
+       "value": "20"
+      },
+      {
+       "label": "25",
+       "value": "25"
+      },
+      {
+       "label": "30",
+       "value": "30"
+      },
+      {
+       "label": "35",
+       "value": "35"
+      },
+      {
+       "label": "40",
+       "value": "40"
+      },
+      {
+       "label": "45",
+       "value": "45"
+      },
+      {
+       "label": "50",
+       "value": "50"
+      },
+      {
+       "label": "55",
+       "value": "55"
+      },
+      {
+       "label": "60",
+       "value": "60"
+      },
+      {
+       "label": "65",
+       "value": "65"
+      },
+      {
+       "label": "70",
+       "value": "70"
+      },
+      {
+       "label": "75",
+       "value": "75"
+      },
+      {
+       "label": "80",
+       "value": "80"
+      },
+      {
+       "label": "85",
+       "value": "85"
+      },
+      {
+       "label": "90",
+       "value": "90"
+      },
+      {
+       "label": "95",
+       "value": "95"
+      },
+      {
+       "label": "100",
+       "value": "100"
+      },
+      {
+       "label": "105",
+       "value": "105"
+      },
+      {
+       "label": "110",
+       "value": "110"
+      },
+      {
+       "label": "115",
+       "value": "115"
+      },
+      {
+       "label": "120",
+       "value": "120"
+      },
+      {
+       "label": "125",
+       "value": "125"
+      },
+      {
+       "label": "130",
+       "value": "130"
+      },
+      {
+       "label": "135",
+       "value": "135"
+      },
+      {
+       "label": "140",
+       "value": "140"
+      },
+      {
+       "label": "145",
+       "value": "145"
+      },
+      {
+       "label": "150",
+       "value": "150"
+      },
+      {
+       "label": "155",
+       "value": "155"
+      },
+      {
+       "label": "160",
+       "value": "160"
+      },
+      {
+       "label": "165",
+       "value": "165"
+      },
+      {
+       "label": "170",
+       "value": "170"
+      },
+      {
+       "label": "175",
+       "value": "175"
+      },
+      {
+       "label": "180",
+       "value": "180"
+      },
+      {
+       "label": "185",
+       "value": "185"
+      },
+      {
+       "label": "190",
+       "value": "190"
+      },
+      {
+       "label": "195",
+       "value": "195"
+      },
+      {
+       "label": "200",
+       "value": "200"
+      },
+      {
+       "label": "300",
+       "value": "300"
+      },
+      {
+       "label": "400",
+       "value": "400"
+      },
+      {
+       "label": "500",
+       "value": "500"
+      },
+      {
+       "label": "beliebig",
+       "value": "*"
+      }
+     ],
+     "quickToggle": null,
+     "defaultFromNavigatorValue": {
+      "label": "0",
+      "value": "0"
+     },
+     "defaultToNavigatorValue": {
+      "label": "beliebig",
+      "value": "*"
+     },
+     "alternativeRanges": [],
+     "alternativeLabel": null,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "label": "Immobilientyp",
+   "navigatorList": [
+    {
+     "id": "objecttype",
+     "label": "Objekttyp",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Garagen / Einstellplätze",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10000"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10000",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10000",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1952,
+         "metaTags": []
+        },
+        {
+         "label": "Kapitalanlagen / Rendite",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10020"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10020",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10020",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2227,
+         "metaTags": []
+        },
+        {
+         "label": "Hausverwaltungen",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10030"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10030",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10030",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1,
+         "metaTags": []
+        },
+        {
+         "label": "Umzüge",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10040"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10040",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10040",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2,
+         "metaTags": []
+        },
+        {
+         "label": "Diverse",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10050"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10050",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10050",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 407,
+         "metaTags": []
+        },
+        {
+         "label": "Gästezimmer",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10060"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10060",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10060",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 8,
+         "metaTags": []
+        },
+        {
+         "label": "Wohnungstausch",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10080"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10080",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10080",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1,
+         "metaTags": []
+        },
+        {
+         "label": "Zeitwohnen",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10090"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10090",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10090",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2,
+         "metaTags": []
+        },
+        {
+         "label": "Gesuche",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10110"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10110",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10110",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 18,
+         "metaTags": []
+        },
+        {
+         "label": "Weinkeller",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10120"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10120",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10120",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 32,
+         "metaTags": []
+        },
+        {
+         "label": "Seehaus/Mobilheim",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "ESTATE_MISC_CATEGORY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "10130"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10130",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&ESTATE_MISC_CATEGORY=10130",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 26,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "ESTATE_MISC_CATEGORY",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    },
+    {
+     "id": "ownagetype",
+     "label": "Besitzform",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "Kauf",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "OWNAGETYPE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&OWNAGETYPE=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&OWNAGETYPE=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 2824,
+         "metaTags": []
+        },
+        {
+         "label": "Miete",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "OWNAGETYPE",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&OWNAGETYPE=2",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&OWNAGETYPE=2",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1852,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "OWNAGETYPE",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    }
+   ]
+  },
+  {
+   "label": "Details & Ausstattung",
+   "navigatorList": [
+    {
+     "id": "keyword",
+     "label": "Suchbegriff",
+     "possibleValues": [],
+     "groupedPossibleValues": [],
+     "selectedValues": [],
+     "navigatorType": "TEXT_SEARCH",
+     "navigatorSelectionType": "SINGLE_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "keyword",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [
+      "RESULTLIST_QUICK_NAVIGATOR"
+     ],
+     "metadata": {
+      "placeholder": "z. B. Ausstattung"
+     }
+    }
+   ]
+  },
+  {
+   "label": "Sonstiges",
+   "navigatorList": [
+    {
+     "id": "availability",
+     "label": "Verfügbarkeit",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "ab sofort",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "AVAILABLETODAY",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "1"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&AVAILABLETODAY=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&AVAILABLETODAY=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 1991,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "AVAILABLETODAY",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    },
+    {
+     "id": "period",
+     "label": "Suchzeitraum",
+     "possibleValues": [],
+     "groupedPossibleValues": [
+      {
+       "label": null,
+       "possibleValues": [
+        {
+         "label": "nur Anzeigen der letzten 48 Stunden",
+         "prePostTextInfo": null,
+         "images": [],
+         "urlParamRepresentationForValue": [
+          {
+           "urlParameterName": "periode",
+           "navigatorUrlParameterType": "STANDARD",
+           "value": "2"
+          }
+         ],
+         "parent": null,
+         "parentId": null,
+         "parentLabel": null,
+         "searchLink": {
+          "id": "searchLink",
+          "description": "link to filter for this navigator value",
+          "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&periode=2&page=1",
+          "selected": false,
+          "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&periode=2&page=1",
+          "serviceName": "ad-search"
+         },
+         "webLink": null,
+         "hits": 0,
+         "metaTags": []
+        }
+       ]
+      }
+     ],
+     "selectedValues": [],
+     "navigatorType": "STANDARD",
+     "navigatorSelectionType": "MULTI_SELECT",
+     "urlConstructionInformation": {
+      "baseUrl": {
+       "id": "baseNavigatorLink",
+       "description": "base url to append parameters to for manual input",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      },
+      "urlParams": [
+       {
+        "urlParameterName": "periode",
+        "navigatorUrlParameterType": "STANDARD"
+       }
+      ]
+     },
+     "resetAllInformation": {
+      "resetAllUrl": {
+       "id": "resetAllLink",
+       "description": "resetAllUrl to reset all selected values of this navigator",
+       "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "selected": false,
+       "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+       "serviceName": "ad-search"
+      }
+     },
+     "navigatorValuesDisplayType": "TEXT",
+     "metaTags": [],
+     "metadata": null
+    }
+   ]
+  }
+ ],
+ "searchExcludeList": {
+  "contextLink": []
+ },
+ "pagingLinksList": {
+  "contextLink": [
+   {
+    "id": "0",
+    "description": "selfLink",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&rows=1",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&rows=1",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "2",
+    "description": "nextLink",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&publishedDateTo=1781185920000&page=2&rows=1",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&publishedDateTo=1781185920000&page=2&rows=1",
+    "serviceName": "ad-search"
+   }
+  ]
+ },
+ "sortOrderList": {
+  "contextLink": [
+   {
+    "id": "published.descending",
+    "description": "Aktualität",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=1",
+    "selected": true,
+    "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=1",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "distance.ascending",
+    "description": "in der Nähe",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=2",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=2",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "price.ascending",
+    "description": "Preis aufsteigend",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=3",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=3",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "price.descending",
+    "description": "Preis absteigend",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=4",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1&sort=4",
+    "serviceName": "ad-search"
+   }
+  ]
+ },
+ "searchContextLinks": {
+  "contextLink": [
+   {
+    "id": "selfLink",
+    "description": "Aktuelle Suche",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "searchBaseLink",
+    "description": "Erste Seite",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/seo/immobilien/sonstige?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+    "selected": false,
+    "relativePath": "/search/atz/seo/immobilien/sonstige?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&page=1",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "resultListSeoNavigatorLink",
+    "description": "SEO URL of the result list",
+    "uri": "/immobilien/sonstige/immobilien-angebote?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+    "selected": false,
+    "relativePath": "/immobilien/sonstige/immobilien-angebote?rows=1&isNavigation=true&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "logSearchLink",
+    "description": "Logs a search view",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35?rows=1&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&isLog=true",
+    "selected": false,
+    "relativePath": "/search/atz/2/35?rows=1&sfId=5a9d4ffe-eb73-41da-b939-94caf6cb6bab&isLog=true",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "fetchTopAds",
+    "description": "Fetch the Top-Ads matching this search",
+    "uri": "https://ad-search.willhaben.at/restapi/v2/search/atz/2/35/atverz?rows=3&TOP_AD=topad_result&sort=11",
+    "selected": false,
+    "relativePath": "/search/atz/2/35/atverz?rows=3&TOP_AD=topad_result&sort=11",
+    "serviceName": "ad-search"
+   },
+   {
+    "id": "topInformation",
+    "description": "Infos zur Reihung der Anzeigen",
+    "uri": "https://www.willhaben.at/will/infos-zur-reihung",
+    "selected": false,
+    "relativePath": "/will/infos-zur-reihung",
+    "serviceName": "web_url",
+    "iconPNG": "https://cache.willhaben.at/img/resultlist/icon_tooltip-questionmark.png",
+    "iconSVG": "https://cache.willhaben.at/img/resultlist/icon_tooltip-questionmark.svg"
+   }
+  ]
+ },
+ "taggingData": {
+  "taggingNames": {
+   "nameValuePair": [
+    {
+     "name": "oewaMweb",
+     "value": "Service/Rubrikenmaerkte/Immobilienmarkt/moewa/Sonstige/${page}"
+    },
+    {
+     "name": "oewa",
+     "value": "Service/Rubrikenmaerkte/Immobilienmarkt/Sonstige/${page}"
+    },
+    {
+     "name": "xiti_SCV",
+     "value": "&x1=2&x2=15&x8=2"
+    },
+    {
+     "name": "googleAdContentUrl",
+     "value": "https://www.willhaben.at/iad/realestate/common/result?AD_TYPE=15"
+    }
+   ]
+  },
+  "tmsDataValues": {
+   "tmsData": {
+    "search_results_number": "4676",
+    "ad_type": "Sonstige",
+    "page_type": "List",
+    "vertical_id": "2",
+    "category_level_id_1": "35",
+    "vertical": "Immobilien",
+    "source": "ResponsiveWeb",
+    "category_tree_id": "7280",
+    "category_level_1": "Sonstige Immobilien zu kaufen oder zu mieten",
+    "environment": "web",
+    "category_level_max": "0",
+    "search_results_displaycount": "1",
+    "event_name": "list",
+    "search_results_page": "1"
+   }
+  },
+  "pulseData": {
+   "pulseEvents": [
+    {
+     "type": "LISTING",
+     "id": 0,
+     "contentId": 0,
+     "name": "Listing Viewed",
+     "adType": "sell",
+     "items": [],
+     "classifiedAdObjects": [
+      {
+       "type": "CLASSIFIEDAD",
+       "id": 1518350377,
+       "adId": 1518350377,
+       "adUuid": "3fc427f4-3bec-4af5-a824-b34e9d305250",
+       "publisher": {
+        "id": "sdrn:willhabenat:user:42b9fd79-dc14-4a17-ad21-c82a3667e9e5",
+        "accountId": "42b9fd79-dc14-4a17-ad21-c82a3667e9e5",
+        "type": "Account"
+       }
+      }
+     ],
+     "numItems": 1,
+     "category": "RealEstate > Sonstige Immobilien zu kaufen oder zu mieten",
+     "filters": {
+      "adType": "sell",
+      "sorting": "PublishedTime",
+      "numResults": "1"
+     },
+     "search": {
+      "@id": "db8779ac-a6c1-48eb-a25e-87a3cf0516df",
+      "@type": "SearchMetadata",
+      "maxRank": 1,
+      "offset": 0,
+      "genericSearchFilters": [],
+      "searchConfigId": 35
+     }
+    }
+   ]
+  },
+  "neustarTaggingData": {
+   "mainCategory": "real-estate_non-defined",
+   "vertical": "real-estate",
+   "device": "mobile"
+  },
+  "qualtricsParameter": null
+ },
+ "seoMetaData": {
+  "canonicalUrl": "https://www.willhaben.at/iad/immobilien/sonstige",
+  "alternateUrl": "https://www.willhaben.at/iad/immobilien/sonstige",
+  "title": "",
+  "keywords": "",
+  "description": "",
+  "orgId": null
+ },
+ "autocompleteLinkList": {
+  "contextLink": [
+   {
+    "id": "autocomplete",
+    "description": "Auto Complete URL",
+    "uri": "https://publicapi.willhaben.at/autocomplete/search?v=1&term=",
+    "selected": false,
+    "relativePath": "/search?v=1&term=",
+    "serviceName": "autocomplete"
+   }
+  ]
+ },
+ "searchTitle": "Sonstige Immobilien",
+ "searchSubTitle": "",
+ "advertisingParameters": {
+  "pagetype": [
+   "Trefferliste"
+  ],
+  "estate_level0": [
+   "Sonstige_Immobilien"
+  ],
+  "search_alert": [
+   "false"
+  ],
+  "searchcount": [
+   "1"
+  ],
+  "payliveryEnabled": [
+   "false"
+  ],
+  "vertical": [
+   "estate"
+  ],
+  "device": [
+   "desktop"
+  ]
+ },
+ "advertisingParametersV2": {
+  "pagetype": "Trefferliste",
+  "estate_level0": "Sonstige_Immobilien",
+  "vertical": "estate",
+  "device": "desktop"
+ },
+ "dmpParameters": {
+  "pagetype": "Trefferliste",
+  "estate_level0": "Sonstige_Immobilien",
+  "search_alert": false,
+  "searchcount": 1,
+  "payliveryEnabled": false,
+  "vertical": "estate",
+  "device": "desktop"
+ },
+ "dmpUserIdentities": {},
+ "metaData": {
+  "viewMode": "LIST_VIEW",
+  "defaultPageSize": 30
+ },
+ "statistics": null,
+ "brazeBanners": [
+  {
+   "id": "f22a5b1e-e343-4ed7-80a1-a9eb1b89614a",
+   "placementId": "srl_immo",
+   "position": 8
+  }
+ ]
+}

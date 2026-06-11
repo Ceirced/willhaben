@@ -160,7 +160,10 @@ class TestFilterAvailable:
     def test_not_selectable_sets_available_false(self) -> None:
         from willhaben.navigation import _parse_filter
 
-        f = _parse_filter({"id": "model", "label": "Model", "navigatorType": "NOT_SELECTABLE"})
+        f = _parse_filter(
+            {"id": "model", "label": "Model", "navigatorType": "STANDARD",
+             "navigatorSelectionType": "NOT_SELECTABLE"}
+        )
         assert f.available is False
         assert f.values == ()
 
@@ -225,3 +228,37 @@ class TestNodeViewOrder:
     def test_unknown_value_raises(self) -> None:
         with pytest.raises(ValueError, match="no value"):
             self._iphone().order(select={"Speicherkapazität": ["999 GB"]})
+
+
+class TestParseRealestate:
+    def test_categories_from_search_id(self) -> None:
+        view = NodeView.from_api(
+            load("navigate_realestate_root.json"), node_id=None, vertical=REALESTATE
+        )
+        labels = {c.label for c in view.categories}
+        assert "Haus kaufen" in labels
+        by_label = {c.label: c.id for c in view.categories}
+        assert by_label["Haus kaufen"] == 102
+
+    def test_other_node_has_ownagetype_filter(self) -> None:
+        view = NodeView.from_api(
+            load("navigate_realestate_other.json"), node_id=35, vertical=REALESTATE
+        )
+        # realestate's searchId navigator is a persistent category switcher (always present),
+        # so categories is the full list here, not empty. The OTHER node exposes buy/rent.
+        assert len(view.categories) > 0
+        assert any(f.id == "ownagetype" for f in view.filters)
+
+
+class TestParseAuto:
+    def test_model_locked_until_make(self) -> None:
+        view = NodeView.from_api(load("navigate_auto.json"), node_id=None, vertical=AUTO)
+        model = next(f for f in view.filters if f.id == "model")
+        assert model.available is False
+        assert model.values == ()
+
+    def test_model_unlocked_with_make(self) -> None:
+        view = NodeView.from_api(load("navigate_auto_bmw.json"), node_id=None, vertical=AUTO)
+        model = next(f for f in view.filters if f.id == "model")
+        assert model.available is True
+        assert len(model.values) > 0

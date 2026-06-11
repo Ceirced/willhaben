@@ -126,7 +126,7 @@ def _target(vertical: Vertical, node: int | None) -> tuple[str, dict[str, int]]:
     raise ValueError(f"{vertical.name} cannot scope to a node yet")
 ```
 
-`Filter` gains `available: bool` (False when `navigatorType == NOT_SELECTABLE`),
+`Filter` gains `available: bool` (False when `navigatorSelectionType == NOT_SELECTABLE`),
 so consumers gate locked filters (auto `model`) until a prerequisite is chosen.
 `NodeView` gains `vertical: Vertical`. `categories` is parsed from the navigator
 named by `vertical.category_nav` (`category` for marketplace, `searchId` for

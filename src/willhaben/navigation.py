@@ -176,7 +176,7 @@ def _parse_filter(nav: dict[str, Any]) -> Filter:
             else SelectionMode.SINGLE
         ),
         values=tuple(values),
-        available=nav_type != "NOT_SELECTABLE",
+        available=nav.get("navigatorSelectionType") != "NOT_SELECTABLE",
     )
 
 
