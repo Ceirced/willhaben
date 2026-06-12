@@ -289,3 +289,98 @@ class TestParseAuto:
         model = next(f for f in view.filters if f.id == "model")
         assert model.available is True
         assert len(model.values) > 0
+
+
+def _make_nav(
+    *,
+    nav_id: str = "Marke",
+    nav_type: str = "HIERARCHICAL",
+    selection_type: str = "MULTI_SELECT",
+    possible_values: list[dict] | None = None,
+    grouped_possible_values: list[dict] | None = None,
+    selected_values: list[dict] | None = None,
+) -> dict:
+    nav: dict = {
+        "id": nav_id,
+        "label": nav_id,
+        "navigatorType": nav_type,
+        "navigatorSelectionType": selection_type,
+        "urlConstructionInformation": {
+            "urlParams": [{"urlParameterName": "treeAttributes"}]
+        },
+    }
+    if possible_values is not None:
+        nav["possibleValues"] = possible_values
+    if grouped_possible_values is not None:
+        nav["groupedPossibleValues"] = grouped_possible_values
+    if selected_values is not None:
+        nav["selectedValues"] = selected_values
+    return nav
+
+
+_HM_SELECTED = {
+    "label": "H&M",
+    "urlParamRepresentationForValue": [
+        {"urlParameterName": "treeAttributes", "value": "5958"}
+    ],
+}
+
+_HM_POSSIBLE = {
+    "label": "H&M",
+    "hits": 42,
+    "urlParamRepresentationForValue": [
+        {"urlParameterName": "treeAttributes", "value": "5958"}
+    ],
+}
+
+_OTHER_POSSIBLE = {
+    "label": "Nike",
+    "hits": 10,
+    "urlParamRepresentationForValue": [
+        {"urlParameterName": "treeAttributes", "value": "5959"}
+    ],
+}
+
+
+class TestSelectedValues:
+    """Applied filter values move to selectedValues in the API response."""
+
+    def test_selected_value_only_is_included(self) -> None:
+        from willhaben.navigation import _parse_filter
+
+        nav = _make_nav(
+            possible_values=[],
+            grouped_possible_values=[],
+            selected_values=[_HM_SELECTED],
+        )
+        f = _parse_filter(nav)
+        assert len(f.values) == 1
+        assert f.values[0].label == "H&M"
+        assert f.values[0].params == {"treeAttributes": "5958"}
+
+    def test_duplicate_label_in_both_appears_once(self) -> None:
+        from willhaben.navigation import _parse_filter
+
+        nav = _make_nav(
+            possible_values=[_HM_POSSIBLE, _OTHER_POSSIBLE],
+            selected_values=[_HM_SELECTED],
+        )
+        f = _parse_filter(nav)
+        labels = [v.label for v in f.values]
+        assert labels.count("H&M") == 1
+        assert "Nike" in labels
+
+    def test_categories_do_not_pick_up_selected_values(self) -> None:
+        from willhaben.navigation import _parse_categories
+
+        nav = _make_nav(
+            nav_id="ATTRIBUTE_TREE_NAME",
+            nav_type="HIERARCHICAL",
+            possible_values=[_OTHER_POSSIBLE],
+            selected_values=[_HM_SELECTED],
+        )
+        cats = _parse_categories(nav)
+        # _parse_categories uses _iter_values (possibleValues only), not selectedValues
+        cat_labels = [c.label for c in cats]
+        assert "H&M" not in cat_labels
+        assert "Nike" in cat_labels

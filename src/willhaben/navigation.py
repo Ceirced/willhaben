@@ -158,13 +158,17 @@ def _parse_filter(nav: dict[str, Any]) -> Filter:
         if "urlParameterName" in p
     )
     values: list[FilterValue] = []
-    for value in _iter_values(nav):
+    seen: set[str] = set()
+    # Applied values move from possibleValues to selectedValues in the API
+    # response; include them (first) so an applied filter keeps its value.
+    # Some navigators list a value in both -> dedupe by label.
+    for value in [*(nav.get("selectedValues") or []), *_iter_values(nav)]:
         vparams = _value_params(value)
-        if not vparams:
+        label = value.get("label", "")
+        if not vparams or label in seen:
             continue
-        values.append(
-            FilterValue(label=value.get("label", ""), params=vparams, hits=value.get("hits"))
-        )
+        seen.add(label)
+        values.append(FilterValue(label=label, params=vparams, hits=value.get("hits")))
     nav_type = nav.get("navigatorType", "")
     return Filter(
         id=nav.get("id", ""),
