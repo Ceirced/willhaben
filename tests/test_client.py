@@ -60,6 +60,14 @@ class TestRequestSuccess:
         params = client._http.get.call_args.kwargs["params"]
         assert params["keyword"] == "hello world"
 
+    def test_list_param_expands_to_repeated_values(
+        self, client: WillhabenClient
+    ) -> None:
+        client._http.get.return_value = make_response({})
+        client.search(MARKETPLACE_PATH, {"treeAttributes": [2537, 2540]})
+        params = client._http.get.call_args.kwargs["params"]
+        assert params["treeAttributes"] == ["2537", "2540"]
+
 
 class TestRetryBehavior:
     def test_retries_on_429(self, client: WillhabenClient) -> None:

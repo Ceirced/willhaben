@@ -1,6 +1,6 @@
 [project]
 name = "willhaben"
-version = "0.3.0"
+version = "0.5.0"
 requires-python = ">=3.13"
 dependencies = [
     "httpx[http2]>=0.28",

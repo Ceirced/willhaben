@@ -12,6 +12,7 @@ from willhaben.models import (
     _parse_price,
     _parse_published,
 )
+from willhaben.navigation import NodeView
 
 
 class TestParseHelpers:
@@ -147,3 +148,39 @@ class TestSearchResultFromApi:
         assert result.rows_returned == 0
         assert result.page == 1
         assert result.ads == []
+
+
+class TestAdPriceAliases:
+    def test_price_amount_key(self) -> None:
+        raw = {
+            "id": 1,
+            "description": "x",
+            "attributes": {"attribute": [{"name": "PRICE/AMOUNT", "values": ["120.00"]}]},
+        }
+        assert Ad.from_api(raw).price == Decimal("120.00")
+
+    def test_plain_price_key(self) -> None:
+        raw = {
+            "id": 2,
+            "description": "y",
+            "attributes": {"attribute": [{"name": "PRICE", "values": ["300000"]}]},
+        }
+        assert Ad.from_api(raw).price == Decimal(300000)
+
+
+class TestSearchResultNode:
+    def test_node_parsed_from_same_payload(self, load_fixture) -> None:
+        from willhaben.verticals import MARKETPLACE
+
+        result = SearchResult.from_api(load_fixture("navigate_apple.json"), vertical=MARKETPLACE)
+        assert isinstance(result.node, NodeView)
+        assert any(c.label == "iPhone 17 Pro" for c in result.node.categories)
+
+    def test_counts_by_state(self, load_fixture) -> None:
+        from willhaben.verticals import MARKETPLACE
+
+        result = SearchResult.from_api(load_fixture("navigate_apple.json"), vertical=MARKETPLACE)
+        counts = result.counts_by_state
+        assert counts[1] == 374
+        assert counts[900] == 4623
+        assert len(counts) == 10

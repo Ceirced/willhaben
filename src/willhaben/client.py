@@ -2,11 +2,18 @@ from __future__ import annotations
 
 import random
 import time
+from collections.abc import Mapping, Sequence
 from typing import Any
 
 import httpx
 
 from .constants import API_ROOT, DEFAULT_USER_AGENT, X_WH_CLIENT
+
+QueryValue = str | int | Sequence[int | str]
+"""A query parameter value: a scalar, or a sequence of ids that becomes repeated
+query keys (e.g. ``treeAttributes=2537&treeAttributes=2540``). A sequence accepts
+both ints and the string ids that `navigation.FilterValue.value` hands back."""
+QueryParams = Mapping[str, QueryValue]
 
 
 class WillhabenAPIError(Exception):
@@ -61,9 +68,16 @@ class WillhabenClient:
             time.sleep(delay - elapsed)
 
     def search(
-        self, path: str, params: dict[str, str | int]
+        self, path: str, params: QueryParams
     ) -> dict[str, Any]:
-        query = {k: str(v) for k, v in params.items() if v is not None}
+        query: dict[str, str | list[str]] = {}
+        for key, value in params.items():
+            if value is None:
+                continue
+            if isinstance(value, (list, tuple)):
+                query[key] = [str(v) for v in value]
+            else:
+                query[key] = str(value)
         query.setdefault("isNavigation", "true")
         url = f"{API_ROOT}/{path}"
 

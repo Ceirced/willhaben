@@ -1,25 +1,19 @@
 from __future__ import annotations
 
-from .constants import AREAS, SortOrder
-from .search import count, search
+from . import AREAS, MARKETPLACE, SortOrder, count, navigate, search
 
 
 def main() -> None:
-    total = count(keyword="fahrrad")
-    print(f"Fahrrad (all): {total:,} results")  # noqa: T201
+    view = navigate(vertical=MARKETPLACE)
+    order = view.order(
+        select={"keyword": "fahrrad", "price": (50, 200)},
+        extra={"areaId": AREAS["wien"].id},
+    )
+    total = count(order)
+    print(f"Fahrrad €50-200 in Wien: {total:,} results")  # noqa: T201
 
-    result = search(
-        keyword="fahrrad",
-        price_from=50,
-        price_to=200,
-        area_id=AREAS["wien"].id,
-        sort=SortOrder.NEWEST,
-        rows=5,
-    )
-    print(  # noqa: T201
-        f"\nFahrrad €50-200 in Wien: {result.rows_found:,} total, "
-        f"showing {len(result.ads)}"
-    )
+    result = search(order, sort=SortOrder.NEWEST, rows=5)
+    print(f"\nShowing {len(result.ads)} of {result.rows_found:,}")  # noqa: T201
     for ad in result.ads:
         price = ad.price_display or "—"
         loc = ad.location or "?"
