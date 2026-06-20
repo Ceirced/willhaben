@@ -82,6 +82,8 @@ class TestAdFromApi:
         assert ad.state == "Wien"
         assert ad.coordinates == (48.2082, 16.3738)
         assert ad.published_at == datetime(2023, 11, 14, 22, 13, 20, tzinfo=UTC)
+        assert ad.changed_at == datetime(2023, 11, 15, 22, 13, 20, tzinfo=UTC)
+        assert ad.expires_at == datetime(2024, 1, 10, 0, 0, 0, tzinfo=UTC)
         assert ad.body == "A nice used bicycle."
         assert ad.is_private is True
         assert ad.main_image_url == "https://images.willhaben.at/main.jpg"
@@ -115,6 +117,26 @@ class TestAdFromApi:
         assert ad.is_private is False
         assert ad.main_image_url is None
         assert ad.url == "https://www.willhaben.at/iad/object?adId=99"
+
+    def test_timestamps_absent(self) -> None:
+        ad = Ad.from_api({"id": 99, "attributes": {"attribute": []}})
+        assert ad.published_at is None
+        assert ad.changed_at is None
+        assert ad.expires_at is None
+
+    def test_changed_and_expires_parsed(self) -> None:
+        raw = {
+            "id": 1,
+            "attributes": {
+                "attribute": [
+                    {"name": "CHANGED", "values": ["1700086400000"]},
+                    {"name": "ENDDATE", "values": ["1704844800000"]},
+                ]
+            },
+        }
+        ad = Ad.from_api(raw)
+        assert ad.changed_at == datetime(2023, 11, 15, 22, 13, 20, tzinfo=UTC)
+        assert ad.expires_at == datetime(2024, 1, 10, 0, 0, 0, tzinfo=UTC)
 
     def test_no_images(self, load_fixture) -> None:
         raw = load_fixture("search_response.json")

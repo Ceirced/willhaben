@@ -59,6 +59,8 @@ class Ad:
     state: str | None
     coordinates: tuple[float, float] | None
     published_at: datetime | None
+    changed_at: datetime | None
+    expires_at: datetime | None
     body: str | None
     main_image_url: str | None
     is_private: bool
@@ -104,6 +106,8 @@ class Ad:
             state=_first(attrs.get("STATE")),
             coordinates=_parse_coords(_first(attrs.get("COORDINATES"))),
             published_at=_parse_epoch_millis(_first(attrs.get("PUBLISHED"))),
+            changed_at=_parse_epoch_millis(_first(attrs.get("CHANGED"))),
+            expires_at=_parse_epoch_millis(_first(attrs.get("ENDDATE"))),
             body=_first(attrs.get("BODY_DYN")),
             main_image_url=main_image,
             is_private=_first(attrs.get("ISPRIVATE")) == "1",
