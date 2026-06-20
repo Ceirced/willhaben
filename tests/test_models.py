@@ -9,8 +9,8 @@ from willhaben.models import (
     _attrs_to_dict,
     _first,
     _parse_coords,
+    _parse_epoch_millis,
     _parse_price,
-    _parse_published,
 )
 from willhaben.navigation import NodeView
 
@@ -47,15 +47,15 @@ class TestParseHelpers:
     def test_parse_coords_no_comma(self) -> None:
         assert _parse_coords("48.2") is None
 
-    def test_parse_published_valid(self) -> None:
-        result = _parse_published("1700000000000")
+    def test_parse_epoch_millis_valid(self) -> None:
+        result = _parse_epoch_millis("1700000000000")
         assert result == datetime(2023, 11, 14, 22, 13, 20, tzinfo=UTC)
 
-    def test_parse_published_none(self) -> None:
-        assert _parse_published(None) is None
+    def test_parse_epoch_millis_none(self) -> None:
+        assert _parse_epoch_millis(None) is None
 
-    def test_parse_published_invalid(self) -> None:
-        assert _parse_published("not-a-number") is None
+    def test_parse_epoch_millis_invalid(self) -> None:
+        assert _parse_epoch_millis("not-a-number") is None
 
     def test_parse_price_valid(self) -> None:
         assert _parse_price("120.50") == Decimal("120.50")

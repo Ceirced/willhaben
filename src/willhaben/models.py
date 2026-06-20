@@ -27,7 +27,7 @@ def _parse_coords(raw: str | None) -> tuple[float, float] | None:
         return None
 
 
-def _parse_published(raw: str | None) -> datetime | None:
+def _parse_epoch_millis(raw: str | None) -> datetime | None:
     if not raw:
         return None
     try:
@@ -103,7 +103,7 @@ class Ad:
             district=_first(attrs.get("DISTRICT")),
             state=_first(attrs.get("STATE")),
             coordinates=_parse_coords(_first(attrs.get("COORDINATES"))),
-            published_at=_parse_published(_first(attrs.get("PUBLISHED"))),
+            published_at=_parse_epoch_millis(_first(attrs.get("PUBLISHED"))),
             body=_first(attrs.get("BODY_DYN")),
             main_image_url=main_image,
             is_private=_first(attrs.get("ISPRIVATE")) == "1",
