@@ -23,6 +23,7 @@ DEFAULT_USER_AGENT: Final = (
 # Server silently caps `rows` at 200 even if you request more.
 MAX_ROWS_PER_PAGE: Final = 200
 
+
 @dataclass(slots=True, eq=False)
 class Area:
     """A willhaben area: a Bundesland, a district within one, or a country

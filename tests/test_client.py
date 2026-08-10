@@ -48,9 +48,7 @@ class TestRequestSuccess:
 
     def test_caller_can_override_isnavigation(self, client: WillhabenClient) -> None:
         client._http.get.return_value = make_response({})
-        client.search(
-            MARKETPLACE_PATH, {"keyword": "bike", "isNavigation": "false"}
-        )
+        client.search(MARKETPLACE_PATH, {"keyword": "bike", "isNavigation": "false"})
         params = client._http.get.call_args.kwargs["params"]
         assert params["isNavigation"] == "false"
 
@@ -121,9 +119,7 @@ class TestRetryBehavior:
             result = client.search(MARKETPLACE_PATH, {"k": "v"})
         assert result == {"ok": True}
 
-    def test_retries_on_remote_protocol_error(
-        self, client: WillhabenClient
-    ) -> None:
+    def test_retries_on_remote_protocol_error(self, client: WillhabenClient) -> None:
         with patch("willhaben.client.time.sleep"):
             client._http.get.side_effect = [
                 httpx.RemoteProtocolError("peer closed connection"),
