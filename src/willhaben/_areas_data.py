@@ -76,6 +76,7 @@ AREAS_DATA: Final[tuple[tuple[int, str, tuple[tuple[int, str], ...]], ...]] = (
             (-53, "Türkei"),
             (-139, "Ungarn"),
             (-158, "USA"),
+            (-14, "Zypern"),
         ),
     ),
     (

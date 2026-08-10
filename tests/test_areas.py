@@ -69,9 +69,9 @@ def test_areas_by_id_round_trip() -> None:
             assert AREAS_BY_ID[child.id] is child
 
 
-def test_areas_by_id_has_148_nodes() -> None:
-    # 10 top-level + 116 Austrian districts + 22 foreign countries.
-    assert len(AREAS_BY_ID) == 148
+def test_areas_by_id_has_149_nodes() -> None:
+    # 10 top-level + 116 Austrian districts + 23 foreign countries.
+    assert len(AREAS_BY_ID) == 149
 
 
 def test_negative_ids_only_under_andere_laender() -> None:
