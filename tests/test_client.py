@@ -147,4 +147,4 @@ class TestPathArgument:
         client._http.get.return_value = make_response({})
         client.search("atz/2/131", {"rows": 1})
         url = client._http.get.call_args.args[0]
-        assert url.endswith("/webapi/iad/search/atz/2/131")
+        assert url.endswith("/restapi/v2/search/atz/2/131")

@@ -6,7 +6,7 @@ from typing import Final
 
 from ._areas_data import AREAS_DATA
 
-API_ROOT: Final = "https://www.willhaben.at/webapi/iad/search"
+API_ROOT: Final = "https://ad-search.willhaben.at/restapi/v2/search"
 
 # Marketplace endpoint path (joined onto API_ROOT).
 MARKETPLACE_PATH: Final = "atz/seo/kaufen-und-verkaufen/marktplatz"
