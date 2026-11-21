@@ -20,7 +20,8 @@ class WillhabenAPIError(Exception):
     """Raised when the Willhaben API returns an error or unexpected response."""
 
 
-_RETRY_STATUS = {429, 502, 503, 504}
+# No 429: a rate-limit block outlasts any backoff, retrying only extends it.
+_RETRY_STATUS = {502, 503, 504}
 
 
 class WillhabenClient:
