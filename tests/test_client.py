@@ -68,15 +68,13 @@ class TestRequestSuccess:
 
 
 class TestRetryBehavior:
-    def test_retries_on_429(self, client: WillhabenClient) -> None:
+    def test_does_not_retry_on_429(self, client: WillhabenClient) -> None:
+        # A rate-limit block outlasts any backoff; retrying only extends it.
         with patch("willhaben.client.time.sleep"):
-            client._http.get.side_effect = [
-                make_response({}, status=429),
-                make_response({"ok": True}),
-            ]
-            result = client.search(MARKETPLACE_PATH, {"k": "v"})
-        assert result == {"ok": True}
-        assert client._http.get.call_count == 2
+            client._http.get.return_value = make_response({}, status=429)
+            with pytest.raises(WillhabenAPIError, match="429"):
+                client.search(MARKETPLACE_PATH, {"k": "v"})
+        assert client._http.get.call_count == 1
 
     def test_retries_on_503(self, client: WillhabenClient) -> None:
         with patch("willhaben.client.time.sleep"):
